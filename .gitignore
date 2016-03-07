@@ -14,7 +14,7 @@
 #Vendors
 /vendor
 /node_modules
-/web/assets/vendor
+/web/vendor
 
 #others
 /nbproject
