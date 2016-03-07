@@ -5,7 +5,7 @@
  */
 var gulp = require('gulp'),
         less = require('gulp-less'),
-        minifyCSS = require('gulp-minify-css'),
+        cleanCSS = require('gulp-clean-css'),
         plumber = require('gulp-plumber'),
         concat = require('gulp-concat');
         watch = require('gulp-watch');
@@ -27,14 +27,13 @@ gulp.task('watch', function () {
     gulp.watch('web/assets/less/**/*.less', ['less']);
 });
 
-gulp.task('minifyCSS', function () {
+gulp.task('cleanCSS', function () {
     gulp.src([
         '.web/assets/css/*.css'
     ])
             .pipe(concat('style.min.css'))
-            .pipe(minifyCSS())
+            .pipe(cleanCSS({compatibility: 'ie8'}))
             .pipe(gulp.dest('web/assets/dist'));
 });
 // define tasks here
-gulp.task('default', ['less', 'minifyCSS', 'watch']);
-
+gulp.task('default', ['less', 'cleanCSS', 'watch']);
