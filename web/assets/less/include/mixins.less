@@ -1,0 +1,67 @@
+//Button next, previus question, Register
+.button(@bgColor, @bgHover, @colorYellow, @colorGrey, @textColor, @float){
+    cursor: pointer;
+    background-color: @bgColor;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: @textColor;
+    display: inline-block;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 60px;
+    padding-left: 20px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    &:hover {
+        background-color: @bgHover;
+        text-decoration: none;
+        i {
+            background-color: @colorGrey;
+        }
+    }
+    i {
+        background-color: @colorYellow;
+        text-align: center;
+        line-height: 40px;
+        float: @float;
+        height: 40px;
+        margin: 10px 10px 0 20px;
+        width: 53px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        transition: none;
+    }
+}
+
+//Li question for class ok, error, active(hover)
+.question(@colorBackground, @color, @icon) {
+    background-color: @colorBackground;
+    border-color: @colorBackground;
+    color: @color;
+
+    .boxLetter {
+        span {
+            background-color: @color;
+
+            &::after{
+                font-family: 'FontAwesome';
+                content: @icon;
+                color: @colorBackground;
+            }
+        }
+    }
+}
+
+//Li question for other question
+.questionSimple(@colorBackground, @color) {
+    background-color: @colorBackground;
+    border-color: @colorBackground;
+    color: @color;
+
+    .boxLetter {
+        span {
+            background-color: @color;
+            color: @colorBackground;
+        }
+    }
+}

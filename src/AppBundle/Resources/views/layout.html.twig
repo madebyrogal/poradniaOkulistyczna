@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex, nofollow" />
+        <title>{% block title %}Poradnia Okulistyczna{% endblock %}</title>
+        {% block stylesheets %}
+            {{ include('AppBundle:default:include_head.html.twig') }}
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <main class="container-fluid">
+            {{ include('AppBundle:default:header.html.twig') }}
+            <div class='container'>
+                    {% block body %}{% endblock %}
+            </div>
+            {{ include('AppBundle:default:footer.html.twig') }}
+        </main>
+        {% block javascripts %}
+            {{ include('AppBundle:default:include_foot.html.twig') }}
+        {% endblock %}
+</body>
+</html>
