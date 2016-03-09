@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class InfoController extends Controller
 {
     /**
-     * @Route("informacje-o-lekach.html")
+     * @Route("informacje-o-lekach.html", name="info")
      */
     public function indexAction()
     {

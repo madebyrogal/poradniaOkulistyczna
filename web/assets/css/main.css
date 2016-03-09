@@ -8823,6 +8823,35 @@ h1 {
 label {
   margin: 0;
 }
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header nav {
+  float: right;
+  margin-top: 10px;
+  color: #000;
+  font-weight: bold;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+header nav ul li:last-child {
+  margin-right: 0;
+}
+header nav ul li a {
+  color: #000;
+}
+header nav ul li a:hover,
+header nav ul li a:active,
+header nav ul li a:focus {
+  color: #000;
+  text-decoration: none;
+}
 .loginForm {
   margin-top: 50px;
 }
@@ -8894,4 +8923,7 @@ label {
 .panel .data form div div textarea {
   width: 700px;
   height: 500px;
+}
+body {
+  font-size: 16px;
 }

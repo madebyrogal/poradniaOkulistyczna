@@ -11,13 +11,11 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+        {{ include('AppBundle:default:header.html.twig') }}
         <main class="container-fluid">
-            {{ include('AppBundle:default:header.html.twig') }}
-            <div class='container'>
-                    {% block body %}{% endblock %}
-            </div>
-            {{ include('AppBundle:default:footer.html.twig') }}
+            {% block body %}{% endblock %}
         </main>
+        {{ include('AppBundle:default:footer.html.twig') }}
         {% block javascripts %}
             {{ include('AppBundle:default:include_foot.html.twig') }}
         {% endblock %}

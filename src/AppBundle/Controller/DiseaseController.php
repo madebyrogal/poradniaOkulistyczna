@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class DiseaseController extends Controller
 {
     /**
-     * @Route("schorzenie.html")
+     * @Route("schorzenie.html", name="disease")
      */
     public function indexAction()
     {

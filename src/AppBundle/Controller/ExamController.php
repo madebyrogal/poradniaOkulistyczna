@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class ExamController extends Controller
 {
     /**
-     * @Route("badania-narzadow-wzroku.html")
+     * @Route("badania-narzadow-wzroku.html", name="exam")
      */
     public function indexAction()
     {
