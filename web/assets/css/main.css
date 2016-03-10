@@ -8831,7 +8831,6 @@ header nav {
   float: right;
   margin-top: 10px;
   color: #000;
-  font-weight: bold;
 }
 header nav ul {
   list-style-type: none;
@@ -8926,4 +8925,12 @@ header nav ul li a:focus {
 }
 body {
   font-size: 16px;
+  color: #282828;
+}
+.homeBanner {
+  background-image: url('../../assets/images/banner.jpg');
+  background-size: cover;
+  background-position: 20% 50%;
+  background-repeat: no-repeat;
+  height: 585px;
 }
