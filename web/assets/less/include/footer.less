@@ -1,0 +1,99 @@
+footer{
+    ul{
+        list-style-type: none;
+
+        li{
+            display: inline-block
+        }
+    }
+
+    .bar-links{
+        padding-top: 45px;
+        padding-bottom: 45px;
+        background-color: @gray-bg;
+        color: @white;
+
+        ul{
+            margin-top:10px;
+
+            &:first-child{
+                margin-top:0;
+            }
+
+            li{
+                border-right: 1px @white solid;
+                padding-left: 20px;
+                padding-right: 20px;
+
+                &:first-child{
+                    padding-left: 0;
+                }
+                &:last-child{
+                    padding-right: 0;
+                    border-right: none;
+                }
+
+                a{
+                    color: @white;
+                }
+            }
+        }
+    }
+
+    nav{
+        text-align: center;
+        margin-top: 30px;
+
+        ul{
+            display: inline-block;
+
+            li{
+                margin-right: 20px;
+
+                &:last-child{
+                    margin-right: 0;
+                }
+
+                a {
+                    font-weight: bold;
+                    color: @black;
+
+                    &:hover, &:active, &:focus {
+                        color: @black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .ext-menu{
+        margin-top:30px;
+        padding-bottom: 30px;
+
+        li{
+            margin-right: 25px;
+
+            &.polfarma-logo{
+                background-image: url('../images/logo_footer.jpg');
+                background-repeat: no-repeat;
+                width: 143px;
+                height: 28px;
+                vertical-align: middle;
+            }
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+            a{
+                color: @main;
+                font-size: 12px;
+
+                &:hover, &:active, &:focus {
+                    color: @main;
+                }
+            }
+        }
+    }
+}
