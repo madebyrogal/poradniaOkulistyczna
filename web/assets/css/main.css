@@ -8927,7 +8927,7 @@ body {
   font-size: 16px;
   color: #282828;
 }
-.homeBanner {
+.home-banner {
   background-image: url('../../assets/images/banner.jpg');
   background-size: cover;
   background-position: 20% 50%;
