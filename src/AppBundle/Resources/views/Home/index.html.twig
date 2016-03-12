@@ -4,4 +4,10 @@
 
 {% block body %}
     <div class="row home-banner"></div>
+    <!--Advertice -->
+    {{ include('AppBundle:common:_advertice.html.twig') }}
+    <!--Advertice end-->
+    <!--Helpfull informations -->
+    {{ include('AppBundle:common:_helpfullInformations.html.twig', {'show':{'disise':1, 'exam':1, 'medicine':1, 'info':1}}) }}
+    <!--Helpfull informations end-->
 {% endblock %}

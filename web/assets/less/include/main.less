@@ -2,3 +2,22 @@ body{
     font-size: 16px;
     color: @main;
 }
+
+h2{
+    font-size: 40px;
+    line-height: 66px;    
+}
+
+.read-more{
+    color: @red;
+    
+    &:after{
+        font-family: 'FontAwesome';
+        content: ' \f105';
+    }
+    
+    &:hover, &:active, &:focus{
+        color: @red;
+        text-decoration: none;
+    }
+}
