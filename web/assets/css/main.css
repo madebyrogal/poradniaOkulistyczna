@@ -8827,27 +8827,50 @@ header {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-header nav {
+header .mobile-bar {
+  text-align: right;
+  color: #272727;
+  font-size: 28px;
+  line-height: 28px;
+}
+@media (min-width: 768px) {
+  header .mobile-bar {
+    line-height: 42px;
+  }
+}
+header #menu.in {
+  display: block !important;
+  padding-top: 20px;
+  clear: both;
+}
+header #menu.in nav {
+  float: none;
+}
+header #menu.in nav ul li {
+  display: block;
+  margin-bottom: 20px;
+}
+header #menu nav {
   float: right;
   margin-top: 10px;
   color: #272727;
 }
-header nav ul {
+header #menu nav ul {
   list-style-type: none;
 }
-header nav ul li {
+header #menu nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
-header nav ul li:last-child {
+header #menu nav ul li:last-child {
   margin-right: 0;
 }
-header nav ul li a {
+header #menu nav ul li a {
   color: #272727;
 }
-header nav ul li a:hover,
-header nav ul li a:active,
-header nav ul li a:focus {
+header #menu nav ul li a:hover,
+header #menu nav ul li a:active,
+header #menu nav ul li a:focus {
   color: #272727;
   text-decoration: none;
 }
@@ -9051,9 +9074,6 @@ h3 {
 .line-hr.red {
   background-color: #fa5456;
 }
-.p-top-10 {
-  padding-top: 10px;
-}
 .advertice {
   border-top: 1px solid #d1d1d1;
   border-bottom: 1px solid #d1d1d1;
@@ -9188,6 +9208,12 @@ h3 {
 .home h1 {
   color: #fa5456;
 }
-.home .content {
+.home .content-row {
+  margin-bottom: 40px;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+.home .content-row .content {
+  padding-top: 15px;
   text-align: justify;
 }

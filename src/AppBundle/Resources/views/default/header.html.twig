@@ -1,9 +1,12 @@
 <header class="container">
     <div class="row">
-        <div class="col-md-4 logo">
+        <div class="col-md-4 col-xs-10 logo">
             <a href="{{path('home')}}"><img id="logo" src="{{asset('assets/images/logo.png')}}" class="img-responsive" alt="Logo - Okulistyczny przewodnik"/></a>
         </div>
-        <div class="col-md-8">
+        <div class="visible-xs-block visible-sm-block col-xs-2 mobile-bar">
+            <i id="mobile-menu" class="fa fa-bars"></i>
+        </div>
+        <div id="menu" class="col-md-8 col-sm-12 visible-md-block visible-lg-block">
             <nav>
                 <ul>
                     <li {% if app.request.get('_route') == 'disease' %}class="active"{% endif %}><a href="{{path('disease')}}">Schorzenia</a></li>
