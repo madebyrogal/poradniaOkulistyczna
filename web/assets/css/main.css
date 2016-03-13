@@ -9007,6 +9007,7 @@ footer .ext-menu li a:focus {
 }
 body {
   font-size: 16px;
+  line-height: 22px;
   color: #8498a3;
 }
 h1 {
@@ -9049,6 +9050,9 @@ h3 {
 }
 .line-hr.red {
   background-color: #ff5356;
+}
+.p-top-10 {
+  padding-top: 10px;
 }
 .advertice {
   border-top: 1px solid #d1d1d1;
@@ -9180,4 +9184,10 @@ h3 {
   background-repeat: no-repeat;
   height: 585px;
   margin-bottom: 30px;
+}
+.home h1 {
+  color: #ff5356;
+}
+.home .content {
+  text-align: justify;
 }
