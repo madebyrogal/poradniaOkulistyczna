@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,800italic,700italic,700,600italic,600,400italic,300italic,300&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700italic,400italic,900,900italic&subset=latin,latin-ext);
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -9009,9 +9009,23 @@ body {
   font-size: 16px;
   color: #8498a3;
 }
+h1 {
+  font-size: 55px;
+  line-height: 65px;
+  font-family: 'Playfair Display';
+  font-weight: bold;
+}
 h2 {
   font-size: 40px;
   line-height: 44px;
+  font-family: 'Playfair Display';
+  font-weight: bold;
+}
+h3 {
+  font-size: 36px;
+  line-height: 40px;
+  font-family: 'Playfair Display';
+  font-weight: bold;
 }
 .read-more {
   color: #ff5356;
@@ -9025,6 +9039,16 @@ h2 {
 .read-more:focus {
   color: #ff5356;
   text-decoration: none;
+}
+.line-hr {
+  display: block;
+  margin: 0;
+  width: 70px;
+  height: 3px;
+  background-color: #000;
+}
+.line-hr.red {
+  background-color: #ff5356;
 }
 .advertice {
   border-top: 1px solid #d1d1d1;
