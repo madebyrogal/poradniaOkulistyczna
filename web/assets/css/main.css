@@ -9051,9 +9051,6 @@ h3 {
 .line-hr.red {
   background-color: #ff5356;
 }
-.p-top-10 {
-  padding-top: 10px;
-}
 .advertice {
   border-top: 1px solid #d1d1d1;
   border-bottom: 1px solid #d1d1d1;
@@ -9188,6 +9185,12 @@ h3 {
 .home h1 {
   color: #ff5356;
 }
-.home .content {
+.home .content-row {
+  margin-bottom: 40px;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+.home .content-row .content {
+  padding-top: 15px;
   text-align: justify;
 }
