@@ -1,6 +1,17 @@
 header{
     padding-top: 10px;
     padding-bottom: 10px;
+    
+    .mobile-bar{
+        text-align: right;
+        color: @black;
+        font-size: 28px;
+        line-height: 28px;
+        
+        @media (min-width: @screen-sm-min){
+            line-height: 42px;
+        }
+    }
 
     nav{
         float: right;
