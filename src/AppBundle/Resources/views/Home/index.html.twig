@@ -3,7 +3,15 @@
 {% block title %}Poradnia Okulistyczna{% endblock %}
 
 {% block body %}
-    <div class="row home-banner"></div>
+    <div class="row home-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-7 col-md-5">
+                    {{ include('AppBundle:common:_searchBox.html.twig') }}
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Advertice -->
     {{ include('AppBundle:common:_advertice.html.twig') }}
     <!--Advertice end-->

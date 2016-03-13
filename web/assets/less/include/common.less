@@ -13,7 +13,7 @@
 
 .helpfull-info {
     margin-bottom: 30px;
-    
+
     h2 {
         color: @black;
         text-align: center;
@@ -36,29 +36,29 @@
                     background-image: url('../images/oko.jpg');
                 }
             }
-            
+
             &.exam{
                 .image {
                     background-image: url('../images/badanie.jpg');
                 }
             }
-            
+
             &.medicine{
                 .image {
                     background-image: url('../images/lek.jpg');
                 }
             }
-            
+
             &.info{
                 .image {
                     background-image: url('../images/kropelka.jpg');
                 }
             }
-            
+
 
             .content{
                 padding: 25px 30px 30px 25px;
-                
+
                 h3{
                     color: @black;
                     margin-bottom: 25px;
@@ -79,6 +79,81 @@
             }
         }
     }
+
+}
+
+.search-box{
+    padding: 33px 38px 0 38px;
+    margin-top: 30px;
+    height: 520px;
+    background-color: @red-bg;
+    border: 1px @gray solid;
+    color: @white;
+
+    h2{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .form-box{
+        margin-bottom: 25px;
+
+        &.secend{
+            margin-bottom: 13px;
+        }
+        
+        input[type="radio"] {
+            display:none;
+        }
+
+        input[type="radio"]:checked + label {
+            &.nice{
+                background-color: @blue-bg;
+                border: 1px @blue-bg solid;
+                color: @white;
+                font-weight: bold;
+            }
+        }
+
+        label{
+            display: block;
+            font-weight: normal;
+            margin-bottom: 8px;
+
+            &.nice{
+                margin-bottom: 0px;
+                width: 110px;
+                height: 38px;
+                padding-top: 7px;
+                display: inline-block;
+                background-color: @white-bg;
+                color: @main;
+                font-weight: normal;
+                border: 1px @gray solid;
+                text-align: center;
+                float: left;
+            }
+        }
+
+        input, select{
+            color: @main;
+            border: 1px @gray solid;
+            height: 38px;
+            width: 100%;
+            padding: 1px 14px 0 14px;
+            background-color: @white-bg;
+
+            &.submit {
+                color: @white;
+                background-color: @blue-dark-bg;
+                border: 1px @blue-dark-bg solid;
+                width: 70%;
+                font-weight: bold;
+                height: 50px;
+            }
+        }
+    }
+
 
 }
 
