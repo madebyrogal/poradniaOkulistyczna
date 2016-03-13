@@ -8838,27 +8838,39 @@ header .mobile-bar {
     line-height: 42px;
   }
 }
-header nav {
+header #menu.in {
+  display: block !important;
+  padding-top: 20px;
+  clear: both;
+}
+header #menu.in nav {
+  float: none;
+}
+header #menu.in nav ul li {
+  display: block;
+  margin-bottom: 20px;
+}
+header #menu nav {
   float: right;
   margin-top: 10px;
   color: #272727;
 }
-header nav ul {
+header #menu nav ul {
   list-style-type: none;
 }
-header nav ul li {
+header #menu nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
-header nav ul li:last-child {
+header #menu nav ul li:last-child {
   margin-right: 0;
 }
-header nav ul li a {
+header #menu nav ul li a {
   color: #272727;
 }
-header nav ul li a:hover,
-header nav ul li a:active,
-header nav ul li a:focus {
+header #menu nav ul li a:hover,
+header #menu nav ul li a:active,
+header #menu nav ul li a:focus {
   color: #272727;
   text-decoration: none;
 }

@@ -6,8 +6,8 @@
         <div class="visible-xs-block visible-sm-block col-xs-2 mobile-bar">
             <i id="mobile-menu" class="fa fa-bars"></i>
         </div>
-        <div class="col-md-8 col-sm-12 visible-md-block visible-lg-block">
-            <nav id="nav">
+        <div id="menu" class="col-md-8 col-sm-12 visible-md-block visible-lg-block">
+            <nav>
                 <ul>
                     <li {% if app.request.get('_route') == 'disease' %}class="active"{% endif %}><a href="{{path('disease')}}">Schorzenia</a></li>
                     <li {% if app.request.get('_route') == 'exam' %}class="active"{% endif %}><a href="{{path('exam')}}">Badania narządów wzroku</a></li>

@@ -7,7 +7,7 @@ $(window).resize(function () {
 });
 
 function toogleMenu() {
-    $('#mobileMenu').on('click', function () {
+    $('#mobile-menu').on('click', function () {
         $('#menu').toggleClass('in');
     });
 }
