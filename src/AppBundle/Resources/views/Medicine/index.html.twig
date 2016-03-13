@@ -3,6 +3,31 @@
 {% block title %}AppBundle:Medicine:index{% endblock %}
 
 {% block body %}
+	<div class="row medicine">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img alt="" class="img-responsive" src="{{asset('assets/images/lek_biodacyna_logo.png')}}" />
+                    <div class="row">
+			            <div class="col-md-6">
+			                <span class="line-hr red"></span>
+			            </div>
+			        </div>
+			        <img alt="" class="img-responsive" src="{{asset('assets/images/wielka_zmiana.png')}}" />
+                </div>
+                <div class="col-xs-12">
+                	<img alt="" class="img-responsive" src="{{asset('assets/images/lek_biodacyna.png')}}" />
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-xs-12">
+            		
+            	</div>
+            	<div class="col-xs-12">
+            	</div>
+            </div>
+        </div>
+    </div>
     <!--Advertice -->
     {{ include('AppBundle:common:_advertice.html.twig') }}
     <!--Advertice end-->
