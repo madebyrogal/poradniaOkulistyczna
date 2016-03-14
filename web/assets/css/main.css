@@ -8878,33 +8878,67 @@ footer ul {
   list-style-type: none;
 }
 footer ul li {
-  display: inline-block;
+  display: block;
+}
+@media (min-width: 768px) {
+  footer ul li {
+    display: inline-block;
+  }
 }
 footer .bar-links {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  font-size: 13px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   background-color: #4d6472;
   color: #fff9fa;
 }
-footer .bar-links ul {
-  margin-top: 10px;
+@media (min-width: 768px) {
+  footer .bar-links {
+    font-size: 16px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
 }
-footer .bar-links ul:first-child {
+footer .bar-links .links {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 768px) {
+  footer .bar-links .links {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+footer .bar-links .links ul {
+  margin-top: 0px;
+}
+@media (min-width: 768px) {
+  footer .bar-links .links ul {
+    margin-top: 10px;
+  }
+}
+footer .bar-links .links ul:first-child {
   margin-top: 0;
 }
-footer .bar-links ul li {
-  border-right: 1px #fff9fa solid;
-  padding-left: 20px;
-  padding-right: 20px;
+footer .bar-links .links ul li {
+  text-align: center;
 }
-footer .bar-links ul li:first-child {
+@media (min-width: 768px) {
+  footer .bar-links .links ul li {
+    border-right: 1px #fff9fa solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: right;
+  }
+}
+footer .bar-links .links ul li:first-child {
   padding-left: 0;
 }
-footer .bar-links ul li:last-child {
+footer .bar-links .links ul li:last-child {
   padding-right: 0;
   border-right: none;
 }
-footer .bar-links ul li a {
+footer .bar-links .links ul li a {
   color: #fff9fa;
 }
 footer nav {
