@@ -8943,16 +8943,27 @@ footer .bar-links .links ul li a {
 }
 footer nav {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  footer nav {
+    margin-top: 30px;
+  }
 }
 footer nav ul {
   display: inline-block;
 }
 footer nav ul li {
-  margin-right: 20px;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  footer nav ul li {
+    margin-right: 20px;
+  }
 }
 footer nav ul li:last-child {
   margin-right: 0;
+  margin-bottom: 0px;
 }
 footer nav ul li a {
   font-weight: bold;
@@ -8965,18 +8976,49 @@ footer nav ul li a:focus {
   text-decoration: none;
 }
 footer .ext-menu {
+  text-align: center;
   margin-top: 30px;
   padding-bottom: 30px;
 }
+@media (min-width: 768px) {
+  footer .ext-menu {
+    text-align: left;
+  }
+}
 footer .ext-menu li {
-  margin-right: 25px;
+  display: inline-block;
+  margin-right: 15px;
+}
+footer .ext-menu li:nth-child(2) {
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  footer .ext-menu li:nth-child(2) {
+    padding-left: 0px;
+  }
+}
+@media (min-width: 768px) {
+  footer .ext-menu li {
+    margin-right: 25px;
+  }
 }
 footer .ext-menu li.polfarma-logo {
   background-image: url('../images/logo_footer.jpg');
   background-repeat: no-repeat;
-  width: 143px;
+  width: 100%;
   height: 28px;
   vertical-align: middle;
+  margin-bottom: 30px;
+  background-position: center center;
+  display: block;
+}
+@media (min-width: 768px) {
+  footer .ext-menu li.polfarma-logo {
+    display: inline-block;
+    width: 143px;
+    margin-bottom: 0px;
+    background-position: left center;
+  }
 }
 footer .ext-menu li:last-child {
   margin-right: 0;
