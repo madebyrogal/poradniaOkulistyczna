@@ -35,6 +35,54 @@
   font-style: italic;
 }
 @font-face {
+  font-family: 'SolomonSans-Black';
+  src: url('../fonts/SolomonSans/Solomon-Sans-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SolomonSans-Black';
+  src: url('../fonts/SolomonSans/Solomon-Sans-Black-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SolomonSans';
+  src: url('../fonts/SolomonSans/Solomon Sans Normal.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SolomonSans';
+  src: url('../fonts/SolomonSans/Solomon Sans Normal Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SolomonSans';
+  src: url('../fonts/SolomonSans/Solomon Sans SemiBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SolomonSans';
+  src: url('../fonts/SolomonSans/Solomon Sans SemiBold Italic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SolomonSans';
+  src: url('../fonts/SolomonSans/Solomon-Sans-Bold-Italic.woff') format('woff');
+  font-weight: bolder;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SolomonSans';
+  src: url('../fonts/SolomonSans/Solomon-Sans-Bold.woff') format('woff');
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
   font-family: 'COCOGOOSE';
   src: url('../fonts/COCOGOOSE/COCOGOOSE.woff') format('woff');
   font-weight: normal;
@@ -9361,4 +9409,13 @@ h3 {
 .home .content-row .content {
   padding-top: 15px;
   text-align: justify;
+}
+.medicine .more-medicine {
+  list-style-type: none;
+  padding: 0;
+}
+.medicine .more-medicine li {
+  border: 1px solid #cacaca;
+  float: left;
+  width: 25%;
 }
