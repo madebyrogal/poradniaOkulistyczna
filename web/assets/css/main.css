@@ -9419,3 +9419,32 @@ h3 {
   float: left;
   width: 25%;
 }
+.medicine .more-medicine li a:hover {
+  text-decoration: none;
+}
+.medicine .more-medicine li img {
+  display: block;
+  margin: 0 auto;
+}
+.medicine .more-medicine li span {
+  display: block;
+  text-align: center;
+}
+.medicine .more-medicine li .text {
+  border-top: 1px solid #cacaca;
+  padding: 20px 0 12px 0;
+}
+.medicine .more-medicine li .text .drug-name {
+  color: #282828;
+  font-size: 24px;
+  font-family: 'PlayfairDisplay';
+  font-weight: bold;
+  line-height: 35px;
+}
+.medicine .more-medicine li .text .see-more {
+  color: #fa5456;
+  font-family: 'SolomonSans';
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 35px;
+}
