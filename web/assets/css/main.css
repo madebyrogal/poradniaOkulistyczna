@@ -48,38 +48,38 @@
 }
 @font-face {
   font-family: 'SolomonSans';
-  src: url('../fonts/SolomonSans/Solomon Sans Normal.woff') format('woff');
+  src: url('../fonts/SolomonSans/Solomon-Sans-Normal.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'SolomonSans';
-  src: url('../fonts/SolomonSans/Solomon Sans Normal Italic.woff') format('woff');
+  src: url('../fonts/SolomonSans/Solomon-Sans-Normal-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
-  font-family: 'SolomonSans';
-  src: url('../fonts/SolomonSans/Solomon Sans SemiBold.woff') format('woff');
-  font-weight: bold;
+  font-family: 'SolomonSans-SemiBold';
+  src: url('../fonts/SolomonSans/Solomon-Sans-SemiBold.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'SolomonSans';
-  src: url('../fonts/SolomonSans/Solomon Sans SemiBold Italic.woff') format('woff');
-  font-weight: bold;
+  font-family: 'SolomonSans-SemiBold';
+  src: url('../fonts/SolomonSans/Solomon-Sans-SemiBold-Italic.woff') format('woff');
+  font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'SolomonSans';
   src: url('../fonts/SolomonSans/Solomon-Sans-Bold-Italic.woff') format('woff');
-  font-weight: bolder;
+  font-weight: bold;
   font-style: italic;
 }
 @font-face {
   font-family: 'SolomonSans';
   src: url('../fonts/SolomonSans/Solomon-Sans-Bold.woff') format('woff');
-  font-weight: bolder;
+  font-weight: bold;
   font-style: normal;
 }
 @font-face {
@@ -8940,7 +8940,8 @@ header #menu.in nav ul li {
   margin-bottom: 20px;
 }
 header #menu nav {
-  font-family: 'PlayfairDisplay-Black';
+  font-family: 'SolomonSans';
+  font-weight: bolder;
   float: right;
   margin-top: 10px;
   color: #272727;
