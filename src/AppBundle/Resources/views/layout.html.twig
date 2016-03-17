@@ -13,7 +13,9 @@
     <body>
         {{ include('AppBundle:default:header.html.twig') }}
         <main class="container-fluid">
-            {% block body %}{% endblock %}
+            <div class="row">
+                {% block body %}{% endblock %}
+            </div>
         </main>
         {{ include('AppBundle:default:footer.html.twig') }}
         {% block javascripts %}

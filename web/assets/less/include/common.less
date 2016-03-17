@@ -1,8 +1,5 @@
 .advertice{
-    border-top: 1px solid @gray;
-    border-bottom: 1px solid @gray;
     text-align: center;
-    padding: 20px 0 25px 0;
     margin-bottom: 30px;
 
     aside{
@@ -57,12 +54,19 @@
 
 
             .content{
-                padding: 25px 30px 30px 25px;
-
+                padding: 12px 15px 10px 15px;
+                
+                @media(min-width: @screen-md-min){
+                    padding: 25px 30px 30px 25px;
+                }
+                
                 h3{
                     color: @black;
                     margin-bottom: 25px;
                     margin-top: 0;
+                    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+                        min-height: 80px;
+                    }
                 }
 
                 .read-more{
@@ -107,6 +111,19 @@
 
     .form-box{
         margin-bottom: 25px;
+        text-align: center;
+        
+        @media(min-width: @screen-sm-min){
+            text-align: left;
+            
+            &.text-center{
+                text-align: center;
+            }
+        }
+        
+        .nice-radio{
+            display: inline-block;
+        }
 
         &.secend{
             margin-bottom: 13px;
@@ -126,9 +143,18 @@
         }
 
         label{
+            font-family: 'SolomonSans-SemiBold';
             display: block;
-            font-weight: normal;
             margin-bottom: 8px;
+            text-align: center;
+            
+            @media(min-width: @screen-sm-min){
+                text-align: left;
+                
+                &.text-center{
+                    text-align: center;
+                }
+            }
 
             &.nice{
                 margin-bottom: 0px;
@@ -138,7 +164,6 @@
                 display: inline-block;
                 background-color: @white-bg;
                 color: @main;
-                font-weight: normal;
                 border: 1px @gray solid;
                 text-align: center;
                 float: left;
@@ -157,9 +182,13 @@
                 color: @white;
                 background-color: @blue-dark-bg;
                 border: 1px @blue-dark-bg solid;
-                width: 70%;
+                width: 100%;
                 font-weight: bold;
                 height: 50px;
+                
+                @media(min-width: @screen-sm-min){
+                    width: 70%;
+                }
             }
         }
     }
