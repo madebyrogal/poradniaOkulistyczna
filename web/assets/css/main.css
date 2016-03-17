@@ -9507,3 +9507,10 @@ hr {
   font-weight: normal;
   line-height: 35px;
 }
+.search-banner {
+  height: 475px;
+  background-image: url('../../assets/images/banner.jpg');
+  background-size: cover;
+  background-position: 17% -185px;
+  background-repeat: no-repeat;
+}
