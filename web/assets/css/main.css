@@ -9237,10 +9237,26 @@ h3 {
     line-height: 40px;
   }
 }
+h4 {
+  font-size: 22px;
+  line-height: 26px;
+  font-family: 'Playfair Display';
+  font-weight: bold;
+}
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'SolomonSans';
+  font-weight: bold;
+  color: #272727;
+}
 hr {
   border-top: 1px solid #d1d1d1;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+.red-text {
+  color: #fa5456;
 }
 .read-more {
   color: #fa5456;

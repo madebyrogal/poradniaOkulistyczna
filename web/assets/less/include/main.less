@@ -10,7 +10,7 @@ h1 {
     font-weight: bold;
     font-size: 40px;
     line-height: 48px;
-    
+
     @media(min-width: @screen-sm-min){
         font-size: 55px;
         line-height: 65px;
@@ -22,7 +22,7 @@ h2 {
     font-weight: bold;
     font-size: 30px;
     line-height: 34px;
-    
+
     @media(min-width: @screen-sm-min){
         font-size: 40px;
         line-height: 44px;
@@ -34,11 +34,26 @@ h3 {
     line-height: 30px;
     font-family: 'Playfair Display';
     font-weight: bold;
-    
+
     @media(min-width: @screen-sm-min){
         font-size: 36px;
-    line-height: 40px;
+        line-height: 40px;
     }
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 26px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'SolomonSans';
+    font-weight: bold;
+    color: @black;
 }
 
 hr{
@@ -47,14 +62,18 @@ hr{
     margin-bottom: 25px;
 }
 
+.red-text{
+    color: @red;
+}
+
 .read-more {
     color: @red;
-    
+
     &:after {
         font-family: 'FontAwesome';
         content: ' \f105';
     }
-    
+
     &:hover, &:active, &:focus{
         color: @red;
         text-decoration: none;
@@ -67,7 +86,7 @@ hr{
     width: 70px;
     height: 3px;
     background-color: #000;
-    
+
     &.red{
         background-color: @red;
     }
