@@ -8915,10 +8915,18 @@ label {
 header {
   padding-top: 10px;
   padding-bottom: 10px;
+  -webkit-box-shadow: 0 6px 13px 8px #e4e4e4;
+  box-shadow: 0 6px 13px 8px #e4e4e4;
+}
+@media (min-width: 768px) {
+  header {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 }
 header .mobile-bar {
   text-align: right;
-  color: #272727;
+  color: #282828;
   font-size: 28px;
   line-height: 28px;
 }
@@ -8944,7 +8952,7 @@ header #menu nav {
   font-weight: bold;
   float: right;
   margin-top: 10px;
-  color: #272727;
+  color: #282828;
 }
 header #menu nav ul {
   list-style-type: none;
@@ -8957,12 +8965,12 @@ header #menu nav ul li:last-child {
   margin-right: 0;
 }
 header #menu nav ul li a {
-  color: #272727;
+  color: #282828;
 }
 header #menu nav ul li a:hover,
 header #menu nav ul li a:active,
 header #menu nav ul li a:focus {
-  color: #272727;
+  color: #282828;
   text-decoration: none;
 }
 footer ul {
@@ -9058,12 +9066,12 @@ footer nav ul li:last-child {
 }
 footer nav ul li a {
   font-weight: bold;
-  color: #272727;
+  color: #282828;
 }
 footer nav ul li a:hover,
 footer nav ul li a:active,
 footer nav ul li a:focus {
-  color: #272727;
+  color: #282828;
   text-decoration: none;
 }
 footer .ext-menu {
@@ -9248,7 +9256,7 @@ h5 {
   line-height: 24px;
   font-family: 'SolomonSans';
   font-weight: bold;
-  color: #272727;
+  color: #282828;
 }
 hr {
   border-top: 1px solid #d1d1d1;
@@ -9296,7 +9304,7 @@ hr {
   margin-bottom: 30px;
 }
 .helpfull-info h2 {
-  color: #272727;
+  color: #282828;
   text-align: center;
   margin-bottom: 15px;
   margin-top: 0;
@@ -9332,7 +9340,7 @@ hr {
   }
 }
 .helpfull-info .help-box article .content h3 {
-  color: #272727;
+  color: #282828;
   margin-bottom: 25px;
   margin-top: 0;
 }
@@ -9492,41 +9500,216 @@ hr {
     text-align: justify;
   }
 }
-.medicine .more-medicine {
+.medicine h1 {
+  color: #282828;
+  font-size: 30px;
+  font-family: 'PlayfairDisplay';
+  font-weight: bold;
+  line-height: 60px;
+  margin: 10px 0 20px 0;
+}
+@media (min-width: 768px) {
+  .medicine h1 {
+    font-size: 45px;
+    margin-bottom: 0;
+  }
+}
+.medicine .medicine-logo {
+  margin: 20px 0;
+}
+@media (min-width: 768px) {
+  .medicine .medicine-logo {
+    margin: 90px 0 20px 0;
+  }
+}
+.medicine .main-image img {
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  .medicine .main-image img {
+    float: right;
+    margin-right: 30%;
+  }
+}
+.medicine .about-medicine {
+  margin-top: 50px;
+}
+.medicine .about-medicine h2 {
+  color: #fa5456;
+  font-family: 'SolomonSans';
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 120%;
+  margin-bottom: 18px;
+}
+@media (min-width: 768px) {
+  .medicine .about-medicine h2 {
+    font-size: 24px;
+  }
+}
+.medicine .about-medicine p {
+  color: #282828;
+  font-family: 'SolomonSans';
+  font-size: 18px;
+  font-weight: normal;
+}
+@media (min-width: 768px) {
+  .medicine .about-medicine p {
+    font-size: 20px;
+  }
+}
+.medicine .about-medicine ul {
   list-style-type: none;
   padding: 0;
 }
-.medicine .more-medicine li {
+.medicine .about-medicine ul li {
+  color: #282828;
+  font-family: 'SolomonSans';
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .medicine .about-medicine ul li {
+    font-size: 20px;
+  }
+}
+.medicine .about-medicine ul li span {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 120%;
+}
+@media (min-width: 768px) {
+  .medicine .about-medicine ul li span {
+    font-size: 24px;
+  }
+}
+.medicine .about-medicine .dosage h2 {
+  line-height: 34px;
+}
+.medicine .about-medicine .dosage h2.special {
+  margin-bottom: 0;
+}
+.medicine .about-medicine .dosage h2:before {
+  background: url('../images/circle.png') 0 0 no-repeat;
+  content: "";
+  float: left;
+  height: 34px;
+  margin-right: 30px;
+  width: 34px;
+}
+.medicine .about-medicine .dosage p {
+  margin-left: 63px;
+}
+.medicine .about-medicine .dosage p.grey-line {
+  border-left: 1px solid #cacaca;
+  padding: 23px 0 30px 48px;
+  margin: 0 0 0 17px;
+}
+.medicine .about-medicine .dosage p.grey-line + h2 {
+  margin-top: 0;
+}
+.medicine .more-medicine h2 {
+  color: #282828;
+  font-family: 'SolomonSans';
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 120%;
+}
+.medicine .more-medicine ul {
+  list-style-type: none;
+  padding: 0;
+}
+.medicine .more-medicine ul li {
   border: 1px solid #cacaca;
   float: left;
-  width: 25%;
+  margin-bottom: 15px;
+  width: 48%;
 }
-.medicine .more-medicine li a:hover {
+.medicine .more-medicine ul li:nth-child(odd) {
+  margin-right: 4%;
+}
+@media (min-width: 768px) {
+  .medicine .more-medicine ul li:nth-child(odd) {
+    margin-right: 0%;
+  }
+}
+@media (min-width: 768px) {
+  .medicine .more-medicine ul li {
+    margin-left: 1%;
+  }
+  .medicine .more-medicine ul li:first-child {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .medicine .more-medicine ul li {
+    width: 24%;
+  }
+}
+.medicine .more-medicine ul li a:hover {
   text-decoration: none;
 }
-.medicine .more-medicine li img {
+.medicine .more-medicine ul li img {
   display: block;
   margin: 0 auto;
 }
-.medicine .more-medicine li span {
+.medicine .more-medicine ul li span {
   display: block;
   text-align: center;
 }
-.medicine .more-medicine li .text {
+.medicine .more-medicine ul li .text {
   border-top: 1px solid #cacaca;
   padding: 20px 0 12px 0;
 }
-.medicine .more-medicine li .text .drug-name {
+.medicine .more-medicine ul li .text .drug-name {
   color: #282828;
-  font-size: 24px;
+  font-size: 16px;
   font-family: 'PlayfairDisplay';
   font-weight: bold;
   line-height: 35px;
 }
-.medicine .more-medicine li .text .see-more {
+@media (min-width: 768px) {
+  .medicine .more-medicine ul li .text .drug-name {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .medicine .more-medicine ul li .text .drug-name {
+    font-size: 24px;
+  }
+}
+.medicine .more-medicine ul li .text .see-more {
   color: #fa5456;
   font-family: 'SolomonSans';
   font-size: 15px;
   font-weight: normal;
   line-height: 35px;
+}
+#breadcrumb {
+  display: none;
+  background-color: #27343f;
+  height: 43px;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  #breadcrumb {
+    display: block;
+  }
+}
+#breadcrumb ul {
+  list-style-type: none;
+  padding: 0;
+}
+#breadcrumb ul li {
+  color: #fff;
+  float: left;
+  font-family: 'SolomonSans';
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 43px;
+  margin-right: 5px;
+}
+#breadcrumb ul li a {
+  color: #fff;
 }
