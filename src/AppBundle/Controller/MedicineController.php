@@ -36,4 +36,14 @@ class MedicineController extends Controller
             // ...
         ));
     }
+
+    /**
+     * @Route("rodzaje-stosowanych-lekow-oflodinex.html", name="oflodinex")
+     */
+    public function oflodinexAction()
+    {
+        return $this->render('AppBundle:Medicine:oflodinex.html.twig', array(
+            // ...
+        ));
+    }
 }
