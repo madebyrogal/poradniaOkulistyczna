@@ -46,4 +46,14 @@ class MedicineController extends Controller
             // ...
         ));
     }
+
+    /**
+     * @Route("rodzaje-stosowanych-lekow-tobrosopt.html", name="tobrosopt")
+     */
+    public function tobrosoptAction()
+    {
+        return $this->render('AppBundle:Medicine:tobrosopt.html.twig', array(
+            // ...
+        ));
+    }
 }
