@@ -9598,15 +9598,15 @@ hr {
   margin-right: 30px;
   width: 34px;
 }
-.medicine .about-medicine .dosage p {
+.medicine .about-medicine .dosage div {
   margin-left: 63px;
 }
-.medicine .about-medicine .dosage p.grey-line {
+.medicine .about-medicine .dosage div.grey-line {
   border-left: 1px solid #cacaca;
   padding: 23px 0 30px 48px;
   margin: 0 0 0 17px;
 }
-.medicine .about-medicine .dosage p.grey-line + h2 {
+.medicine .about-medicine .dosage div.grey-line + h2 {
   margin-top: 0;
 }
 .medicine .more-medicine h2 {

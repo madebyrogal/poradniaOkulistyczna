@@ -27,4 +27,13 @@ class MedicineController extends Controller
         ));
     }
 
+    /**
+     * @Route("rodzaje-stosowanych-lekow-dicortineff.html", name="dicortineff")
+     */
+    public function dicortineffAction()
+    {
+        return $this->render('AppBundle:Medicine:dicortineff.html.twig', array(
+            // ...
+        ));
+    }
 }
