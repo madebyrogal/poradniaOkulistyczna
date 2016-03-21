@@ -7,6 +7,7 @@
 #Logs
 /app/logs/*
 !app/logs/.gitkeep
+/log
 
 #Config
 /app/config/parameters.yml
