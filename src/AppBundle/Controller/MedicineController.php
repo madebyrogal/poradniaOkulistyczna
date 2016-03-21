@@ -17,4 +17,14 @@ class MedicineController extends Controller
         ));
     }
 
+    /**
+     * @Route("rodzaje-stosowanych-lekow-biodacyna.html", name="biodacyna")
+     */
+    public function biodacynaAction()
+    {
+        return $this->render('AppBundle:Medicine:biodacyna.html.twig', array(
+            // ...
+        ));
+    }
+
 }
