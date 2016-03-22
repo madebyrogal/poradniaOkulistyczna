@@ -12,8 +12,10 @@ class SearchController extends Controller
      */
     public function searchAction()
     {
+        $diseases = $this->getDoctrine()->getRepository('AppBundle:Disease')->findAll();
+
         return $this->render('AppBundle:Search:search.html.twig', array(
-            // ...
+            '$diseases' => $diseases
         ));
     }
 

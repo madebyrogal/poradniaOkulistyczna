@@ -1,1 +1,97 @@
-
+.search{
+    color: @black;
+    
+    .select-category{
+        margin-bottom: 20px;
+        
+        ul{
+            list-style-type: none;
+            float: left;
+            
+            li{
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+                line-height: 33px;
+                margin-right: 8px;
+                color: @white;
+                
+                &.category{
+                    color: @main;
+                    text-transform: none;
+                    width: auto;
+                    font-weight: normal;
+                }
+                
+                &:last-child{
+                    margin-right: 0px;
+                }
+                
+                &.red{
+                    background-color: @red-bg-type;
+                }
+                
+                &.yellow{
+                    background-color: @green-bg-type;
+                }
+                
+                &.green{
+                    background-color: @green-bg-type;
+                }
+            }
+        }
+    }
+    
+    .disease{
+        border: 1px @gray solid;
+        padding: 15px 12px;
+        margin-bottom: 15px;
+        .box-shadow(0px 5px 35px -13px rgba(0,0,0,0.75));
+        
+        h2{
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: @blue;
+            font-size: 16px;
+            line-height: 16px;
+        }
+        
+        h3{
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 20px;
+            line-height: 24px;
+            color: @black;
+        }
+        
+        .disise-img{
+            width: 100%;
+            height: 163px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 15px;
+        }
+        
+        .subtitle{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 16px;
+            color: @black;
+            margin-bottom: 5px;
+        }
+        
+        b{
+            color: @black;
+        }
+        
+        .comments{
+            margin-top:5px;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px @red-bg-type solid;
+        }
+    }
+}
