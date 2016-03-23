@@ -32,27 +32,59 @@
             <div class="row">
                 <div class="col-xs-12">
                     <article class="disease">
-                        <h2 class="category">Urazy</h2>
-                        <h4 class="title">Oparzenia chemiczne i termiczne</h4>
-                        <div class="disise-img" style="background-image: url({{asset('assets/images/chore_oko.jpg')}})"></div>
                         <div class="row">
-                            <span class="subtitle col-xs-12">Objawy:</span>
-                            <p class="col-xs-12 content">wywiad w kierunku urazu, silny ból gałki ocznej, pogorszenie ostrości wzroku, uszkodzenie struktur gałki ocznej widoczne w świetle rozproszonym</p>
+                            <div class="col-xs-12 col-sm-7 col-md-8">
+                                <h2 class="category">Urazy</h2>
+                                <h4 class="title">Oparzenia chemiczne i termiczne</h4>
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-md-4 text-right img-wraper">
+                                <div class="disise-img" style="background-image: url({{asset('assets/images/chore_oko.jpg')}})"></div>
+                            </div>
+                            <span class="subtitle col-xs-12 col-sm-7 col-md-8">Objawy:</span>
+                            <p class="col-xs-12 col-sm-7 col-md-8 content">wywiad w kierunku urazu, silny ból gałki ocznej, pogorszenie ostrości wzroku, uszkodzenie struktur gałki ocznej widoczne w świetle rozproszonym</p>
+                            <span class="subtitle col-xs-12 col-sm-7 col-md-8">Zalecenia:</span>
+                            <p class="col-xs-12 col-sm-7 col-md-8 content">ocena ostrości wzroku do dali, trzeba zasłonić gałkę oczną jałowym opatrunkiem, pacjenta należy pilnie odesłać na ostry dyżur okulistyczny</p>
                         </div>
                         <div class="row">
-                            <span class="subtitle col-xs-12">Zalecenia:</span>
-                            <p class="col-xs-12 content">ocena ostrości wzroku do dali, trzeba zasłonić gałkę oczną jałowym opatrunkiem, pacjenta należy pilnie odesłać na ostry dyżur okulistyczny</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-xs-12 col-md-8">
                                 <div class="comments"><b>Uwaga!</b><br/> Nie można uciskać gałki ocznej</div>
                             </div>
                         </div>
                         <div class="row clearfix">
-                            <div class="col-xs-5">
+                            <div class="col-xs-5 col-md-4">
                                 <span class="type-A">A</span><span class="red-text"> tryb pilny</span>
                             </div>
-                            <div class="col-xs-7">
+                            <div class="col-xs-7 col-md-4">
+                                <div class="button-ext">Zwiń zalecenia <i class="fa fa-chevron-up"></i></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-xs-12">
+                    <article class="disease">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-7 col-md-8">
+                                <h2 class="category">Urazy</h2>
+                                <h4 class="title">Oparzenia chemiczne i termiczne</h4>
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-md-4 text-right img-wraper">
+                                <div class="disise-img" style="background-image: url({{asset('assets/images/chore_oko.jpg')}})"></div>
+                            </div>
+                            <span class="subtitle col-xs-12 col-sm-7 col-md-8">Objawy:</span>
+                            <p class="col-xs-12 col-sm-7 col-md-8 content">wywiad w kierunku urazu, silny ból gałki ocznej, pogorszenie ostrości wzroku, uszkodzenie struktur gałki ocznej widoczne w świetle rozproszonym</p>
+                            <span class="subtitle col-xs-12 col-sm-7 col-md-8">Zalecenia:</span>
+                            <p class="col-xs-12 col-sm-7 col-md-8 content">ocena ostrości wzroku do dali, trzeba zasłonić gałkę oczną jałowym opatrunkiem, pacjenta należy pilnie odesłać na ostry dyżur okulistyczny</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-8">
+                                <div class="comments"><b>Uwaga!</b><br/> Nie można uciskać gałki ocznej</div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-xs-5 col-md-4">
+                                <span class="type-A">A</span><span class="red-text"> tryb pilny</span>
+                            </div>
+                            <div class="col-xs-7 col-md-4">
                                 <div class="button-ext">Zwiń zalecenia <i class="fa fa-chevron-up"></i></div>
                             </div>
                         </div>
@@ -61,4 +93,10 @@
             </div>
         </div>
     </section>
+    <!--Advertice -->
+    {{ include('AppBundle:common:_advertice.html.twig') }}
+    <!--Advertice end-->
+    <!--Helpfull informations -->
+    {{ include('AppBundle:common:_helpfullInformations.html.twig', {'show':{'disise':1, 'exam':1, 'medicine':1, 'info':1}}) }}
+    <!--Helpfull informations end-->
 {% endblock %}

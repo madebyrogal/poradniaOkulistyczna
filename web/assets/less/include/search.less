@@ -1,8 +1,20 @@
 .search{
     color: @black;
 
+    h5{
+        @media (min-width: @screen-sm-min) {
+            float: left;
+        }
+    }
+
     .select-category{
         margin-bottom: 20px;
+
+        @media (min-width: @screen-sm-min) {
+            float: left;
+            margin-left: 35px;
+            margin-top: 5px;
+        }
 
         ul{
             list-style-type: none;
@@ -48,8 +60,12 @@
     .disease{
         border: 1px @gray solid;
         padding: 15px 12px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         .box-shadow(0px 5px 35px -13px rgba(0,0,0,0.75));
+
+        @media (min-width: @screen-sm-min) {
+            padding: 20px 30px;
+        }
 
         h2{
             margin-top: 0;
@@ -66,12 +82,31 @@
             margin-bottom: 12px;
         }
 
-        .disise-img{
-            width: 100%;
-            height: 163px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin-bottom: 15px;
+        .img-wraper{
+            @media (min-width: @screen-sm-min) {
+                float: right;
+            }
+
+            .disise-img{
+                width: 100%;
+                height: 163px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-bottom: 15px;
+                padding-bottom: 50vw;
+
+                @media (min-width: @screen-sm-min) {
+                    width: 252px;
+                    padding-bottom: 0;
+                    display: inline-block;
+                }
+                
+                @media (min-width: @screen-md-min) {
+                    width: 100%;
+                    padding-bottom: 66%;
+                }
+                
+            }
         }
 
         .subtitle{
@@ -109,14 +144,14 @@
             color: @white;
             margin-right: 4px;
         }
-        
+
         .red-text{
             float: left;
             font-weight: bold;
             font-size: 12px;
             line-height: 33px;
         }
-        
+
         .button-ext{
             width: 148px;
             height: 35px;
@@ -129,7 +164,7 @@
             background-color: @blue-dark-bg;
             padding-left: 18px;
             padding-right: 8px;
-            
+
             i{
                 float: right;
                 line-height: 32px;
