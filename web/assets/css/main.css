@@ -9801,3 +9801,38 @@ hr {
   padding: 10px;
   border: 1px #e32728 solid;
 }
+.search .disease .type-A {
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-color: #e32728;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 33px;
+  color: #fff9fa;
+  margin-right: 4px;
+}
+.search .disease .red-text {
+  float: left;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 33px;
+}
+.search .disease .button-ext {
+  width: 148px;
+  height: 35px;
+  text-align: left;
+  float: right;
+  font-size: 13px;
+  line-height: 35px;
+  font-weight: bold;
+  color: #fff9fa;
+  background-color: #57a3b1;
+  padding-left: 18px;
+  padding-right: 8px;
+}
+.search .disease .button-ext i {
+  float: right;
+  line-height: 32px;
+}

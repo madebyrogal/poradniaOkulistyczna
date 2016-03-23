@@ -1,13 +1,13 @@
 .search{
     color: @black;
-    
+
     .select-category{
         margin-bottom: 20px;
-        
+
         ul{
             list-style-type: none;
             float: left;
-            
+
             li{
                 display: inline-block;
                 width: 30px;
@@ -18,39 +18,39 @@
                 line-height: 33px;
                 margin-right: 8px;
                 color: @white;
-                
+
                 &.category{
                     color: @black;
                     text-transform: none;
                     width: auto;
                     font-weight: normal;
                 }
-                
+
                 &:last-child{
                     margin-right: 0px;
                 }
-                
+
                 &.red{
                     background-color: @red-bg-type;
                 }
-                
+
                 &.yellow{
                     background-color: @green-bg-type;
                 }
-                
+
                 &.green{
                     background-color: @green-bg-type;
                 }
             }
         }
     }
-    
+
     .disease{
         border: 1px @gray solid;
         padding: 15px 12px;
         margin-bottom: 15px;
         .box-shadow(0px 5px 35px -13px rgba(0,0,0,0.75));
-        
+
         h2{
             margin-top: 0;
             margin-bottom: 8px;
@@ -60,12 +60,12 @@
             font-family: 'SolomonSans';
             font-weight: bold;
         }
-        
+
         h4{
             margin-top: 0;
             margin-bottom: 12px;
         }
-        
+
         .disise-img{
             width: 100%;
             height: 163px;
@@ -73,7 +73,7 @@
             background-size: cover;
             margin-bottom: 15px;
         }
-        
+
         .subtitle{
             font-weight: bold;
             font-size: 14px;
@@ -85,16 +85,55 @@
             font-size: 13px;
             line-height: 20px;
         }
-        
+
         b{
             color: @black;
         }
-        
+
         .comments{
             margin-top:5px;
             margin-bottom: 15px;
             padding: 10px;
             border: 1px @red-bg-type solid;
+        }
+
+        .type-A{
+            float: left;
+            width: 30px;
+            height: 30px;
+            background-color: @red-bg-type;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 33px;
+            color: @white;
+            margin-right: 4px;
+        }
+        
+        .red-text{
+            float: left;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 33px;
+        }
+        
+        .button-ext{
+            width: 148px;
+            height: 35px;
+            text-align: left;
+            float: right;
+            font-size: 13px;
+            line-height: 35px;
+            font-weight: bold;
+            color: @white;
+            background-color: @blue-dark-bg;
+            padding-left: 18px;
+            padding-right: 8px;
+            
+            i{
+                float: right;
+                line-height: 32px;
+            }
         }
     }
 }
