@@ -9737,7 +9737,7 @@ hr {
   color: #fff9fa;
 }
 .search .select-category ul li.category {
-  color: #8498a3;
+  color: #282828;
   text-transform: none;
   width: auto;
   font-weight: normal;
@@ -9764,16 +9764,15 @@ hr {
 .search .disease h2 {
   margin-top: 0;
   margin-bottom: 8px;
-  color: #58a3a8;
+  color: #56a3b0;
   font-size: 16px;
   line-height: 16px;
+  font-family: 'SolomonSans';
+  font-weight: bold;
 }
-.search .disease h3 {
+.search .disease h4 {
   margin-top: 0;
   margin-bottom: 12px;
-  font-size: 20px;
-  line-height: 24px;
-  color: #282828;
 }
 .search .disease .disise-img {
   width: 100%;
@@ -9784,10 +9783,14 @@ hr {
 }
 .search .disease .subtitle {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
   color: #282828;
   margin-bottom: 5px;
+}
+.search .disease .content {
+  font-size: 13px;
+  line-height: 20px;
 }
 .search .disease b {
   color: #282828;
