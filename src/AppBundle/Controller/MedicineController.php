@@ -16,44 +16,4 @@ class MedicineController extends Controller
             // ...
         ));
     }
-
-    /**
-     * @Route("rodzaje-stosowanych-lekow-biodacyna.html", name="biodacyna")
-     */
-    public function biodacynaAction()
-    {
-        return $this->render('AppBundle:Medicine:biodacyna.html.twig', array(
-            // ...
-        ));
-    }
-
-    /**
-     * @Route("rodzaje-stosowanych-lekow-dicortineff.html", name="dicortineff")
-     */
-    public function dicortineffAction()
-    {
-        return $this->render('AppBundle:Medicine:dicortineff.html.twig', array(
-            // ...
-        ));
-    }
-
-    /**
-     * @Route("rodzaje-stosowanych-lekow-oflodinex.html", name="oflodinex")
-     */
-    public function oflodinexAction()
-    {
-        return $this->render('AppBundle:Medicine:oflodinex.html.twig', array(
-            // ...
-        ));
-    }
-
-    /**
-     * @Route("rodzaje-stosowanych-lekow-tobrosopt.html", name="tobrosopt")
-     */
-    public function tobrosoptAction()
-    {
-        return $this->render('AppBundle:Medicine:tobrosopt.html.twig', array(
-            // ...
-        ));
-    }
 }
