@@ -9758,13 +9758,13 @@ hr {
   margin-right: 0px;
 }
 .search .select-category ul li.red {
-  background-color: #e32728;
+  background-color: #ed1c24;
 }
 .search .select-category ul li.yellow {
-  background-color: #b1d99a;
+  background-color: #3eb74d;
 }
 .search .select-category ul li.green {
-  background-color: #b1d99a;
+  background-color: #3eb74d;
 }
 .search .disease {
   border: 1px #d1d1d1 solid;
@@ -9835,13 +9835,13 @@ hr {
   margin-top: 5px;
   margin-bottom: 15px;
   padding: 10px;
-  border: 1px #e32728 solid;
+  border: 1px #ed1c24 solid;
 }
 .search .disease .type-A {
   float: left;
   width: 30px;
   height: 30px;
-  background-color: #e32728;
+  background-color: #ed1c24;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
