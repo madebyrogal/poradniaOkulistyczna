@@ -9715,6 +9715,36 @@ hr {
 #breadcrumb ul li a {
   color: #fff;
 }
+.disease h1 {
+  color: #283440;
+  font-size: 40px;
+  font-family: 'PlayfairDisplay';
+  font-weight: bold;
+  line-height: 65px;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+.disease .disease-list {
+  list-style-type: none;
+  padding: 0;
+}
+.disease .disease-list li {
+  border: 1px solid #cacaca;
+  -webkit-box-shadow: 0px 3px 6px 1px #cacaca;
+  box-shadow: 0px 3px 6px 1px #cacaca;
+  float: left;
+  margin: 0 0 8px 0;
+  width: 100%;
+}
+.disease .disease-list li .name {
+  color: #000000;
+  cursor: pointer;
+  display: block;
+  font-size: 24px;
+  font-family: 'PlayfairDisplay';
+  font-weight: bold;
+  padding: 24px 2% 22px 3%;
+}
 .search {
   color: #282828;
 }
