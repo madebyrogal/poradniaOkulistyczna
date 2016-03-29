@@ -1,0 +1,90 @@
+.exam{
+    color: @black;
+    font-size: 19px;
+    line-height: 26px;
+
+    ul.dosage {
+        margin-left: 10px;
+        list-style-type: none;
+        
+        > li{
+            position: relative;
+            padding-left: 45px;
+            padding-bottom: 45px;
+            border-left: 1px solid #cacaca;
+            
+            &:before {
+                background: url('../images/circle.png') 0 0 no-repeat;
+                //background-image: url('../images/circle.png');
+                //background-position: left top;
+                //background-repeat: no-repeat;
+                content: "";
+                height: 34px;
+                width: 34px;
+                position: absolute;
+                left: -17px;
+                top: 0px;
+            }
+            
+            &:last-child{
+                border-left: none;
+                padding-bottom: 30px;
+            }
+            
+            h2{
+                margin: 0;
+            }
+        }
+        
+        .list{
+            margin-top: 30px;
+            
+            li{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    
+    .list{
+        list-style-type: none;
+        
+        li{
+            position: relative;
+            padding-left: 12px;
+            
+            &:before{
+                position: absolute;
+                content:'-';
+                left: 0;
+            }
+        }
+    }
+    
+    h1{
+        margin-top: 40px;
+        margin-bottom: 55px;
+        @media(min-width: @screen-sm-min){
+            margin-top: 0px;
+        }
+    }
+
+    h2{
+        color: @red;
+        font-size: 24px;
+        line-height: 34px;
+        font-family: 'SolomonSans';
+        margin: 0;
+    }
+    
+    h3{
+        font-size: 19px;
+        line-height: 26px;
+        font-family: 'SolomonSans';
+        margin: 10px 0 10px 0;
+    }
+    
+    img{
+        margin-bottom: 20px;
+    }
+}
+
