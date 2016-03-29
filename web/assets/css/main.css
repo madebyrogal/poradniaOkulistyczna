@@ -9512,6 +9512,25 @@ hr {
 #breadcrumb ul li a {
   color: #fff;
 }
+.list-box {
+  list-style-type: none;
+}
+.list-box > li {
+  display: block;
+  border: 1px solid #d1d1d1;
+  padding: 24px 30px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 5px 35px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 35px -13px rgba(0, 0, 0, 0.75);
+}
+.list-box > li:last-child {
+  margin-bottom: 47px;
+}
+.list-box > li h2 {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0;
+}
 .home h1 {
   color: #fa5456;
 }
@@ -10001,4 +10020,16 @@ hr {
 }
 .exam img {
   margin-bottom: 20px;
+}
+.medicine-sort {
+  color: #282828;
+}
+.medicine-sort h1 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .medicine-sort h1 {
+    margin-top: 0px;
+  }
 }

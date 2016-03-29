@@ -1,9 +1,44 @@
 {% extends "AppBundle::layout.html.twig" %}
 
-{% block title %}AppBundle:Medicine:index{% endblock %}
+{% block title %}Rodzaje stosowanych leków{% endblock %}
 
-{% block body %}	
+{% block body %}
+    <div class="medicine-sort">
+        <div id="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li><a title="" href="{{path('home')}}">Strona główna <i class="fa fa-angle-right"></i></a></li>
+                    <li>Rodzaje stosowanych leków</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">Rodzaje stosowanych leków</h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="list-box">
+                        <li>
+                            <h2>Leki przeciwbakteryjne</h2>
+                        </li>
+                        <li>
+                            <h2>Preparaty złożone - antybiotyk + steroid</h2>
+                        </li>
+                        <li>
+                            <h2>Leki przeciwwirusowe</h2>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <!--Advertice -->
     {{ include('AppBundle:common:_advertice.html.twig') }}
     <!--Advertice end-->
+    <!--Helpfull informations -->
+    {{ include('AppBundle:common:_helpfullInformations.html.twig', {'show':{'disise':1, 'exam':1, 'medicine':0, 'info':0}}) }}
+    <!--Helpfull informations end-->
 {% endblock %}
