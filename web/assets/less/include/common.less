@@ -23,7 +23,6 @@
         padding-top:15px;
         padding-bottom:15px;
 
-
         article{
             .box-shadow(0px 5px 35px -13px rgba(0,0,0,0.75));
             border: 1px @gray solid;
@@ -61,16 +60,28 @@
                 }
 
                 h3{
+                    font-family: 'Playfair Display';
+                    font-size: 36px;
+                    line-height: 48px;
                     color: @black;
                     margin-bottom: 25px;
                     margin-top: 0;
-                    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-                        min-height: 80px;
+                    
+                    @media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+                        min-height: 96px;
                     }
+                }
+                
+                p{
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: @main;   
                 }
 
                 .read-more{
                     float: right;
+                    font-size: 15px;
+                    line-height: 22px;
                 }
             }
 
@@ -278,7 +289,7 @@
 
             .border{
                 margin-top: 30px;
-                
+
                 @media(min-width: @screen-sm-min){
                     border-left: 1px solid @gray;
                     margin-top: 0px;
