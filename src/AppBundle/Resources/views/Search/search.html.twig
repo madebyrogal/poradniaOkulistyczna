@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    {{ include('AppBundle:common:_searchBoxFull.html.twig') }}
+                    {{ include('AppBundle:common:_searchBoxFull.html.twig', {'search':search})}}
                 </div>
             </div>
         </div>
@@ -17,22 +17,23 @@
             <div class="row">
                 <div class="col-xs-12">
                     <span class="line-hr"></span>
-                    <h5>Wyszukiwany objaw: <span class="red-text">łzawienie</span></h5>
+                    <h5>Wyszukiwany objaw: <span class="red-text">{{search.search}}</span></h5>
                     <div class="select-category clearfix">
 
                         <ul>
                             <li class="category">Kategoria:</li>
-                            <li class="red">A</li>
-                            <li class="yellow">B</li>
-                            <li class="green">C</li>
+                            {% for type in types %}
+                            <li class="type-{{type.type}} selector" data-category="category-{{type.type}}">{{type.type}}</li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="row">
+                {% if diseases %}
                 {% for disease in diseases %}
                     <div class="col-xs-12">
-                        <article class="disease not-extend">
+                        <article class="disease not-extend category-{{disease.type}}">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-7 col-md-8">
                                     <h2 class="category">{{disease.category.name}}</h2>
@@ -67,6 +68,9 @@
                         </article>
                     </div>
                 {% endfor%}
+                {% else%}
+                    <div class="col-xs-12">Przykro nam, ale nic nie znaleziono. Spróbuj wybrać schorzenie z listy.</div>
+                {%endif%}
             </div>
         </div>
     </section>
