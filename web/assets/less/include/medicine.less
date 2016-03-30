@@ -26,8 +26,23 @@
 			}
 		}
 	}
+	@media (min-width: @screen-md-min) {
+		.dicortineff .main-image {
+			margin-top: 100px;
+		}
+		.oflodinex .main-image {
+			margin-top: 20px;
+			padding-right: 3%;
+		}
+		.tobrosopt .main-image {
+			img {
+				margin-right: 5%;
+				margin-top: 40px;
+			}
+		}
+	}
 	.about-medicine {
-		margin-top: 50px;
+		//margin-top: 50px;
 		h2 {
 			color: @red;
 			font-family: 'SolomonSans';
@@ -116,7 +131,7 @@
 				border: 1px solid #cacaca;
 				float: left;
 				margin-bottom: 15px;
-				width: 48%;
+				width: 100%;
 				&:nth-child(odd) {
 					margin-right: 4%;
 					@media (min-width: @screen-sm-min) {
@@ -124,13 +139,14 @@
 					}
 				}
 				@media (min-width: @screen-sm-min) {
-					margin-left: 1%;
+					margin-left: 2%;
 					&:first-child {
 						margin-left: 0;
 					}
 				}
 				@media (min-width: @screen-sm-min) {
-					width: 24%;
+					//width: 24%;
+					width: 32%;
 				}
 				a {
 					&:hover {

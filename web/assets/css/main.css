@@ -9617,8 +9617,18 @@ hr {
     margin-right: 30%;
   }
 }
-.medicine .about-medicine {
-  margin-top: 50px;
+@media (min-width: 992px) {
+  .medicine .dicortineff .main-image {
+    margin-top: 100px;
+  }
+  .medicine .oflodinex .main-image {
+    margin-top: 20px;
+    padding-right: 3%;
+  }
+  .medicine .tobrosopt .main-image img {
+    margin-right: 5%;
+    margin-top: 40px;
+  }
 }
 .medicine .about-medicine h2 {
   color: #fa5456;
@@ -9710,7 +9720,7 @@ hr {
   border: 1px solid #cacaca;
   float: left;
   margin-bottom: 15px;
-  width: 48%;
+  width: 100%;
 }
 .medicine .more-medicine ul li:nth-child(odd) {
   margin-right: 4%;
@@ -9722,7 +9732,7 @@ hr {
 }
 @media (min-width: 768px) {
   .medicine .more-medicine ul li {
-    margin-left: 1%;
+    margin-left: 2%;
   }
   .medicine .more-medicine ul li:first-child {
     margin-left: 0;
@@ -9730,7 +9740,7 @@ hr {
 }
 @media (min-width: 768px) {
   .medicine .more-medicine ul li {
-    width: 24%;
+    width: 32%;
   }
 }
 .medicine .more-medicine ul li a:hover {
