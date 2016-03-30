@@ -59,6 +59,11 @@
 			float: left;
 			margin: 0 0 8px 0;
 			width: 100%;
+			&.active {
+				.disease-content {
+					display: block;
+				}
+			}
 			.name {
 				color: #000000;
 				cursor: pointer;
@@ -71,6 +76,7 @@
 		}
 		.disease-content {
 			border-top: 1px solid #c9c9c9;
+			display: none;
 			float: left;
 			padding: 30px 0;
 			margin: 0 2% 0 3%;
@@ -130,7 +136,7 @@
 				    font-weight: bold;
 				    height: 30px;
 				    line-height: 33px;
-				    margin-right: 4px;
+				    margin-right: 13px;
 				    text-align: center;
 				    text-transform: uppercase;
 				    width: 30px;
