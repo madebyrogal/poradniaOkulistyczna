@@ -9818,7 +9818,7 @@ hr {
   background-color: #ed1c24;
 }
 .search .select-category ul li.yellow {
-  background-color: #3eb74d;
+  background-color: #fbbd09;
 }
 .search .select-category ul li.green {
   background-color: #3eb74d;
@@ -9834,6 +9834,20 @@ hr {
   .search .disease {
     padding: 20px 30px;
   }
+}
+@media (min-width: 768px) {
+  .search .disease.not-extend .symptoms {
+    min-height: 106px;
+  }
+}
+.search .disease.not-extend .extend-content {
+  display: none;
+}
+.search .disease.not-extend .normal {
+  display: block;
+}
+.search .disease .normal {
+  display: none;
 }
 .search .disease h2 {
   margin-top: 0;
@@ -9894,11 +9908,10 @@ hr {
   padding: 10px;
   border: 1px #ed1c24 solid;
 }
-.search .disease .type-A {
+.search .disease .type {
   float: left;
   width: 30px;
   height: 30px;
-  background-color: #ed1c24;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -9906,14 +9919,32 @@ hr {
   color: #fff9fa;
   margin-right: 4px;
 }
-.search .disease .red-text {
+.search .disease .type.type-A {
+  background-color: #ed1c24;
+}
+.search .disease .type.type-B {
+  background-color: #fbbd09;
+}
+.search .disease .type.type-C {
+  background-color: #3eb74d;
+}
+.search .disease .text-type {
   float: left;
   font-weight: bold;
   font-size: 12px;
   line-height: 33px;
 }
+.search .disease .text-type.text-type-A {
+  color: #ed1c24;
+}
+.search .disease .text-type.text-type-B {
+  color: #fbbd09;
+}
+.search .disease .text-type.text-type-C {
+  color: #3eb74d;
+}
 .search .disease .button-ext {
-  width: 148px;
+  width: 160px;
   height: 35px;
   text-align: left;
   float: right;
@@ -9924,6 +9955,7 @@ hr {
   background-color: #57a3b1;
   padding-left: 18px;
   padding-right: 8px;
+  cursor: pointer;
 }
 .search .disease .button-ext i {
   float: right;

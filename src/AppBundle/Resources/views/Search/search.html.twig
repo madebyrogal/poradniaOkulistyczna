@@ -30,66 +30,43 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12">
-                    <article class="disease">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-7 col-md-8">
-                                <h2 class="category">Urazy</h2>
-                                <h4 class="title">Oparzenia chemiczne i termiczne</h4>
+                {% for disease in diseases %}
+                    <div class="col-xs-12">
+                        <article class="disease not-extend">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-7 col-md-8">
+                                    <h2 class="category">{{disease.category.name}}</h2>
+                                    <h4 class="title">{{disease.name}}</h4>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-4 text-right img-wraper">
+                                    <div class="disise-img" style="background-image: url({{asset(disease.picture1)}})"></div>
+                                </div>
+                                <div class="subtitle col-xs-12 col-sm-7 col-md-8">Objawy:</div>
+                                <div class="col-xs-12 col-sm-7 col-md-8 content symptoms">
+                                    <p>{{disease.symptoms | raw}}</p>
+                                </div>
+                                <div class="subtitle col-xs-12 col-sm-7 col-md-8 extend-content">Zalecenia:</div>
+                                <div class="col-xs-12 col-sm-7 col-md-8 content extend-content">
+                                    <p>{{disease.recommendation | raw}}</p>
+                                </div>
+                                {% if disease.comments %}
+                                    <div class="col-xs-12 col-md-8 extend-content">
+                                        <div class="comments"><b>Uwaga!</b><br/> Nie można uciskać gałki ocznej</div>
+                                    </div>
+                                {% endif %}
+                                <div class="col-xs-7 col-md-5">
+                                    <span class="type type-{{disease.type | default('A')}}">{{disease.type}}</span><span class="text-type text-type-{{disease.type | default('A')}}"> {{disease.type | writeType}}</span>
+                                </div>
+                                <div class="col-xs-5 col-md-3">
+                                    <div class="button-ext">
+                                        <span class="normal">Sprawdź zalecenia <i class="fa fa-chevron-down"></i></span>
+                                        <span class="extend-content">Zwiń zalecenia <i class="fa fa-chevron-up"></i></span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-xs-12 col-sm-5 col-md-4 text-right img-wraper">
-                                <div class="disise-img" style="background-image: url({{asset('assets/images/chore_oko.jpg')}})"></div>
-                            </div>
-                            <span class="subtitle col-xs-12 col-sm-7 col-md-8">Objawy:</span>
-                            <p class="col-xs-12 col-sm-7 col-md-8 content">wywiad w kierunku urazu, silny ból gałki ocznej, pogorszenie ostrości wzroku, uszkodzenie struktur gałki ocznej widoczne w świetle rozproszonym</p>
-                            <span class="subtitle col-xs-12 col-sm-7 col-md-8">Zalecenia:</span>
-                            <p class="col-xs-12 col-sm-7 col-md-8 content">ocena ostrości wzroku do dali, trzeba zasłonić gałkę oczną jałowym opatrunkiem, pacjenta należy pilnie odesłać na ostry dyżur okulistyczny</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-8">
-                                <div class="comments"><b>Uwaga!</b><br/> Nie można uciskać gałki ocznej</div>
-                            </div>
-                        </div>
-                        <div class="row clearfix">
-                            <div class="col-xs-5 col-md-4">
-                                <span class="type-A">A</span><span class="red-text"> tryb pilny</span>
-                            </div>
-                            <div class="col-xs-7 col-md-4">
-                                <div class="button-ext">Zwiń zalecenia <i class="fa fa-chevron-up"></i></div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xs-12">
-                    <article class="disease">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-7 col-md-8">
-                                <h2 class="category">Urazy</h2>
-                                <h4 class="title">Oparzenia chemiczne i termiczne</h4>
-                            </div>
-                            <div class="col-xs-12 col-sm-5 col-md-4 text-right img-wraper">
-                                <div class="disise-img" style="background-image: url({{asset('assets/images/chore_oko.jpg')}})"></div>
-                            </div>
-                            <span class="subtitle col-xs-12 col-sm-7 col-md-8">Objawy:</span>
-                            <p class="col-xs-12 col-sm-7 col-md-8 content">wywiad w kierunku urazu, silny ból gałki ocznej, pogorszenie ostrości wzroku, uszkodzenie struktur gałki ocznej widoczne w świetle rozproszonym</p>
-                            <span class="subtitle col-xs-12 col-sm-7 col-md-8">Zalecenia:</span>
-                            <p class="col-xs-12 col-sm-7 col-md-8 content">ocena ostrości wzroku do dali, trzeba zasłonić gałkę oczną jałowym opatrunkiem, pacjenta należy pilnie odesłać na ostry dyżur okulistyczny</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-8">
-                                <div class="comments"><b>Uwaga!</b><br/> Nie można uciskać gałki ocznej</div>
-                            </div>
-                        </div>
-                        <div class="row clearfix">
-                            <div class="col-xs-5 col-md-4">
-                                <span class="type-A">A</span><span class="red-text"> tryb pilny</span>
-                            </div>
-                            <div class="col-xs-7 col-md-4">
-                                <div class="button-ext">Zwiń zalecenia <i class="fa fa-chevron-up"></i></div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                        </article>
+                    </div>
+                {% endfor%}
             </div>
         </div>
     </section>
