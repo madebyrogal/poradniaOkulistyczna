@@ -22,15 +22,15 @@ function toogleDisease(){
 }
 
 function disease() {
-    $('.disease-list li span').click(function (e) {
+    $('.disease-list li').click(function (e) {
         e.preventDefault();
-        if ($(this).parent().hasClass('active')) {
+        if ($(this).hasClass('active')) {
             $(this).next('.disease-content').slideUp();
-            $(this).parent().removeClass('active');
+            $(this).removeClass('active');
         } else {
             $('.disease-list li .disease-content').slideUp();
             $('.disease-list li').removeClass('active');
-            $(this).parent().addClass('active');
+            $(this).addClass('active');
             $(this).next('.disease-content').slideDown();
         }
     });
