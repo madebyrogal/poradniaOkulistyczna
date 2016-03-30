@@ -9639,6 +9639,10 @@ hr {
     margin-right: 30%;
   }
 }
+.medicine .h1-img {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
 @media (min-width: 992px) {
   .medicine .dicortineff .main-image {
     margin-top: 100px;
