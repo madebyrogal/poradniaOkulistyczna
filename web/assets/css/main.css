@@ -9814,13 +9814,13 @@ hr {
 .search .select-category ul li:last-child {
   margin-right: 0px;
 }
-.search .select-category ul li.red {
+.search .select-category ul li.type-A {
   background-color: #ed1c24;
 }
-.search .select-category ul li.yellow {
+.search .select-category ul li.type-B {
   background-color: #fbbd09;
 }
-.search .select-category ul li.green {
+.search .select-category ul li.type-C {
   background-color: #3eb74d;
 }
 .search .disease {

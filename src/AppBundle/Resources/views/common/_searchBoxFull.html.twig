@@ -12,13 +12,13 @@
         </div>
         <div class="form-box secend">
             <label>Wpisz typowy objaw</label>
-            <input type="text" name="search[search]" /> 
+            <input type="text" name="search[search]" value="{{search.search}}"/> 
         </div>
         <div class="form-box">
             <label class="text-center">lub</label>
             <label>Wybierz schorzenie z listy</label>
             <select name="search[disease]">
-                {{ render(controller('AppBundle:Search:renderOptionSearch')) }}
+                {{ render(controller('AppBundle:Search:renderOptionSearch',{'diseaseId': search.disease})) }}
             </select>
         </div>
         <div class="form-box text-center">

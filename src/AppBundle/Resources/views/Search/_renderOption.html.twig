@@ -1,4 +1,4 @@
 <option value="0"></option>
 {% for disease in diseases %}
-    <option value="{{disease.id}}" class="patient-{{disease.patient.id}}">{{disease.name}}</option>
+    <option value="{{disease.id}}" class="patient-{{disease.patient.id}}" {%if (diseaseId ==  disease.id)%}selected="selected"{% endif %}>{{disease.name}}</option>
 {% endfor%}

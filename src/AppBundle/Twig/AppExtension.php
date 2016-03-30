@@ -27,7 +27,7 @@ class AppExtension extends \Twig_Extension
     {
         switch($type){
             case 'A':
-                $typeText = 'tryp pilny';
+                $typeText = 'tryb pilny';
                 break;
             case 'B':
                 $typeText = 'tryb przyspieszony';
