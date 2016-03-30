@@ -9581,7 +9581,7 @@ hr {
   cursor: pointer;
 }
 .list-box > li .content .medicine-list li.active {
-  color: #61a7a7;
+  color: #56a3b0;
   background-color: transparent;
   font-weight: bold;
 }
@@ -10047,15 +10047,15 @@ hr {
   list-style-type: none;
   padding: 0;
 }
-.disease .disease-list li {
+.disease .disease-list > li {
   border: 1px solid #cacaca;
-  -webkit-box-shadow: 0px 3px 6px 1px #cacaca;
-  box-shadow: 0px 3px 6px 1px #cacaca;
+  -webkit-box-shadow: 0px 5px 35px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 35px -13px rgba(0, 0, 0, 0.75);
   float: left;
-  margin: 0 0 8px 0;
+  margin: 0 0 20px 0;
   width: 100%;
 }
-.disease .disease-list li:before {
+.disease .disease-list > li:before {
   font-family: 'FontAwesome';
   color: #d1d1d1;
   float: right;
@@ -10063,13 +10063,13 @@ hr {
   cursor: pointer;
   margin: 23px 20px 0 0;
 }
-.disease .disease-list li.active:before {
+.disease .disease-list > li.active:before {
   content: '\f077';
 }
-.disease .disease-list li.active .disease-content {
+.disease .disease-list > li.active .disease-content {
   display: block;
 }
-.disease .disease-list li .name {
+.disease .disease-list > li .name {
   color: #000000;
   cursor: pointer;
   display: block;
@@ -10080,7 +10080,7 @@ hr {
   padding: 24px 2% 22px 3%;
 }
 @media (min-width: 992px) {
-  .disease .disease-list li .name {
+  .disease .disease-list > li .name {
     line-height: 22px;
   }
 }
@@ -10105,51 +10105,48 @@ hr {
 }
 .disease .disease-list .menu-disease li {
   background-color: #f3f3f3;
+  cursor: pointer;
   border: none;
-  -webkit-box-shadow: unset;
-  box-shadow: unset;
-}
-.disease .disease-list .menu-disease li:before {
-  content: '';
-}
-.disease .disease-list .menu-disease li a {
   color: #000;
   display: block;
   font-family: 'SolomonSans';
   font-size: 15px;
   font-weight: normal;
+  margin-bottom: 10px;
   padding: 12px 13px 8px 10px;
 }
 .disease .disease-list .menu-disease li.active {
-  background-color: #fff;
-}
-.disease .disease-list .menu-disease li.active a {
-  color: #56a3b0;
+  background-color: transparent;
   font-weight: bold;
+  color: #56a3b0;
 }
-.disease .disease-list .more-disease {
+.disease .more-disease {
   float: left;
   padding-left: 3%;
   width: 100%;
+  display: none;
+}
+.disease .more-disease.active {
+  display: block;
 }
 @media (min-width: 768px) {
-  .disease .disease-list .more-disease {
+  .disease .more-disease {
     border-left: 1px solid #c9c9c9;
     width: 74%;
   }
 }
-.disease .disease-list .more-disease p {
+.disease .more-disease p {
   color: #282828;
   font-family: 'SolomonSans';
   font-size: 15px;
   font-weight: normal;
 }
-.disease .disease-list .more-disease .mode {
+.disease .more-disease .mode {
   font-weight: bold;
   font-size: 16px;
   padding: 9px 0;
 }
-.disease .disease-list .more-disease .mode span {
+.disease .more-disease .mode span {
   color: #fff9fa;
   display: inline-block;
   font-weight: bold;
@@ -10160,70 +10157,70 @@ hr {
   text-transform: uppercase;
   width: 30px;
 }
-.disease .disease-list .more-disease .mode.type-A {
+.disease .more-disease .mode.type-A {
   color: #ed1c24;
 }
-.disease .disease-list .more-disease .mode.type-A span {
+.disease .more-disease .mode.type-A span {
   background-color: #ed1c24;
 }
-.disease .disease-list .more-disease .mode.type-B {
+.disease .more-disease .mode.type-B {
   color: #fbbd09;
 }
-.disease .disease-list .more-disease .mode.type-B span {
+.disease .more-disease .mode.type-B span {
   background-color: #fbbd09;
 }
-.disease .disease-list .more-disease .mode.type-C {
+.disease .more-disease .mode.type-C {
   color: #3eb74d;
 }
-.disease .disease-list .more-disease .mode.type-C span {
+.disease .more-disease .mode.type-C span {
   background-color: #3eb74d;
 }
-.disease .disease-list .more-disease .picture img {
+.disease .more-disease .picture img {
   margin: 0 auto 20px auto;
 }
 @media (min-width: 992px) {
-  .disease .disease-list .more-disease .picture {
+  .disease .more-disease .picture {
     float: right;
     width: 40%;
   }
 }
 @media (min-width: 992px) {
-  .disease .disease-list .more-disease .about-disease {
+  .disease .more-disease .about-disease {
     float: left;
     padding-right: 3%;
     width: 60%;
   }
 }
-.disease .disease-list .more-disease .about-disease .top {
+.disease .more-disease .about-disease .top {
   color: #282828;
   font-weight: bold;
 }
 @media (min-width: 992px) {
-  .disease .disease-list .more-disease .about-disease .top {
+  .disease .more-disease .about-disease .top {
     float: left;
     padding-right: 2%;
     width: 18%;
   }
 }
-.disease .disease-list .more-disease .about-disease .desc {
+.disease .more-disease .about-disease .desc {
   color: #282828;
 }
 @media (min-width: 992px) {
-  .disease .disease-list .more-disease .about-disease .desc {
+  .disease .more-disease .about-disease .desc {
     float: left;
     width: 82%;
   }
 }
-.disease .disease-list .more-disease .unwrap-button {
+.disease .more-disease .unwrap-button {
   margin-top: 20px;
 }
 @media (min-width: 992px) {
-  .disease .disease-list .more-disease .unwrap-button {
+  .disease .more-disease .unwrap-button {
     float: left;
     width: 100%;
   }
 }
-.disease .disease-list .more-disease .unwrap-button a {
+.disease .more-disease .unwrap-button a {
   background-color: #56a3b0;
   color: #fff;
   display: inline-block;
@@ -10235,23 +10232,23 @@ hr {
   width: 100%;
 }
 @media (min-width: 768px) {
-  .disease .disease-list .more-disease .unwrap-button a {
+  .disease .more-disease .unwrap-button a {
     float: right;
     width: 50%;
   }
 }
 @media (min-width: 992px) {
-  .disease .disease-list .more-disease .unwrap-button a {
+  .disease .more-disease .unwrap-button a {
     width: 27%;
   }
 }
-.disease .disease-list .more-disease .unwrap-button a i {
+.disease .more-disease .unwrap-button a i {
   float: right;
   font-weight: normal;
   line-height: 35px;
   margin-left: 1%;
 }
-.disease .disease-list .more-disease .unwrap-button a:hover {
+.disease .more-disease .unwrap-button a:hover {
   text-decoration: none;
 }
 .exam {

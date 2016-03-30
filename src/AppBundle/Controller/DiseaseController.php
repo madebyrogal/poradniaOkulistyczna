@@ -12,8 +12,10 @@ class DiseaseController extends Controller
      */
     public function indexAction()
     {
+        $diseaseCategories = $this->getDoctrine()->getRepository('AppBundle:DiseaseCategory')->findAll();
+                
         return $this->render('AppBundle:Disease:index.html.twig', array(
-            // ...
+            'diseaseCategories' => $diseaseCategories
         ));
     }
 

@@ -1,250 +1,249 @@
 .disease {
-	h1 {
-		color: @dark-gray;
-		font-size: 40px;
-		font-family: 'PlayfairDisplay';
-		font-weight: bold;
-		line-height: 65px;
-		margin: 0 0 20px 0;
-		text-align: center;
-	}
-	.disease-choice {
-		list-style-type: none;
-		margin: 0 auto 38px auto;
-		width: 470px;
-		li {
-			float: left;
-			height: 100px;
-			width: 235px;
-			&.active {
-				background-color: #40bcef;
-				a {
-					color: @white-bg;
-					font-weight: bold;
-				}
-			}
-			a {
-				color: #a8a8a8;
-				display: block;
-				font-family: 'SolomonSans';
-				font-size: 18px;
-				font-weight: normal;
-				line-height: 100px;
-				&:hover {
-					text-decoration: none;
-				}
-			}
-		}
-		.child {
-			background: url('../images/search_child.png') #dfdfdf 0 0 no-repeat;
-			a {
-				padding-left: 18%;
-			}
-		}
-		.adult {
-			background: url('../images/search_adult.png') #dfdfdf 0 0 no-repeat;
-			a {
-				padding-right: 14%;
-				text-align: right;
-			}
-		}
-	}
-	.disease-list {
-		list-style-type: none;
-		padding: 0;
-		li {
-			border: 1px solid @border-gray;
-			-webkit-box-shadow: 0px 3px 6px 1px #cacaca;
-			box-shadow: 0px 3px 6px 1px #cacaca;
-			float: left;
-			margin: 0 0 8px 0;
-			width: 100%;
-			&:before {
-	            font-family: 'FontAwesome';
-	            color: @gray;
-	            float: right;
-	            content: '\f078';
-	            cursor: pointer;
-	            margin: 23px 20px 0 0;
-	        }
-			&.active {
-				&:before {
-					content: '\f077';
-				}
-				.disease-content {
-					display: block;
-				}
-			}
-			.name {
-				color: #000000;
-				cursor: pointer;
-				display: block;
-				font-size: 24px;
-				font-family: 'PlayfairDisplay';
-				font-weight: bold;
-				line-height: 28px;
-				padding: 24px 2% 22px 3%;
-				@media (min-width: @screen-md-min) {
-					line-height: 22px;
-				}
-			}
-		}
-		.disease-content {
-			border-top: 1px solid #c9c9c9;
-			display: none;
-			float: left;
-			padding: 30px 0;
-			margin: 0 2% 0 3%;
-			width: 95%;
-		}
-		.menu-disease {
-			float: left;
-			list-style-type: none;
-			margin: 0 3% 9px 0;
-			width: 100%;
-			@media (min-width: @screen-sm-min) {
-				width: 23%;
-			}
-			li {
-				background-color: #f3f3f3;
-				border: none;
-				-webkit-box-shadow: unset;
-				box-shadow: unset;
-				&:before {
-					content: '';
-				}
-				a {
-					color: #000;
-					display: block;
-					font-family: 'SolomonSans';
-					font-size: 15px;
-					font-weight: normal;
-					padding: 12px 13px 8px 10px;
-				}
-				&.active {
-					background-color: #fff;
-					a {
-						color: #56a3b0;
-						font-weight: bold;	
-					}
-				}
-			}
-		}
-		.more-disease {
-			float: left;
-			padding-left: 3%; 
-			width: 100%;
-			@media (min-width: @screen-sm-min) {
-				border-left: 1px solid #c9c9c9;
-				width: 74%;
-			}
-			p {
-				color: #282828;
-				font-family: 'SolomonSans';
-				font-size: 15px;
-				font-weight: normal;
-			}
-			.mode {
-				font-weight: bold;
-				font-size: 16px;
-				padding: 9px 0;
-				span {
-					color: #fff9fa;
-				    display: inline-block;
-				    font-weight: bold;
-				    height: 30px;
-				    line-height: 33px;
-				    margin-right: 13px;
-				    text-align: center;
-				    text-transform: uppercase;
-				    width: 30px;
-				    
-				}
-				&.type-A {
-					color: #ed1c24;
-					span {
-						background-color: #ed1c24;
-					}
-			    }
-			    &.type-B {
-			    	color: #fbbd09;
-			    	span {
-						background-color: #fbbd09;
-					}
-			    }
-			    &.type-C {
-			    	color: #3eb74d;
-			    	span {
-						background-color: #3eb74d;
-					}
-			    }
-			}
-			.picture {
-				img {
-					margin: 0 auto 20px auto;
-				}
-				@media (min-width: @screen-md-min) {
-					float: right;
-					width: 40%;
-				}
-			}
-			.about-disease {
-				@media (min-width: @screen-md-min) {
-					float: left;
-					padding-right: 3%;
-					width: 60%;
-				}
-				.top {
-					color: #282828;
-					font-weight: bold;
-					@media (min-width: @screen-md-min) {
-						float: left;
-						padding-right: 2%;
-						width: 18%;
-					}
-				}
-				.desc {
-					color: #282828;
-					@media (min-width: @screen-md-min) {
-						float: left;
-						width: 82%;
-					}
-				}
-			}
-			.unwrap-button {
-				margin-top: 20px;
-				@media (min-width: @screen-md-min) {
-					float: left;
-					width: 100%;
-				}
-				a {
-					background-color: #56a3b0;
-					color: #fff;
-					display: inline-block;
-					font-family: 'SolomonSans';
-					font-size: 15px;
-					font-weight: bold;
-					line-height: 35px;
-					padding: 0 11px 0 14px;
-					width: 100%;
-					@media (min-width: @screen-sm-min) {
-						float: right;
-						width: 50%;
-					}
-					@media (min-width: @screen-md-min) {
-						width: 27%;
-					}
-					i {
-						float: right;
-						font-weight: normal;
-    					line-height: 35px;
-    					margin-left: 1%;
-					}
-					&:hover {
-						text-decoration: none;
-					}
-				}
-			}
-		}
-	}
+    h1 {
+        color: @dark-gray;
+        font-size: 40px;
+        font-family: 'PlayfairDisplay';
+        font-weight: bold;
+        line-height: 65px;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+    .disease-choice {
+        list-style-type: none;
+        margin: 0 auto 38px auto;
+        width: 470px;
+        li {
+            float: left;
+            height: 100px;
+            width: 235px;
+            &.active {
+                background-color: #40bcef;
+                a {
+                    color: @white-bg;
+                    font-weight: bold;
+                }
+            }
+            a {
+                color: #a8a8a8;
+                display: block;
+                font-family: 'SolomonSans';
+                font-size: 18px;
+                font-weight: normal;
+                line-height: 100px;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        .child {
+            background: url('../images/search_child.png') #dfdfdf 0 0 no-repeat;
+            a {
+                padding-left: 18%;
+            }
+        }
+        .adult {
+            background: url('../images/search_adult.png') #dfdfdf 0 0 no-repeat;
+            a {
+                padding-right: 14%;
+                text-align: right;
+            }
+        }
+    }
+    .disease-list {
+        list-style-type: none;
+        padding: 0;
+        >li {
+            border: 1px solid @border-gray;
+            .box-shadow(0px 5px 35px -13px rgba(0,0,0,0.75));
+            float: left;
+            margin: 0 0 20px 0;
+            width: 100%;
+            &:before {
+                font-family: 'FontAwesome';
+                color: @gray;
+                float: right;
+                content: '\f078';
+                cursor: pointer;
+                margin: 23px 20px 0 0;
+            }
+            &.active {
+                &:before {
+                    content: '\f077';
+                }
+                .disease-content {
+                    display: block;
+                }
+            }
+            .name {
+                color: #000000;
+                cursor: pointer;
+                display: block;
+                font-size: 24px;
+                font-family: 'PlayfairDisplay';
+                font-weight: bold;
+                line-height: 28px;
+                padding: 24px 2% 22px 3%;
+                @media (min-width: @screen-md-min) {
+                    line-height: 22px;
+                }
+            }
+        }
+        .disease-content {
+            border-top: 1px solid #c9c9c9;
+            display: none;
+            float: left;
+            padding: 30px 0;
+            margin: 0 2% 0 3%;
+            width: 95%;
+        }
+        .menu-disease {
+            float: left;
+            list-style-type: none;
+            margin: 0 3% 9px 0;
+            width: 100%;
+            @media (min-width: @screen-sm-min) {
+                width: 23%;
+            }
+            li {
+                background-color: #f3f3f3;
+                cursor: pointer;
+                border: none;
+                color: #000;
+                display: block;
+                font-family: 'SolomonSans';
+                font-size: 15px;
+                font-weight: normal;
+                margin-bottom: 10px;
+                padding: 12px 13px 8px 10px;
+
+                &.active {
+                    background-color: transparent;
+                    font-weight: bold;	
+                    color: @green-dark;
+                }
+            }
+        }
+    }
+    .more-disease {
+        float: left;
+        padding-left: 3%; 
+        width: 100%;
+        display: none;
+        
+        &.active{
+            display: block;
+        }
+        
+        @media (min-width: @screen-sm-min) {
+            border-left: 1px solid #c9c9c9;
+            width: 74%;
+        }
+        p {
+            color: #282828;
+            font-family: 'SolomonSans';
+            font-size: 15px;
+            font-weight: normal;
+        }
+        .mode {
+            font-weight: bold;
+            font-size: 16px;
+            padding: 9px 0;
+            span {
+                color: #fff9fa;
+                display: inline-block;
+                font-weight: bold;
+                height: 30px;
+                line-height: 33px;
+                margin-right: 13px;
+                text-align: center;
+                text-transform: uppercase;
+                width: 30px;
+
+            }
+            &.type-A {
+                color: #ed1c24;
+                span {
+                    background-color: #ed1c24;
+                }
+            }
+            &.type-B {
+                color: #fbbd09;
+                span {
+                    background-color: #fbbd09;
+                }
+            }
+            &.type-C {
+                color: #3eb74d;
+                span {
+                    background-color: #3eb74d;
+                }
+            }
+        }
+        .picture {
+            img {
+                margin: 0 auto 20px auto;
+            }
+            @media (min-width: @screen-md-min) {
+                float: right;
+                width: 40%;
+            }
+        }
+        .about-disease {
+            @media (min-width: @screen-md-min) {
+                float: left;
+                padding-right: 3%;
+                width: 60%;
+            }
+            .top {
+                color: #282828;
+                font-weight: bold;
+                @media (min-width: @screen-md-min) {
+                    float: left;
+                    padding-right: 2%;
+                    width: 18%;
+                }
+            }
+            .desc {
+                color: #282828;
+                @media (min-width: @screen-md-min) {
+                    float: left;
+                    width: 82%;
+                }
+            }
+        }
+        .unwrap-button {
+            margin-top: 20px;
+            @media (min-width: @screen-md-min) {
+                float: left;
+                width: 100%;
+            }
+            a {
+                background-color: #56a3b0;
+                color: #fff;
+                display: inline-block;
+                font-family: 'SolomonSans';
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 35px;
+                padding: 0 11px 0 14px;
+                width: 100%;
+                @media (min-width: @screen-sm-min) {
+                    float: right;
+                    width: 50%;
+                }
+                @media (min-width: @screen-md-min) {
+                    width: 27%;
+                }
+                i {
+                    float: right;
+                    font-weight: normal;
+                    line-height: 35px;
+                    margin-left: 1%;
+                }
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }

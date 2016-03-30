@@ -29,7 +29,7 @@ class Disease
     private $name;
 
    /**
-     * @ORM\ManyToOne(targetEntity="DiseaseCategory")
+     * @ORM\ManyToOne(targetEntity="DiseaseCategory", inversedBy="diseases")
      * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
      */
     private $category;

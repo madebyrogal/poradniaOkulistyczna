@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * DiseaseCategory
@@ -34,8 +35,17 @@ class DiseaseCategory
      * @ORM\Column(name="hash", type="string", length=255)
      */
     private $hash;
+    
+    /**
+     * @ORM\OneToMany(targetEntity="Disease", mappedBy="category")
+     */
+    private $diseases;
 
 
+    public function __construct() {
+        $this->diseases = new ArrayCollection();
+    }
+    
     /**
      * Get id
      *
@@ -90,5 +100,38 @@ class DiseaseCategory
     public function getHash()
     {
         return $this->hash;
+    }
+
+    /**
+     * Add diseases
+     *
+     * @param \AppBundle\Entity\Disease $diseases
+     * @return DiseaseCategory
+     */
+    public function addDisease(\AppBundle\Entity\Disease $diseases)
+    {
+        $this->diseases[] = $diseases;
+
+        return $this;
+    }
+
+    /**
+     * Remove diseases
+     *
+     * @param \AppBundle\Entity\Disease $diseases
+     */
+    public function removeDisease(\AppBundle\Entity\Disease $diseases)
+    {
+        $this->diseases->removeElement($diseases);
+    }
+
+    /**
+     * Get diseases
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getDiseases()
+    {
+        return $this->diseases;
     }
 }

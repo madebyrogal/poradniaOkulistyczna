@@ -12,92 +12,41 @@
                     <li class="adult"><a title="" href="">Dorosły</a></li>
                 </ul>
                 <ul class="disease-list clearfix">
-                    <li>
-                        <span class="name">Urazy</span>
-                        <div class="disease-content"></div>
-                    </li>
-                    <li>
-                        <span  class="name">Bolesne „czerwone oko” i jednoczesne znaczne pogorszenie ostrości wzroku</span>
-                        <div class="disease-content"></div>
-                    </li>
-                    <li>
-                        <span class="name">Objawy okulistyczne sugerujące nagły stan neurologiczny</span>
-                        <div class="disease-content"></div>
-                    </li>
-                    <li>
-                        <span class="name">Nagłe pogorszenie ostrości wzroku bez objawów „czerwonego oka”</span>
-                        <div class="disease-content">
-                            <ul class="menu-disease">
-                                <li><a title="" href="">Niedrożność naczyń siatkówki</a></li>
-                                <li><a title="" href="">Zapalenie tętnicy skroniowej (choroba Hortona)</a></li>
-                                <li class="active"><a title="" href="">Przednia niedokrwienna neuropatia nerwu wzrokowego</a></li>
-                                <li><a title="" href="">Zapalenie nerwu wzrokowego</a></li>
-                                <li><a title="" href="">Odwarstwienie siatkówki</a></li>
-                                <li><a title="" href="">Wylew krwi do ciała szklistego</a></li>
-                                <li><a title="" href="">Wylew krwi do plamki żółtej – np. wysiękowa postać AMD</a></li>
-                            </ul>
-                            <div class="more-disease">
-                                <div class="mode type-{{disease.type | default('A')}}"><span>A</span>tryb pilny</div>
-                                <div class="picture">
-                                    <img class="img-responsive" alt="" src="{{asset('assets/images/czerwone_oko.jpg')}}"/>
-                                </div>
-                                <div class="about-disease">
-                                    <div class="top">Objawy:</div>
-                                    <div class="desc">
-                                        <p>nagłe, bezbolesne zaniewidzenie lub znaczne pogorszenie ostrości wzroku zwykle w godzinach porannych,</p>
-                                        <p>wywiad w kierunku chorób naczyniowych</p>
+                    {% for category in diseaseCategories %}
+                        <li>
+                            <span class="name">{{category.name}}</span>
+                            <div class="disease-content">
+                                <ul class="menu-disease">
+                                    {% for disease in category.diseases %}
+                                        <li {% if loop.first %}class="active" {% endif %} data-disease="disease-{{disease.id}}">{{disease.name}}</li>
+                                    {% endfor %}
+                                </ul>
+                                {% for disease in category.diseases %}
+                                    <div class="more-disease disease-{{disease.id}} {% if loop.first %}active{% endif %}">
+                                        <div class="mode type-{{disease.type | default('A')}}"><span>{{disease.type}}</span>{{disease.type | writeType}}</div>
+                                        <div class="picture">
+                                            {% if disease.picture1 %}<img class="img-responsive" alt="" src="{{asset(disease.picture1)}}"/>{% endif %}
+                                        </div>
+                                        <div class="about-disease">
+                                            <div class="top">Objawy:</div>
+                                            <div class="desc">
+                                                <p>{{disease.symptoms | raw}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="about-disease">
+                                            <div class="top">Zalecenia:</div>
+                                            <div class="desc">
+                                                <p>{{disease.recommendation | raw}}</p>
+                                            </div>
+                                        </div>
+                                        <!--<div class="unwrap-button">
+                                                                        <a class="" title="" href="#">Zwiń zalecenia <i class="fa fa-chevron-up"></i></a>
+                                                                    </div>-->
                                     </div>
-                                </div>
-                                <div class="about-disease">
-                                    <div class="top">Zalecenia:</div>
-                                    <div class="desc">
-                                        <p>ocena ostrości wzroku do dali, należy podać 1 tabletkę (500 mg) kwasu acetylosalicylowego, pacjenta należy pilnie odesłać na ostry dyżur okulistyczny
-                                        </p>
-                                    </div>
-                                </div>
-                                <!--<div class="unwrap-button">
-                                    <a class="" title="" href="#">Zwiń zalecenia <i class="fa fa-chevron-up"></i></a>
-                                </div>-->
+                                {% endfor %}
                             </div>
-                            
-                        </div>
-                    </li>
-                    <li>
-                        <span class="name">Objawy oczne wymagające konsultacji okulistycznej</span>
-                        <div class="disease-content"></div>
-                    </li>
-                    <li>
-                        <span class="name">Obrzęki powiek</span>
-                        <div class="disease-content"></div>
-                    </li>
-                    <li>
-                        <span class="name">Wytrzeszcz</span>
-                        <div class="disease-content"></div>
-                    </li>
-                    <li>
-                        <span class="name">Dwojenie obrazu</span>
-                        <div class="disease-content"></div>
-                    </li>
-                    <li>
-                        <span class="name">Schorzenia, których objawy wymagają różnicowania z chorobami nowotworowymi</span>
-                        <div class="disease-content"></div>
-                    </li>
-                    <li>
-                        <span class="name">Pogorszenie ostrości wzroku</span>
-                        <div class="disease-content"></div>
-                    </li>
-                    <li>
-                        <span class="name">Zez</span>
-                        <div class="disease-content"></div>
-                    </li>
-                    <li>
-                        <span class="name">„Czerwone oko” bez jednoczesnego pogorszenia ostrości wzroku</span>
-                        <div class="disease-content"></div>
-                    </li>
-                    <li>
-                        <span class="name">Łzawienie</span>
-                        <div class="disease-content"></div>
-                    </li>
+                        </li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
