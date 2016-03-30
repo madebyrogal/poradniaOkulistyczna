@@ -2,6 +2,7 @@ $(document).ready(function () {
     toogleMenu();
     toogleDisease();
     disease();
+    toogleMedicine();
 });
 
 $(window).resize(function () {
@@ -14,6 +15,7 @@ function toogleMenu() {
     });
 }
 
+//Toogle disease on search page
 function toogleDisease(){
     $('.disease .button-ext').click(function(){
         var disease = $(this).closest('.disease');
@@ -21,6 +23,7 @@ function toogleDisease(){
     });
 }
 
+//Toogle disease on disease page
 function disease() {
     $('.disease-list li').click(function (e) {
         e.preventDefault();
@@ -33,5 +36,22 @@ function disease() {
             $(this).addClass('active');
             $(this).next('.disease-content').slideDown();
         }
+    });
+}
+
+//Toogle medicine on medicine page
+function toogleMedicine(){
+    $('.list-box li h2').click(function(){
+        $(this).next().slideToggle();
+    });
+    
+    $('.medicine-list li').click(function(){
+        var medicine = $(this).data('medicine');
+        
+        $(this).siblings('li').removeClass('active');
+        $(this).addClass('active');
+        $(this).closest('.row').find('.border').removeClass('active');
+        $('.'+medicine).addClass('active');
+        
     });
 }
