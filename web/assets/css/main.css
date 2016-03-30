@@ -10032,6 +10032,172 @@ hr {
   font-weight: bold;
   padding: 24px 2% 22px 3%;
 }
+.disease .disease-list .disease-content {
+  border-top: 1px solid #c9c9c9;
+  float: left;
+  padding: 30px 0;
+  margin: 0 2% 0 3%;
+  width: 95%;
+}
+.disease .disease-list .menu-disease {
+  float: left;
+  list-style-type: none;
+  margin: 0 3% 9px 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .disease .disease-list .menu-disease {
+    width: 23%;
+  }
+}
+.disease .disease-list .menu-disease li {
+  background-color: #f3f3f3;
+  border: none;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+}
+.disease .disease-list .menu-disease li a {
+  color: #000;
+  display: block;
+  font-family: 'SolomonSans';
+  font-size: 15px;
+  font-weight: normal;
+  padding: 12px 13px 8px 10px;
+}
+.disease .disease-list .menu-disease li.active {
+  background-color: #fff;
+}
+.disease .disease-list .menu-disease li.active a {
+  color: #56a3b0;
+  font-weight: bold;
+}
+.disease .disease-list .more-disease {
+  float: left;
+  padding-left: 3%;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .disease .disease-list .more-disease {
+    border-left: 1px solid #c9c9c9;
+    width: 74%;
+  }
+}
+.disease .disease-list .more-disease p {
+  color: #282828;
+  font-family: 'SolomonSans';
+  font-size: 15px;
+  font-weight: normal;
+}
+.disease .disease-list .more-disease .mode {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 9px 0;
+}
+.disease .disease-list .more-disease .mode span {
+  color: #fff9fa;
+  display: inline-block;
+  font-weight: bold;
+  height: 30px;
+  line-height: 33px;
+  margin-right: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 30px;
+}
+.disease .disease-list .more-disease .mode.type-A {
+  color: #ed1c24;
+}
+.disease .disease-list .more-disease .mode.type-A span {
+  background-color: #ed1c24;
+}
+.disease .disease-list .more-disease .mode.type-B {
+  color: #fbbd09;
+}
+.disease .disease-list .more-disease .mode.type-B span {
+  background-color: #fbbd09;
+}
+.disease .disease-list .more-disease .mode.type-C {
+  color: #3eb74d;
+}
+.disease .disease-list .more-disease .mode.type-C span {
+  background-color: #3eb74d;
+}
+.disease .disease-list .more-disease .picture img {
+  margin: 0 auto 20px auto;
+}
+@media (min-width: 992px) {
+  .disease .disease-list .more-disease .picture {
+    float: right;
+    width: 40%;
+  }
+}
+@media (min-width: 992px) {
+  .disease .disease-list .more-disease .about-disease {
+    float: left;
+    padding-right: 3%;
+    width: 60%;
+  }
+}
+.disease .disease-list .more-disease .about-disease .top {
+  color: #282828;
+  font-weight: bold;
+}
+@media (min-width: 992px) {
+  .disease .disease-list .more-disease .about-disease .top {
+    float: left;
+    padding-right: 2%;
+    width: 18%;
+  }
+}
+.disease .disease-list .more-disease .about-disease .desc {
+  color: #282828;
+}
+@media (min-width: 992px) {
+  .disease .disease-list .more-disease .about-disease .desc {
+    float: left;
+    width: 82%;
+  }
+}
+.disease .disease-list .more-disease .unwrap-button {
+  margin-top: 20px;
+}
+@media (min-width: 992px) {
+  .disease .disease-list .more-disease .unwrap-button {
+    float: left;
+    width: 100%;
+  }
+}
+.disease .disease-list .more-disease .unwrap-button a {
+  background-color: #56a3b0;
+  color: #fff;
+  display: inline-block;
+  font-family: 'SolomonSans';
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 35px;
+  padding: 0 11px 0 14px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .disease .disease-list .more-disease .unwrap-button a {
+    float: right;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .disease .disease-list .more-disease .unwrap-button a {
+    width: 27%;
+  }
+}
+.disease .disease-list .more-disease .unwrap-button a i {
+  float: right;
+  font-weight: normal;
+  line-height: 35px;
+  margin-left: 1%;
+}
+.disease .disease-list .more-disease .unwrap-button a:hover {
+  text-decoration: none;
+}
 .exam {
   color: #282828;
   font-size: 19px;
