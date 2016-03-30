@@ -59,6 +59,22 @@
 			float: left;
 			margin: 0 0 8px 0;
 			width: 100%;
+			&:before {
+	            font-family: 'FontAwesome';
+	            color: @gray;
+	            float: right;
+	            content: '\f078';
+	            cursor: pointer;
+	            margin: 23px 20px 0 0;
+	        }
+			&.active {
+				&:before {
+					content: '\f077';
+				}
+				.disease-content {
+					display: block;
+				}
+			}
 			.name {
 				color: #000000;
 				cursor: pointer;
@@ -66,11 +82,16 @@
 				font-size: 24px;
 				font-family: 'PlayfairDisplay';
 				font-weight: bold;
+				line-height: 28px;
 				padding: 24px 2% 22px 3%;
+				@media (min-width: @screen-md-min) {
+					line-height: 22px;
+				}
 			}
 		}
 		.disease-content {
 			border-top: 1px solid #c9c9c9;
+			display: none;
 			float: left;
 			padding: 30px 0;
 			margin: 0 2% 0 3%;
@@ -89,6 +110,9 @@
 				border: none;
 				-webkit-box-shadow: unset;
 				box-shadow: unset;
+				&:before {
+					content: '';
+				}
 				a {
 					color: #000;
 					display: block;
@@ -130,7 +154,7 @@
 				    font-weight: bold;
 				    height: 30px;
 				    line-height: 33px;
-				    margin-right: 4px;
+				    margin-right: 13px;
 				    text-align: center;
 				    text-transform: uppercase;
 				    width: 30px;

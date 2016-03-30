@@ -10033,6 +10033,20 @@ hr {
   margin: 0 0 8px 0;
   width: 100%;
 }
+.disease .disease-list li:before {
+  font-family: 'FontAwesome';
+  color: #d1d1d1;
+  float: right;
+  content: '\f078';
+  cursor: pointer;
+  margin: 23px 20px 0 0;
+}
+.disease .disease-list li.active:before {
+  content: '\f077';
+}
+.disease .disease-list li.active .disease-content {
+  display: block;
+}
 .disease .disease-list li .name {
   color: #000000;
   cursor: pointer;
@@ -10040,10 +10054,17 @@ hr {
   font-size: 24px;
   font-family: 'PlayfairDisplay';
   font-weight: bold;
+  line-height: 28px;
   padding: 24px 2% 22px 3%;
+}
+@media (min-width: 992px) {
+  .disease .disease-list li .name {
+    line-height: 22px;
+  }
 }
 .disease .disease-list .disease-content {
   border-top: 1px solid #c9c9c9;
+  display: none;
   float: left;
   padding: 30px 0;
   margin: 0 2% 0 3%;
@@ -10065,6 +10086,9 @@ hr {
   border: none;
   -webkit-box-shadow: unset;
   box-shadow: unset;
+}
+.disease .disease-list .menu-disease li:before {
+  content: '';
 }
 .disease .disease-list .menu-disease li a {
   color: #000;
@@ -10109,7 +10133,7 @@ hr {
   font-weight: bold;
   height: 30px;
   line-height: 33px;
-  margin-right: 4px;
+  margin-right: 13px;
   text-align: center;
   text-transform: uppercase;
   width: 30px;
