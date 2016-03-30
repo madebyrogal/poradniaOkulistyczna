@@ -121,10 +121,39 @@
 				font-weight: normal;
 			}
 			.mode {
-				color: #e32629;
 				font-weight: bold;
 				font-size: 16px;
 				padding: 9px 0;
+				span {
+					color: #fff9fa;
+				    display: inline-block;
+				    font-weight: bold;
+				    height: 30px;
+				    line-height: 33px;
+				    margin-right: 4px;
+				    text-align: center;
+				    text-transform: uppercase;
+				    width: 30px;
+				    
+				}
+				&.type-A {
+					color: #ed1c24;
+					span {
+						background-color: #ed1c24;
+					}
+			    }
+			    &.type-B {
+			    	color: #fbbd09;
+			    	span {
+						background-color: #fbbd09;
+					}
+			    }
+			    &.type-C {
+			    	color: #3eb74d;
+			    	span {
+						background-color: #3eb74d;
+					}
+			    }
 			}
 			.picture {
 				img {

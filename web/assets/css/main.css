@@ -10089,10 +10089,38 @@ hr {
   font-weight: normal;
 }
 .disease .disease-list .more-disease .mode {
-  color: #e32629;
   font-weight: bold;
   font-size: 16px;
   padding: 9px 0;
+}
+.disease .disease-list .more-disease .mode span {
+  color: #fff9fa;
+  display: inline-block;
+  font-weight: bold;
+  height: 30px;
+  line-height: 33px;
+  margin-right: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 30px;
+}
+.disease .disease-list .more-disease .mode.type-A {
+  color: #ed1c24;
+}
+.disease .disease-list .more-disease .mode.type-A span {
+  background-color: #ed1c24;
+}
+.disease .disease-list .more-disease .mode.type-B {
+  color: #fbbd09;
+}
+.disease .disease-list .more-disease .mode.type-B span {
+  background-color: #fbbd09;
+}
+.disease .disease-list .more-disease .mode.type-C {
+  color: #3eb74d;
+}
+.disease .disease-list .more-disease .mode.type-C span {
+  background-color: #3eb74d;
 }
 .disease .disease-list .more-disease .picture img {
   margin: 0 auto 20px auto;
