@@ -9539,25 +9539,31 @@ hr {
 .list-box > li:last-child {
   margin-bottom: 47px;
 }
-.list-box > li:before {
+.list-box > li h2 {
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 26px;
+  margin: 0;
+}
+.list-box > li h2:before {
   font-family: 'FontAwesome';
   color: #d1d1d1;
   float: right;
   content: '\f078';
   cursor: pointer;
 }
-.list-box > li h2 {
-  font-size: 22px;
-  line-height: 26px;
-  margin: 0;
-}
 .list-box > li .content {
+  display: none;
   border-top: 1px solid #d1d1d1;
   padding-top: 25px;
   margin-top: 24px;
 }
 .list-box > li .content .border {
   margin-top: 30px;
+  display: none;
+}
+.list-box > li .content .border.active {
+  display: block;
 }
 @media (min-width: 768px) {
   .list-box > li .content .border {
@@ -9572,6 +9578,12 @@ hr {
   padding: 11px;
   background-color: #f3f3f3;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+.list-box > li .content .medicine-list li.active {
+  color: #61a7a7;
+  background-color: transparent;
+  font-weight: bold;
 }
 .list-box > li .content .medicine-list li:last-child {
   margin-bottom: 0;
