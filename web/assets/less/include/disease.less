@@ -82,7 +82,11 @@
 				font-size: 24px;
 				font-family: 'PlayfairDisplay';
 				font-weight: bold;
+				line-height: 28px;
 				padding: 24px 2% 22px 3%;
+				@media (min-width: @screen-md-min) {
+					line-height: 22px;
+				}
 			}
 		}
 		.disease-content {
@@ -106,6 +110,9 @@
 				border: none;
 				-webkit-box-shadow: unset;
 				box-shadow: unset;
+				&:before {
+					content: '';
+				}
 				a {
 					color: #000;
 					display: block;

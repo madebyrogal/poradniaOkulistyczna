@@ -10044,7 +10044,13 @@ hr {
   font-size: 24px;
   font-family: 'PlayfairDisplay';
   font-weight: bold;
+  line-height: 28px;
   padding: 24px 2% 22px 3%;
+}
+@media (min-width: 992px) {
+  .disease .disease-list li .name {
+    line-height: 22px;
+  }
 }
 .disease .disease-list .disease-content {
   border-top: 1px solid #c9c9c9;
@@ -10070,6 +10076,9 @@ hr {
   border: none;
   -webkit-box-shadow: unset;
   box-shadow: unset;
+}
+.disease .disease-list .menu-disease li:before {
+  content: '';
 }
 .disease .disease-list .menu-disease li a {
   color: #000;
