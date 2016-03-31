@@ -19,7 +19,7 @@
                                 <ul class="menu-disease">
                                     {% for disease in category.diseases %}
                                         <li {% if loop.first %}class="active" {% endif %} data-disease="disease-{{disease.id}}">{{disease.name}}</li>
-                                    {% endfor %}
+                                        {% endfor %}
                                 </ul>
                                 {% for disease in category.diseases %}
                                     <div class="more-disease disease-{{disease.id}} {% if loop.first %}active{% endif %}">
@@ -39,6 +39,16 @@
                                                 <p>{{disease.recommendation | raw}}</p>
                                             </div>
                                         </div>
+                                        {% if disease.comments %}
+                                            <div class="about-disease">
+                                                <div class="comments clearfix">
+                                                    <div class="desc">
+                                                        <b>Uwaga!</b><br/> 
+                                                        <p>{{disease.comments | raw}}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endif %}
                                         <!--<div class="unwrap-button">
                                                                         <a class="" title="" href="#">Zwiń zalecenia <i class="fa fa-chevron-up"></i></a>
                                                                     </div>-->

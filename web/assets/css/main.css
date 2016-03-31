@@ -10211,6 +10211,12 @@ hr {
     width: 82%;
   }
 }
+.disease .more-disease .about-disease .comments {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px #ed1c24 solid;
+}
 .disease .more-disease .unwrap-button {
   margin-top: 20px;
 }
