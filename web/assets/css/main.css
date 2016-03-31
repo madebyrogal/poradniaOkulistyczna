@@ -9303,7 +9303,6 @@ hr {
   margin-bottom: 30px;
 }
 .advertice aside {
-  display: inline-block;
   text-align: left;
 }
 .helpfull-info {
@@ -10269,8 +10268,11 @@ hr {
 .exam ul.dosage > li {
   position: relative;
   padding-left: 45px;
-  padding-bottom: 45px;
+  padding-bottom: 40px;
   border-left: 1px solid #cacaca;
+}
+.exam ul.dosage > li h2 {
+  line-height: 40px;
 }
 .exam ul.dosage > li:before {
   background: url('../images/circle.png') 0 0 no-repeat;
@@ -10289,15 +10291,23 @@ hr {
   margin: 0;
 }
 .exam ul.dosage .list {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .exam ul.dosage .list li {
-  margin-bottom: 15px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  .exam .right {
+    padding: 0;
+  }
 }
 .exam .list {
   list-style-type: none;
 }
 .exam .list li {
+  font-size: 20px;
+  line-height: 24px;
   position: relative;
   padding-left: 12px;
 }
@@ -10308,7 +10318,7 @@ hr {
 }
 .exam h1 {
   margin-top: 40px;
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 @media (min-width: 768px) {
   .exam h1 {
@@ -10318,15 +10328,15 @@ hr {
 .exam h2 {
   color: #fa5456;
   font-size: 24px;
-  line-height: 34px;
+  line-height: 30px;
   font-family: 'SolomonSans';
   margin: 0;
 }
 .exam h3 {
-  font-size: 19px;
-  line-height: 26px;
+  font-size: 20px;
+  line-height: 24px;
   font-family: 'SolomonSans';
-  margin: 10px 0 10px 0;
+  margin: 5px 0 8px 0;
 }
 .exam img {
   margin-bottom: 20px;
