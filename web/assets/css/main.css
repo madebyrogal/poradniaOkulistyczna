@@ -10059,20 +10059,6 @@ hr {
   margin: 0 0 20px 0;
   width: 100%;
 }
-.disease .disease-list > li:before {
-  font-family: 'FontAwesome';
-  color: #d1d1d1;
-  float: right;
-  content: '\f078';
-  cursor: pointer;
-  margin: 23px 20px 0 0;
-}
-.disease .disease-list > li.active:before {
-  content: '\f077';
-}
-.disease .disease-list > li.active .disease-content {
-  display: block;
-}
 .disease .disease-list > li .name {
   color: #000000;
   cursor: pointer;
@@ -10087,6 +10073,16 @@ hr {
   .disease .disease-list > li .name {
     line-height: 22px;
   }
+}
+.disease .disease-list > li .name:before {
+  font-family: 'FontAwesome';
+  color: #d1d1d1;
+  float: right;
+  content: '\f078';
+  cursor: pointer;
+}
+.disease .disease-list > li .name.active:before {
+  content: '\f077';
 }
 .disease .disease-list .disease-content {
   border-top: 1px solid #c9c9c9;

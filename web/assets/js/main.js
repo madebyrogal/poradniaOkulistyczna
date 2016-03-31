@@ -26,7 +26,7 @@ function toogleDisease(){
 //Toogle disease on disease page
 function disease() {
     $('.disease-list > li .name').click(function (e) {
-        $(this).next('.disease-content').slideToggle();
+        $(this).toggleClass('active').next('.disease-content').slideToggle();
     });
     
     $('.menu-disease li').click(function(){

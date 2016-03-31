@@ -58,22 +58,7 @@
             float: left;
             margin: 0 0 20px 0;
             width: 100%;
-            &:before {
-                font-family: 'FontAwesome';
-                color: @gray;
-                float: right;
-                content: '\f078';
-                cursor: pointer;
-                margin: 23px 20px 0 0;
-            }
-            &.active {
-                &:before {
-                    content: '\f077';
-                }
-                .disease-content {
-                    display: block;
-                }
-            }
+
             .name {
                 color: #000000;
                 cursor: pointer;
@@ -83,8 +68,23 @@
                 font-weight: bold;
                 line-height: 28px;
                 padding: 24px 2% 22px 3%;
+
                 @media (min-width: @screen-md-min) {
                     line-height: 22px;
+                }
+
+                &:before {
+                    font-family: 'FontAwesome';
+                    color: @gray;
+                    float: right;
+                    content: '\f078';
+                    cursor: pointer;
+                }
+
+                &.active{
+                    &:before {
+                        content: '\f077';
+                    }
                 }
             }
         }
@@ -129,11 +129,11 @@
         padding-left: 3%; 
         width: 100%;
         display: none;
-        
+
         &.active{
             display: block;
         }
-        
+
         @media (min-width: @screen-sm-min) {
             border-left: 1px solid #c9c9c9;
             width: 74%;
