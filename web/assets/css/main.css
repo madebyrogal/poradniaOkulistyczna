@@ -9323,9 +9323,11 @@ hr {
   padding-bottom: 15px;
 }
 .helpfull-info .help-box article {
+  border: 1px #d1d1d1 solid;
+}
+.helpfull-info .help-box article:hover {
   -webkit-box-shadow: 0px 5px 35px -13px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 5px 35px -13px rgba(0, 0, 0, 0.75);
-  border: 1px #d1d1d1 solid;
 }
 .helpfull-info .help-box article.disise .image {
   background-image: url('../images/oko.jpg');
