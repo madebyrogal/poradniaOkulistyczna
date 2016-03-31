@@ -10041,6 +10041,7 @@ hr {
 }
 .disease .disease-choice .adult {
   background: url('../images/search_adult.png') #dfdfdf 0 0 no-repeat;
+  border-left: 1px solid #cacaca;
 }
 .disease .disease-choice .adult a {
   padding-right: 14%;
