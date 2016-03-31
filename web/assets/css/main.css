@@ -9305,6 +9305,9 @@ hr {
 .advertice aside {
   text-align: left;
 }
+.advertice aside img {
+  margin: 0 auto;
+}
 .helpfull-info {
   margin-bottom: 30px;
 }
@@ -10008,12 +10011,22 @@ hr {
 .disease .disease-choice {
   list-style-type: none;
   margin: 0 auto 38px auto;
-  width: 470px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .disease .disease-choice {
+    width: 470px;
+  }
 }
 .disease .disease-choice li {
   float: left;
   height: 100px;
-  width: 235px;
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .disease .disease-choice li {
+    width: 235px;
+  }
 }
 .disease .disease-choice li.active {
   background-color: #40bcef;
@@ -10029,23 +10042,43 @@ hr {
   font-size: 18px;
   font-weight: normal;
   line-height: 100px;
+  text-align: center;
 }
 .disease .disease-choice li a:hover {
   text-decoration: none;
 }
 .disease .disease-choice .child {
-  background: url('../images/search_child.png') #dfdfdf 0 0 no-repeat;
+  background-color: #dfdfdf;
 }
-.disease .disease-choice .child a {
-  padding-left: 18%;
+@media (min-width: 768px) {
+  .disease .disease-choice .child {
+    background-image: url('../images/search_child.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 768px) {
+  .disease .disease-choice .child a {
+    padding-left: 18%;
+    text-align: left;
+  }
 }
 .disease .disease-choice .adult {
-  background: url('../images/search_adult.png') #dfdfdf 0 0 no-repeat;
+  background-color: #dfdfdf;
   border-left: 1px solid #cacaca;
 }
-.disease .disease-choice .adult a {
-  padding-right: 14%;
-  text-align: right;
+@media (min-width: 768px) {
+  .disease .disease-choice .adult {
+    background-image: url('../images/search_adult.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 768px) {
+  .disease .disease-choice .adult a {
+    padding-right: 14%;
+    text-align: right;
+  }
 }
 .disease .disease-list {
   list-style-type: none;
