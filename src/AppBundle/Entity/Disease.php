@@ -88,6 +88,20 @@ class Disease
      * @ORM\Column(name="picture3", type="string", length=255, nullable=true)
      */
     private $picture3;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="inFooter", type="boolean", nullable=true)
+     */
+    private $inFooter;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="positionInFooter", type="integer", nullable=true)
+     */
+    private $positionInFooter;
 
 
     /**
@@ -329,5 +343,51 @@ class Disease
     public function getPatient()
     {
         return $this->patient;
+    }
+
+    /**
+     * Set inFooter
+     *
+     * @param boolean $inFooter
+     * @return Disease
+     */
+    public function setInFooter($inFooter)
+    {
+        $this->inFooter = $inFooter;
+
+        return $this;
+    }
+
+    /**
+     * Get inFooter
+     *
+     * @return boolean 
+     */
+    public function getInFooter()
+    {
+        return $this->inFooter;
+    }
+
+    /**
+     * Set positionInFooter
+     *
+     * @param integer $positionInFooter
+     * @return Disease
+     */
+    public function setPositionInFooter($positionInFooter)
+    {
+        $this->positionInFooter = $positionInFooter;
+
+        return $this;
+    }
+
+    /**
+     * Get positionInFooter
+     *
+     * @return integer 
+     */
+    public function getPositionInFooter()
+    {
+        return $this->positionInFooter;
     }
 }

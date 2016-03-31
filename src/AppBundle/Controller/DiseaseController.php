@@ -18,5 +18,16 @@ class DiseaseController extends Controller
             'diseaseCategories' => $diseaseCategories
         ));
     }
+    
+    /**
+     * Generate footer disease
+     */
+    public function generateFooterDiseasesAction(){
+        $footerDiseases = $this->getDoctrine()->getRepository('AppBundle:Disease')->findBy(array('inFooter' => true), array('positionInFooter' => 'ASC'));
+        
+        return $this->render('AppBundle:Disease:_generateFooterDiseases.html.twig', array(
+            'footerDiseases' => $footerDiseases
+        ));
+    }
 
 }

@@ -1,18 +1,7 @@
 <footer>
     <div class="container-fluid bar-links">
         <div class="container links">
-            <ul>
-                <li><a href="#">Oparzenia chemiczne i termiczne</a></li>
-                <li><a href="#">Alergiczne zapalenie tkanek oczodołu</a></li>
-                <li><a href="#">Wirusowe zapalenie spojówek</a></li>
-                <li><a href="#">Bakteryjne zapalenie spojówek</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Alergiczne zapalenie spojówek</a></li>
-                <li><a href="#">Zespół suchego oka</a></li>
-                <li><a href="#">Zaburzenia drożności dróg łzowych</a></li>
-                <li><a href="#">Przewlekłe zapalenie brzegów powiek i spojówek</a></li>
-            </ul>
+            {{ render(controller('AppBundle:Disease:generateFooterDiseases')) }}
         </div>
     </div>
     <div class="container">

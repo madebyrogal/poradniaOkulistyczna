@@ -1,0 +1,10 @@
+<ul>
+    {% for i in 0..3 %}
+        <li class="footer-disease"><a href="{{path('disease')}}#disease-{{footerDiseases[i].id}}">{{footerDiseases[i].name}}</a></li>
+    {% endfor %}
+</ul>
+<ul>
+    {% for i in 4..7 %}
+        <li class="footer-disease"><a href="{{path('disease')}}#disease-{{footerDiseases[i].id}}">{{footerDiseases[i].name}}</a></li>
+    {% endfor %}
+</ul>
