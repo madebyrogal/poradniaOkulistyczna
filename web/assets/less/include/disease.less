@@ -11,11 +11,17 @@
     .disease-choice {
         list-style-type: none;
         margin: 0 auto 38px auto;
-        width: 470px;
+        width: 100%;
+        @media (min-width: @screen-sm-min) {
+            width: 470px;
+        }
         li {
             float: left;
             height: 100px;
-            width: 235px;
+            width: 50%;
+            @media (min-width: @screen-sm-min) {
+                width: 235px;
+            }
             &.active {
                 background-color: #40bcef;
                 a {
@@ -30,24 +36,41 @@
                 font-size: 18px;
                 font-weight: normal;
                 line-height: 100px;
+                text-align: center;
                 &:hover {
                     text-decoration: none;
                 }
             }
         }
         .child {
-            background: url('../images/search_child.png') #dfdfdf 0 0 no-repeat;
-            a {
-                padding-left: 18%;
+            background-color: #dfdfdf;
+            @media (min-width: @screen-sm-min) {
+                background-image: url('../images/search_child.png');
+                background-position: 0 0;
+                background-repeat:  no-repeat;
+            }
+            @media (min-width: @screen-sm-min) {
+                a {
+                    padding-left: 18%;
+                    text-align: left;
+                }
             }
         }
         .adult {
-            background: url('../images/search_adult.png') #dfdfdf 0 0 no-repeat;
+            background-color: #dfdfdf;
             border-left: 1px solid #cacaca;
-            a {
-                padding-right: 14%;
-                text-align: right;
+            @media (min-width: @screen-sm-min) {
+                background-image: url('../images/search_adult.png');
+                background-position: 0 0;
+                background-repeat:  no-repeat;
             }
+            a {
+                @media (min-width: @screen-sm-min) {
+                    padding-right: 14%;
+                    text-align: right;
+                }
+            }
+           
         }
     }
     .disease-list {
