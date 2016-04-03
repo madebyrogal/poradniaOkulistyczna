@@ -37,6 +37,12 @@ class DiseaseCategory
     private $hash;
     
     /**
+     * @ORM\ManyToOne(targetEntity="PatientCategory")
+     * @ORM\JoinColumn(name="patient_id", referencedColumnName="id")
+     */
+    private $patient;
+    
+    /**
      * @ORM\OneToMany(targetEntity="Disease", mappedBy="category")
      */
     private $diseases;
@@ -133,5 +139,28 @@ class DiseaseCategory
     public function getDiseases()
     {
         return $this->diseases;
+    }
+
+    /**
+     * Set patient
+     *
+     * @param \AppBundle\Entity\PatientCategory $patient
+     * @return DiseaseCategory
+     */
+    public function setPatient(\AppBundle\Entity\PatientCategory $patient = null)
+    {
+        $this->patient = $patient;
+
+        return $this;
+    }
+
+    /**
+     * Get patient
+     *
+     * @return \AppBundle\Entity\PatientCategory 
+     */
+    public function getPatient()
+    {
+        return $this->patient;
     }
 }
