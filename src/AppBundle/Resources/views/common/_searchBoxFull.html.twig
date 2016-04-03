@@ -10,9 +10,12 @@
                 <label class="nice" for="search-box-patient-adult">Dorosły</label>
             </div>
         </div>
-        <div class="form-box secend">
+        <div class="form-box secend symptomsInput">
             <label>Wpisz typowy objaw</label>
-            <input type="text" name="search[search]" value="{{search.search}}"/> 
+            <input id="symptom" type="text" name="search[search]" autocomplete="off" value="{{search.search}}"/>
+            <div class="symptomsAutoComplete">
+                <ul></ul>
+            </div>
         </div>
         <div class="form-box">
             <label class="text-center">lub</label>
@@ -24,5 +27,6 @@
         <div class="form-box text-center">
             <input type="submit" class="submit" value="Sprawdź wytyczne" /> 
         </div>
+        <input id="symptomURL" type="hidden" value="{{path('symptoms-search')}}" />
     </form>
 </aside>

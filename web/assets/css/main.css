@@ -9425,6 +9425,28 @@ hr {
     text-align: left;
   }
 }
+.search-box .symptomsInput {
+  position: relative;
+}
+.search-box .symptomsInput .symptomsAutoComplete {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  max-height: 190px;
+  overflow: auto;
+  z-index: 1;
+}
+.search-box .symptomsInput .symptomsAutoComplete ul {
+  list-style-type: none;
+  background-color: #fff;
+}
+.search-box .symptomsInput .symptomsAutoComplete ul li {
+  color: #282828;
+  text-align: left;
+  padding: 2px 5px;
+  cursor: pointer;
+}
 .search-box .form-box {
   margin-bottom: 25px;
   text-align: center;

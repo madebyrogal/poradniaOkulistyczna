@@ -147,6 +147,32 @@
             text-align: left;
         }
     }
+    
+    .symptomsInput{
+        position: relative;
+        
+        .symptomsAutoComplete{
+            position: absolute;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            max-height: 190px;
+            overflow: auto;
+            z-index: 1;
+            
+            ul{
+                list-style-type: none;
+                background-color: #fff;
+                
+                li{
+                    color: @black;
+                    text-align: left;
+                    padding: 2px 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 
     .form-box{
         margin-bottom: 25px;

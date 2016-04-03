@@ -5,11 +5,53 @@ $(document).ready(function () {
     toogleMedicine();
     openDiseaseFromLocation();
     clikOnFooterDisease();
+    searchAutoComplet();
 });
 
 $(window).resize(function () {
     
 });
+
+function searchAutoComplet(){
+    //Autocomplete
+    $('#symptom').keyup(function(){
+        var url = $('#symptomURL').val();
+        var data = {
+            'symptom': $(this).val()
+        };
+        $.ajax({
+            url: url,
+            data: data,
+            type: 'GET',
+            success: function(response){
+                var symptoms = response;
+                var ulCon = $('.symptomsAutoComplete ul');
+                $(ulCon).html('');
+                symptoms.forEach(function(elem){
+                    $(ulCon).append($('<li>').html(elem.name));
+                });
+                if(symptoms.length){
+                    ulCon.show();
+                } else {
+                    ulCon.hide();
+                }
+            }
+        });
+    });
+    
+    //Select autocomplete word
+    $('.symptomsAutoComplete ul').on('click', 'li', function(){
+        var symptom = $(this).html();
+        $('#symptom').val(symptom);
+        $('.symptomsAutoComplete ul').hide();
+    });
+    
+    $('#symptom').focusout(function(){
+        setTimeout(function(){
+            $('.symptomsAutoComplete ul').hide()
+        }, 200);
+    });
+}
 
 function toogleMenu() {
     $('#mobile-menu').on('click', function () {
