@@ -27,7 +27,7 @@
 
         article{
             border: 1px @gray solid;
-            
+
             &:hover{
                 .box-shadow(0px 5px 35px -13px rgba(0,0,0,0.75));
             }
@@ -121,9 +121,10 @@
 
     &.search-banner{
         background-image: url('../../assets/images/banner.jpg');
-        
+
         @media(min-width: @screen-sm-min){
             background-image: url('../../assets/images/banner_tight.jpg');
+            background-position: 60% 50%;
             height: 180px;
         }
     }
@@ -141,10 +142,77 @@
     @media(min-width: @screen-sm-min){
         padding: 33px 38px 0 38px;
         margin-top: 30px;
-        
+
         &.search-result{
+            padding: 25px 19px 0 19px;
             margin-top: 74px;
             margin-bottom: 30px;
+            height: 360px;
+            
+            @media(min-width: @screen-lg-min){
+                height: 273px;
+            }
+
+            h2{
+                text-align: center;
+                margin-bottom: 18px;
+            }
+
+            .form-box{
+                
+                &.patient{
+                    text-align: center;
+                    label{
+                        text-align: center;
+                    }
+                    
+                    @media(min-width: @screen-lg-min){
+                        display: inline-block;
+                    }
+                }
+
+                &.symptoms-input{
+                    display: inline-block;
+                    width: 45%;
+                    position: relative;
+                    
+                    @media(min-width: @screen-lg-min){
+                        width: 35%;
+                    }
+                    
+                    label{
+                        text-align: center;
+                    }
+                }
+
+                &.diseases-list{
+                    display: inline-block;
+                    width: 45%;
+                    margin-left: 9%;
+                    position: relative;
+                    
+                    @media(min-width: @screen-lg-min){
+                        width: 35%;
+                    }
+
+                    label{
+                        text-align: center;
+                        
+                        &.text-or{
+                            position: absolute;
+                            top: 40px;
+                            left: -14%;
+                            z-index: 1;
+                        }
+                    }
+                }
+                
+                .submit{
+                    @media(min-width: @screen-sm-min){
+                        width: 262px;
+                    }
+                }
+            }
         }
     }
 
@@ -157,10 +225,10 @@
             text-align: left;
         }
     }
-    
-    .symptomsInput{
+
+    .symptoms-input{
         position: relative;
-        
+
         .symptomsAutoComplete{
             position: absolute;
             top: 70px;
@@ -169,11 +237,11 @@
             max-height: 190px;
             overflow: auto;
             z-index: 1;
-            
+
             ul{
                 list-style-type: none;
                 background-color: #fff;
-                
+
                 li{
                     color: @black;
                     text-align: left;

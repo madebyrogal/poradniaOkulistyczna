@@ -1,7 +1,7 @@
 <aside class="search-box search-result">
     <form action="{{path('search')}}" method="GET">
         <h2>Sprawdź zalecenia terapeutyczne</h2>
-        <div class="form-box clearfix">
+        <div class="form-box clearfix patient">
             <label>Pacjent</label>
             <div class="nice-radio clearfix">
                 <input type="radio" id="search-box-patient-child" name="search[patient]" class="change-option" {%if (search.patient==1)%}checked="checked"{%endif%} value="1"/>
@@ -10,15 +10,15 @@
                 <label class="nice" for="search-box-patient-adult">Dorosły</label>
             </div>
         </div>
-        <div class="form-box secend symptomsInput">
+        <div class="form-box secend symptoms-input">
             <label>Wpisz typowy objaw</label>
             <input id="symptom" type="text" name="search[search]" autocomplete="off" value="{{search.search}}"/>
             <div class="symptomsAutoComplete">
                 <ul></ul>
             </div>
         </div>
-        <div class="form-box">
-            <label class="text-center">lub</label>
+        <div class="form-box diseases-list">
+            <label class="text-center text-or">lub</label>
             <label>Wybierz schorzenie z listy</label>
             <select name="search[disease]" id="select-disease">
                 {{ render(controller('AppBundle:Search:renderOptionSearch',{'diseaseId': search.disease, 'patientId' : search.patient})) }}

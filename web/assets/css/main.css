@@ -9403,6 +9403,7 @@ hr {
 @media (min-width: 768px) {
   .head-banner.search-banner {
     background-image: url('../../assets/images/banner_tight.jpg');
+    background-position: 60% 50%;
     height: 180px;
   }
 }
@@ -9422,8 +9423,68 @@ hr {
     margin-top: 30px;
   }
   .search-box.search-result {
+    padding: 25px 19px 0 19px;
     margin-top: 74px;
     margin-bottom: 30px;
+    height: 360px;
+  }
+  .search-box.search-result h2 {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .search-box.search-result .form-box.patient {
+    text-align: center;
+  }
+  .search-box.search-result .form-box.patient label {
+    text-align: center;
+  }
+  .search-box.search-result .form-box.symptoms-input {
+    display: inline-block;
+    width: 45%;
+    position: relative;
+  }
+  .search-box.search-result .form-box.symptoms-input label {
+    text-align: center;
+  }
+  .search-box.search-result .form-box.diseases-list {
+    display: inline-block;
+    width: 45%;
+    margin-left: 9%;
+    position: relative;
+  }
+  .search-box.search-result .form-box.diseases-list label {
+    text-align: center;
+  }
+  .search-box.search-result .form-box.diseases-list label.text-or {
+    position: absolute;
+    top: 40px;
+    left: -14%;
+    z-index: 1;
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .search-box.search-result {
+    height: 273px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .search-box.search-result .form-box.patient {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .search-box.search-result .form-box.symptoms-input {
+    width: 35%;
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .search-box.search-result .form-box.diseases-list {
+    width: 35%;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .search-box.search-result .form-box .submit {
+    width: 262px;
   }
 }
 .search-box h2 {
@@ -9436,10 +9497,10 @@ hr {
     text-align: left;
   }
 }
-.search-box .symptomsInput {
+.search-box .symptoms-input {
   position: relative;
 }
-.search-box .symptomsInput .symptomsAutoComplete {
+.search-box .symptoms-input .symptomsAutoComplete {
   position: absolute;
   top: 70px;
   left: 0;
@@ -9448,11 +9509,11 @@ hr {
   overflow: auto;
   z-index: 1;
 }
-.search-box .symptomsInput .symptomsAutoComplete ul {
+.search-box .symptoms-input .symptomsAutoComplete ul {
   list-style-type: none;
   background-color: #fff;
 }
-.search-box .symptomsInput .symptomsAutoComplete ul li {
+.search-box .symptoms-input .symptomsAutoComplete ul li {
   color: #282828;
   text-align: left;
   padding: 2px 5px;
