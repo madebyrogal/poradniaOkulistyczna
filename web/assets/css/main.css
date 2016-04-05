@@ -8913,8 +8913,8 @@ label {
   margin: 0;
 }
 header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 17px;
+  padding-bottom: 16px;
   -webkit-box-shadow: 0 6px 13px 8px #e4e4e4;
   box-shadow: 0 6px 13px 8px #e4e4e4;
 }
@@ -8949,6 +8949,7 @@ header #menu.in nav ul li {
 }
 header #menu nav {
   font-family: 'SolomonSans';
+  font-size: 16px;
   font-weight: bold;
   float: right;
   margin-top: 10px;
@@ -9365,7 +9366,7 @@ hr {
 .helpfull-info .help-box article .content p {
   font-size: 15px;
   line-height: 22px;
-  color: #8498a3;
+  color: #4c6472;
 }
 .helpfull-info .help-box article .content .read-more {
   float: right;
@@ -9390,7 +9391,7 @@ hr {
   .head-banner {
     background-position: 35% 50%;
     height: 585px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 }
 .head-banner.home-banner {
@@ -9633,6 +9634,9 @@ hr {
   .home .content-row .content {
     text-align: justify;
   }
+}
+.home .container p {
+  color: #282828;
 }
 .medicine h1 {
   color: #282828;
