@@ -9260,7 +9260,7 @@ h5 {
   color: #282828;
 }
 hr {
-  border-top: 1px solid #d1d1d1;
+  border-top: 1px solid #cecece;
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -9304,6 +9304,8 @@ hr {
   margin-bottom: 30px;
 }
 .advertice aside {
+  color: #4c6472;
+  font-size: 16px;
   text-align: left;
 }
 .advertice aside img {
@@ -9619,7 +9621,7 @@ hr {
   color: #fa5456;
 }
 .home .content-row {
-  margin-bottom: 40px;
+  margin-bottom: 22px;
 }
 @media (min-width: 992px) {
   .home .content-row {
