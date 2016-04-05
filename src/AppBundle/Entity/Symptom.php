@@ -27,6 +27,13 @@ class Symptom
      * @ORM\Column(name="name", type="string", length=255)
      */
     private $name;
+    
+     /**
+     * @var string
+     *
+     * @ORM\Column(name="patient_id", type="integer")
+     */
+    private $patient;
 
 
     /**
@@ -60,5 +67,28 @@ class Symptom
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * Set patient
+     *
+     * @param integer $patient
+     * @return Symptom
+     */
+    public function setPatient($patient)
+    {
+        $this->patient = $patient;
+
+        return $this;
+    }
+
+    /**
+     * Get patient
+     *
+     * @return integer 
+     */
+    public function getPatient()
+    {
+        return $this->patient;
     }
 }

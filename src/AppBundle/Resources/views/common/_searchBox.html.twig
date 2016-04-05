@@ -4,9 +4,9 @@
         <div class="form-box clearfix">
             <label>Pacjent</label>
             <div class="nice-radio clearfix">
-                <input type="radio" id="search-box-patient-child" name="search[patient]" value="1"/>
+                <input type="radio" id="search-box-patient-child" name="search[patient]" class="change-option" checked="checked" value="1"/>
                 <label class="nice" for="search-box-patient-child">Dziecko</label>
-                <input type="radio" id="search-box-patient-adult" name="search[patient]" value="2"/>
+                <input type="radio" id="search-box-patient-adult" name="search[patient]" class="change-option" value="2"/>
                 <label class="nice" for="search-box-patient-adult">Dorosły</label>
             </div>
         </div>
@@ -20,7 +20,7 @@
         <div class="form-box">
             <label class="text-center">lub</label>
             <label>Wybierz schorzenie z listy</label>
-            <select name="search[disease]">
+            <select name="search[disease]" id="select-disease">
                 {{ render(controller('AppBundle:Search:renderOptionSearch')) }}
             </select>
         </div>
@@ -28,5 +28,6 @@
             <input type="submit" class="submit" value="Sprawdź wytyczne" /> 
         </div>
         <input id="symptomURL" type="hidden" value="{{path('symptoms-search')}}" />
+        <input id="diseaseOptionURL" type="hidden" value="{{path('disease-change')}}" />
     </form>
 </aside>

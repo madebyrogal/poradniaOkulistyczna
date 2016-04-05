@@ -9,8 +9,8 @@
                 <div class="col-xs-12">
                     <h1>Wybierz pacjenta</h1>
                     <ul class="disease-choice clearfix">
-                        <li class="child {%if (patientID == 1)%}active{%endif%}"><a title="" href="{{path('disease-patient', {'patient': 'dziecko'})}}">Dziecko</a></li>
-                        <li class="adult {%if (patientID == 2)%}active{%endif%}"><a title="" href="{{path('disease-patient', {'patient': 'dorosly'})}}">Dorosły</a></li>
+                        <li class="child {%if (patientID == 1)%}active{%endif%}"><a title="" href="{{path('disease', {'patient': 'dziecko'})}}">Dziecko</a></li>
+                        <li class="adult {%if (patientID == 2)%}active{%endif%}"><a title="" href="{{path('disease', {'patient': 'dorosly'})}}">Dorosły</a></li>
                     </ul>
                     <ul class="disease-list clearfix">
                         {% for category in diseaseCategories %}
@@ -18,19 +18,12 @@
                                 <span class="name">{{category.name}}</span>
                                 <div class="disease-content">
                                     <ul class="menu-disease">
-                                        {% set active = true %}
                                         {% for disease in category.diseases %}
-                                            {% if (patientID == 3 or (patientID == disease.patient.id or disease.patient.id == 3)) %}
-                                                <li {% if active %}class="active" {% endif %} data-disease="disease-{{disease.id}}">{{disease.name}}</li>
-                                                {% set active = false %}
-                                            {% endif %}
+                                            <li {% if loop.first %}class="active" {% endif %} data-disease="disease-{{disease.id}}">{{disease.name}}</li>
                                         {% endfor %}
                                     </ul>
-                                    {% set active = true %}
                                     {% for disease in category.diseases %}
-                                        {% if (patientID == 3 or (patientID == disease.patient.id or disease.patient.id == 3)) %}
-                                        <div class="more-disease disease-{{disease.id}} {% if active %}active{% endif %}">
-                                            {% set active = false %}
+                                        <div class="more-disease disease-{{disease.id}} {% if loop.first %}active{% endif %}">
                                             <div class="mode type-{{disease.type | default('A')}}"><span>{{disease.type}}</span>{{disease.type | writeType}}</div>
                                             <div class="picture">
                                                 {% if disease.picture1 %}<img class="img-responsive" alt="" src="{{asset(disease.picture1)}}"/>{% endif %}
@@ -61,7 +54,6 @@
                                                                             <a class="" title="" href="#">Zwiń zalecenia <i class="fa fa-chevron-up"></i></a>
                                                                         </div>-->
                                         </div>
-                                        {% endif %}
                                     {% endfor %}
                                 </div>
                             </li>

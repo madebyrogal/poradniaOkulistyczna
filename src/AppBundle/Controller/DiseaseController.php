@@ -10,38 +10,24 @@ class DiseaseController extends Controller
 
     const DISEASE_CHILD = 1;
     const DISEASE_ADULT = 2;
-    const DISEASE_ALL = 3;
 
     /**
-     * @Route("schorzenie.html", name="disease")
+     * @Route("schorzenie/{patient}.html", name="disease", defaults={"patient" = "dziecko"})
      */
-    public function indexAction()
-    {
-        $diseaseCategories = $this->getDoctrine()->getRepository('AppBundle:DiseaseCategory')->findAll();
-
-        return $this->render('AppBundle:Disease:index.html.twig', array(
-                    'diseaseCategories' => $diseaseCategories,
-                    'patientID' => 3
-        ));
-    }
-
-    /**
-     * @Route("schorzenie/{patient}.html", name="disease-patient")
-     */
-    public function patientAction($patient)
+    public function indexAction($patient)
     {
         switch ($patient) {
             case 'dziecko':
-                $diseaseCategories = $this->getDoctrine()->getRepository('AppBundle:DiseaseCategory')->findBy(array('patient' => [self::DISEASE_CHILD, self::DISEASE_ALL]));
+                $diseaseCategories = $this->getDoctrine()->getRepository('AppBundle:DiseaseCategory')->findBy(array('patient' => self::DISEASE_CHILD));
                 $patientID = self::DISEASE_CHILD;
                 break;
             case 'dorosly':
-                $diseaseCategories = $this->getDoctrine()->getRepository('AppBundle:DiseaseCategory')->findBy(array('patient' => [self::DISEASE_ADULT, self::DISEASE_ALL]));
+                $diseaseCategories = $this->getDoctrine()->getRepository('AppBundle:DiseaseCategory')->findBy(array('patient' => self::DISEASE_ADULT));
                 $patientID = self::DISEASE_ADULT;
                 break;
             default :
-                $diseaseCategories = $this->getDoctrine()->getRepository('AppBundle:DiseaseCategory')->findAll();
-                $patientID = 3;
+                $diseaseCategories = $this->getDoctrine()->getRepository('AppBundle:DiseaseCategory')->findBy(array('patient' => self::DISEASE_CHILD));
+                $patientID = self::DISEASE_CHILD;
                 break;
         }
 

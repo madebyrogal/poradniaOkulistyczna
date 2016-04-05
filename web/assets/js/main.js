@@ -6,18 +6,44 @@ $(document).ready(function () {
     openDiseaseFromLocation();
     clikOnFooterDisease();
     searchAutoComplet();
+    changeOptionDisease();
 });
 
 $(window).resize(function () {
     
 });
 
+//Change option in select disease after change patient type
+function changeOptionDisease(){
+    $('.change-option').change(function(){
+        var url = $('#diseaseOptionURL').val();
+        var data = {
+            'patient': $(this).val()
+        };
+        $.ajax({
+            url: url,
+            data: data,
+            type: 'GET',
+            success: function(response){
+                var diseases = response;
+                var select = $('#select-disease');
+                $(select).html('');
+                $(select).append($('<option>').html('').val(''));
+                diseases.forEach(function(elem){
+                    $(select).append($('<option>').html(elem.name).val(elem.id));
+                });
+            }
+        });
+    });
+}
+
 function searchAutoComplet(){
     //Autocomplete
     $('#symptom').keyup(function(){
         var url = $('#symptomURL').val();
         var data = {
-            'symptom': $(this).val()
+            'symptom': $(this).val(),
+            'patient': $(".nice-radio input[type='radio']:checked").val()
         };
         $.ajax({
             url: url,
