@@ -8989,12 +8989,12 @@ footer .bar-links {
   font-size: 13px;
   padding-top: 18px;
   padding-bottom: 18px;
-  background-color: #4d6472;
+  background-color: #4c6472;
   color: #fff9fa;
 }
 @media (min-width: 768px) {
   footer .bar-links {
-    font-size: 16px;
+    font-size: 17px;
     padding-top: 45px;
     padding-bottom: 45px;
   }
@@ -9012,6 +9012,9 @@ footer .bar-links .links {
 footer .bar-links .links ul {
   margin-top: 0px;
 }
+footer .bar-links .links ul.second li {
+  padding-right: 10px;
+}
 @media (min-width: 768px) {
   footer .bar-links .links ul {
     margin-top: 10px;
@@ -9025,9 +9028,9 @@ footer .bar-links .links ul li {
 }
 @media (min-width: 768px) {
   footer .bar-links .links ul li {
-    border-right: 1px #fff9fa solid;
-    padding-left: 20px;
-    padding-right: 20px;
+    border-right: 1px #cacaca solid;
+    padding-left: 12px;
+    padding-right: 14px;
     text-align: right;
   }
 }
@@ -9039,7 +9042,7 @@ footer .bar-links .links ul li:last-child {
   border-right: none;
 }
 footer .bar-links .links ul li a {
-  color: #fff9fa;
+  color: #282828;
 }
 footer nav {
   text-align: center;
@@ -9067,6 +9070,7 @@ footer nav ul li:last-child {
 }
 footer nav ul li a {
   font-weight: bold;
+  font-size: 18px;
   color: #282828;
 }
 footer nav ul li a:hover,
@@ -9083,6 +9087,11 @@ footer .ext-menu {
 @media (min-width: 768px) {
   footer .ext-menu {
     text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  footer .ext-menu {
+    float: left;
   }
 }
 footer .ext-menu li {
@@ -9124,13 +9133,26 @@ footer .ext-menu li:last-child {
   margin-right: 0;
 }
 footer .ext-menu li a {
-  color: #8498a3;
-  font-size: 12px;
+  color: #4c6472;
+  font-size: 13px;
 }
 footer .ext-menu li a:hover,
 footer .ext-menu li a:active,
 footer .ext-menu li a:focus {
-  color: #8498a3;
+  color: #4c6472;
+}
+footer .copywrite {
+  color: #cacaca;
+  font-family: 'SolomonSans';
+  font-size: 13px;
+  margin-top: 0;
+  padding-bottom: 30px;
+}
+@media (min-width: 992px) {
+  footer .copywrite {
+    float: right;
+    margin-top: 30px;
+  }
 }
 .loginForm {
   margin-top: 50px;
