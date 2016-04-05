@@ -10075,6 +10075,7 @@ hr {
   }
 }
 .disease .disease-choice li {
+  background: #dfdfdf;
   float: left;
   height: 100px;
   width: 50%;
@@ -10085,7 +10086,9 @@ hr {
   }
 }
 .disease .disease-choice li.active {
-  background-color: #40bcef;
+  background: none;
+  -webkit-box-shadow: inset 0 0 96px 14px #40bcef;
+  box-shadow: inset 0 0 96px 14px #40bcef;
 }
 .disease .disease-choice li.active a {
   color: #fff;
@@ -10103,18 +10106,11 @@ hr {
 .disease .disease-choice li a:hover {
   text-decoration: none;
 }
-.disease .disease-choice .child {
-  background-color: #dfdfdf;
-}
 @media (min-width: 768px) {
-  .disease .disease-choice .child {
+  .disease .disease-choice .child a {
     background-image: url('../images/search_child.png');
     background-position: 0 0;
     background-repeat: no-repeat;
-  }
-}
-@media (min-width: 768px) {
-  .disease .disease-choice .child a {
     padding-left: 18%;
     text-align: left;
   }
@@ -10124,14 +10120,10 @@ hr {
   border-left: 1px solid #cacaca;
 }
 @media (min-width: 768px) {
-  .disease .disease-choice .adult {
+  .disease .disease-choice .adult a {
     background-image: url('../images/search_adult.png');
     background-position: 0 0;
     background-repeat: no-repeat;
-  }
-}
-@media (min-width: 768px) {
-  .disease .disease-choice .adult a {
     padding-right: 14%;
     text-align: right;
   }
@@ -10145,7 +10137,7 @@ hr {
   -webkit-box-shadow: 0px 5px 35px -13px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 5px 35px -13px rgba(0, 0, 0, 0.75);
   float: left;
-  margin: 0 0 20px 0;
+  margin: 0 0 8px 0;
   width: 100%;
 }
 .disease .disease-list > li .name {
