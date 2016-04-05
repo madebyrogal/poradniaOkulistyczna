@@ -8989,12 +8989,12 @@ footer .bar-links {
   font-size: 13px;
   padding-top: 18px;
   padding-bottom: 18px;
-  background-color: #4d6472;
+  background-color: #4c6472;
   color: #fff9fa;
 }
 @media (min-width: 768px) {
   footer .bar-links {
-    font-size: 16px;
+    font-size: 17px;
     padding-top: 45px;
     padding-bottom: 45px;
   }
@@ -9012,6 +9012,9 @@ footer .bar-links .links {
 footer .bar-links .links ul {
   margin-top: 0px;
 }
+footer .bar-links .links ul.second li {
+  padding-right: 10px;
+}
 @media (min-width: 768px) {
   footer .bar-links .links ul {
     margin-top: 10px;
@@ -9025,9 +9028,9 @@ footer .bar-links .links ul li {
 }
 @media (min-width: 768px) {
   footer .bar-links .links ul li {
-    border-right: 1px #fff9fa solid;
-    padding-left: 20px;
-    padding-right: 20px;
+    border-right: 1px #cacaca solid;
+    padding-left: 12px;
+    padding-right: 14px;
     text-align: right;
   }
 }
@@ -9039,7 +9042,7 @@ footer .bar-links .links ul li:last-child {
   border-right: none;
 }
 footer .bar-links .links ul li a {
-  color: #fff9fa;
+  color: #282828;
 }
 footer nav {
   text-align: center;
@@ -9067,6 +9070,7 @@ footer nav ul li:last-child {
 }
 footer nav ul li a {
   font-weight: bold;
+  font-size: 18px;
   color: #282828;
 }
 footer nav ul li a:hover,
@@ -9083,6 +9087,11 @@ footer .ext-menu {
 @media (min-width: 768px) {
   footer .ext-menu {
     text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  footer .ext-menu {
+    float: left;
   }
 }
 footer .ext-menu li {
@@ -9124,13 +9133,26 @@ footer .ext-menu li:last-child {
   margin-right: 0;
 }
 footer .ext-menu li a {
-  color: #8498a3;
-  font-size: 12px;
+  color: #4c6472;
+  font-size: 13px;
 }
 footer .ext-menu li a:hover,
 footer .ext-menu li a:active,
 footer .ext-menu li a:focus {
-  color: #8498a3;
+  color: #4c6472;
+}
+footer .copywrite {
+  color: #cacaca;
+  font-family: 'SolomonSans';
+  font-size: 13px;
+  margin-top: 0;
+  padding-bottom: 30px;
+}
+@media (min-width: 992px) {
+  footer .copywrite {
+    float: right;
+    margin-top: 30px;
+  }
 }
 .loginForm {
   margin-top: 50px;
@@ -9260,7 +9282,7 @@ h5 {
   color: #282828;
 }
 hr {
-  border-top: 1px solid #d1d1d1;
+  border-top: 1px solid #cecece;
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -9301,9 +9323,11 @@ hr {
 }
 .advertice {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .advertice aside {
+  color: #4c6472;
+  font-size: 16px;
   text-align: left;
 }
 .advertice aside img {
@@ -9315,7 +9339,7 @@ hr {
 .helpfull-info h2 {
   color: #282828;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   margin-top: 0;
   line-height: 40px;
 }
@@ -9350,6 +9374,9 @@ hr {
     padding: 25px 30px 30px 25px;
   }
 }
+.helpfull-info .help-box article .content a:hover {
+  text-decoration: none;
+}
 .helpfull-info .help-box article .content h3 {
   font-family: 'Playfair Display';
   font-size: 36px;
@@ -9364,11 +9391,12 @@ hr {
   }
 }
 .helpfull-info .help-box article .content p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
   color: #4c6472;
 }
 .helpfull-info .help-box article .content .read-more {
+  font-family: 'SolomonSans-SemiBold';
   float: right;
   font-size: 15px;
   line-height: 22px;
@@ -9690,7 +9718,7 @@ hr {
   color: #fa5456;
 }
 .home .content-row {
-  margin-bottom: 40px;
+  margin-bottom: 22px;
 }
 @media (min-width: 992px) {
   .home .content-row {
@@ -10118,6 +10146,7 @@ hr {
   }
 }
 .disease .disease-choice li {
+  background: #dfdfdf;
   float: left;
   height: 100px;
   width: 50%;
@@ -10128,7 +10157,9 @@ hr {
   }
 }
 .disease .disease-choice li.active {
-  background-color: #40bcef;
+  background: none;
+  -webkit-box-shadow: inset 0 0 96px 14px #40bcef;
+  box-shadow: inset 0 0 96px 14px #40bcef;
 }
 .disease .disease-choice li.active a {
   color: #fff;
@@ -10146,18 +10177,11 @@ hr {
 .disease .disease-choice li a:hover {
   text-decoration: none;
 }
-.disease .disease-choice .child {
-  background-color: #dfdfdf;
-}
 @media (min-width: 768px) {
-  .disease .disease-choice .child {
+  .disease .disease-choice .child a {
     background-image: url('../images/search_child.png');
     background-position: 0 0;
     background-repeat: no-repeat;
-  }
-}
-@media (min-width: 768px) {
-  .disease .disease-choice .child a {
     padding-left: 18%;
     text-align: left;
   }
@@ -10167,14 +10191,10 @@ hr {
   border-left: 1px solid #cacaca;
 }
 @media (min-width: 768px) {
-  .disease .disease-choice .adult {
+  .disease .disease-choice .adult a {
     background-image: url('../images/search_adult.png');
     background-position: 0 0;
     background-repeat: no-repeat;
-  }
-}
-@media (min-width: 768px) {
-  .disease .disease-choice .adult a {
     padding-right: 14%;
     text-align: right;
   }
@@ -10188,7 +10208,7 @@ hr {
   -webkit-box-shadow: 0px 5px 35px -13px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 5px 35px -13px rgba(0, 0, 0, 0.75);
   float: left;
-  margin: 0 0 20px 0;
+  margin: 0 0 8px 0;
   width: 100%;
 }
 .disease .disease-list > li .name {
