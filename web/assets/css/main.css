@@ -9399,6 +9399,12 @@ hr {
 .head-banner.search-banner {
   background-image: url('../../assets/images/banner.jpg');
 }
+@media (min-width: 768px) {
+  .head-banner.search-banner {
+    background-image: url('../../assets/images/banner_tight.jpg');
+    height: 180px;
+  }
+}
 .search-box {
   padding: 23px 14px 15px 14px;
   margin-top: 70px;
@@ -9413,6 +9419,10 @@ hr {
   .search-box {
     padding: 33px 38px 0 38px;
     margin-top: 30px;
+  }
+  .search-box.search-result {
+    margin-top: 74px;
+    margin-bottom: 30px;
   }
 }
 .search-box h2 {

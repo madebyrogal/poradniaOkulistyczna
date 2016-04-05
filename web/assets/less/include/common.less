@@ -121,6 +121,11 @@
 
     &.search-banner{
         background-image: url('../../assets/images/banner.jpg');
+        
+        @media(min-width: @screen-sm-min){
+            background-image: url('../../assets/images/banner_tight.jpg');
+            height: 180px;
+        }
     }
 }
 
@@ -136,6 +141,11 @@
     @media(min-width: @screen-sm-min){
         padding: 33px 38px 0 38px;
         margin-top: 30px;
+        
+        &.search-result{
+            margin-top: 74px;
+            margin-bottom: 30px;
+        }
     }
 
     h2{
