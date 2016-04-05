@@ -9301,7 +9301,7 @@ hr {
 }
 .advertice {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .advertice aside {
   color: #4c6472;
@@ -9317,7 +9317,7 @@ hr {
 .helpfull-info h2 {
   color: #282828;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   margin-top: 0;
   line-height: 40px;
 }
@@ -9352,6 +9352,9 @@ hr {
     padding: 25px 30px 30px 25px;
   }
 }
+.helpfull-info .help-box article .content a:hover {
+  text-decoration: none;
+}
 .helpfull-info .help-box article .content h3 {
   font-family: 'Playfair Display';
   font-size: 36px;
@@ -9366,11 +9369,12 @@ hr {
   }
 }
 .helpfull-info .help-box article .content p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
   color: #4c6472;
 }
 .helpfull-info .help-box article .content .read-more {
+  font-family: 'SolomonSans-SemiBold';
   float: right;
   font-size: 15px;
   line-height: 22px;
