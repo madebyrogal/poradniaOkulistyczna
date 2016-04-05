@@ -174,7 +174,9 @@
                     }
                     
                     @media(min-width: @screen-lg-min){
-                        display: inline-block;
+                        float: left;
+                        margin-right: 9%;
+                        margin-bottom: 0;
                     }
                 }
 
@@ -184,7 +186,7 @@
                     position: relative;
                     
                     @media(min-width: @screen-lg-min){
-                        width: 35%;
+                        width: 30%;
                     }
                     
                     label{
@@ -199,7 +201,7 @@
                     position: relative;
                     
                     @media(min-width: @screen-lg-min){
-                        width: 35%;
+                        width: 30%;
                     }
 
                     label{
@@ -210,6 +212,9 @@
                             top: 40px;
                             left: -14%;
                             z-index: 1;
+                            @media(min-width: @screen-lg-min){
+                                left: -18%;
+                            }
                         }
                     }
                 }
