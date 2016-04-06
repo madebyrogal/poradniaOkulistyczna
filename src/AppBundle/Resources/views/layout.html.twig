@@ -18,6 +18,7 @@
             </div>
         </main>
         {{ include('AppBundle:default:footer.html.twig') }}
+        {% block footersil %}{% endblock %}
         {% block javascripts %}
             {{ include('AppBundle:default:include_foot.html.twig') }}
         {% endblock %}

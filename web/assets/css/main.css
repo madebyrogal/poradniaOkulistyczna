@@ -9154,6 +9154,10 @@ footer .copywrite {
     margin-top: 30px;
   }
 }
+.footer-sil {
+  color: #282828;
+  text-align: justify;
+}
 .loginForm {
   margin-top: 50px;
 }
@@ -9875,6 +9879,7 @@ hr {
   font-size: 26px;
   font-weight: bold;
   line-height: 120%;
+  margin-bottom: 20px;
 }
 .medicine .more-medicine ul {
   list-style-type: none;
@@ -9919,7 +9924,6 @@ hr {
   text-align: center;
 }
 .medicine .more-medicine ul li .text {
-  border-top: 1px solid #cacaca;
   padding: 20px 0 12px 0;
 }
 .medicine .more-medicine ul li .text .drug-name {

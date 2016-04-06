@@ -3,63 +3,63 @@
 {% block title %}AppBundle:Medicine:index{% endblock %}
 
 {% block body %}
-	<div class="medicine">
-		<div id="breadcrumb">
-			<div class="container">
-				<ul>
-					<li><a title="" href="{{path('home')}}">Strona główna <i class="fa fa-angle-right"></i></a></li>
-					<li><a title="" href="">Informacje o lekach <i class="fa fa-angle-right"></i></a></li>
-					<li>Tobrosopt</li>
-				</ul>
-			</div>
-		</div>
+    <div class="medicine">
+        <div id="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li><a title="" href="{{path('home')}}">Strona główna <i class="fa fa-angle-right"></i></a></li>
+                    <li><a title="" href="">Informacje o lekach <i class="fa fa-angle-right"></i></a></li>
+                    <li>Tobrosopt</li>
+                </ul>
+            </div>
+        </div>
         <div class="container tobrosopt">
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
                     <img alt="" class="img-responsive medicine-logo" src="{{asset('assets/images/lek_tobrosopt_logo.png')}}" />
                     <div class="row">
-			            <div class="col-md-6">
-			                <span class="line-hr red"></span>
-			            </div>
-			        </div>
-			        <!--<h1>potrójne uderzenie <br>w zapalenie</h1>-->
-			        <!--<img alt="" class="img-responsive" src="{{asset('assets/images/wielka_zmiana.png')}}" />-->
+                        <div class="col-md-6">
+                            <span class="line-hr red"></span>
+                        </div>
+                    </div>
+                    <!--<h1>potrójne uderzenie <br>w zapalenie</h1>-->
+                    <!--<img alt="" class="img-responsive" src="{{asset('assets/images/wielka_zmiana.png')}}" />-->
                 </div>
                 <div class="col-xs-12 col-sm-6 main-image">
-                	<img alt="" class="img-responsive" src="{{asset('assets/images/lek_tobrosopt.png')}}" />
+                    <img alt="" class="img-responsive" src="{{asset('assets/images/lek_tobrosopt.png')}}" />
                 </div>
             </div>
             <div class="row about-medicine">
-            	<div class="col-xs-12 col-sm-6 col-md-5">
-            		<h2>Informacje o leku</h2>
-            		<ul>
-            			<li><span>Skład</span>
+                <div class="col-xs-12 col-sm-6 col-md-5">
+                    <h2>Informacje o leku</h2>
+                    <ul>
+                        <li><span>Skład</span>
                             tobramycyna + deksametazon (3mg+1mg)/ml
                         </li>
-            			<li>Tobramycyna to antybiotyk aminoglikozydowy o szybkim i silnym  działaniu bakteriobójczym zarówno na bakterie Gram (+), jak i Gram (-). <sup>1</sup></li>
-            			<li>Deksametazon to jeden z najsilniej działających steroidów. <sup>2</sup></li>
-            		</ul>
-            	</div>
-            	<div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 dosage">
-            		<h2 class="special">Wskazania</h2>
-            		<div class="grey-line">
+                        <li>Tobramycyna to antybiotyk aminoglikozydowy o szybkim i silnym  działaniu bakteriobójczym zarówno na bakterie Gram (+), jak i Gram (-). <sup>1</sup></li>
+                        <li>Deksametazon to jeden z najsilniej działających steroidów. <sup>2</sup></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 dosage">
+                    <h2 class="special">Wskazania</h2>
+                    <div class="grey-line">
                         <p>Zapobieganie i leczenie zapalenia</p>
                         <p>Zapobieganie zakażeniu po operacyjnym usunięciu zaćmy</p> 
                     </div>
-            		<h2>Postać</h2>
-            		<div>
+                    <h2>Postać</h2>
+                    <div>
                         <p>krople do oczu, zawiesina</p> 
                         <p>Badania wykazały, że preparat łączony 0,3% tobramycyna + 0,1% deksametazon jest skuteczny w leczeniu:</p>
                         <p>- infekcji bakteryjnych powierzchni oka<sup>3</sup></p>
                         <p>- zapalenia wnętrza gałki ocznej u pacjentów po operacji zaćmy<sup>4</sup></p>
                     </div>
-            	</div>
+                </div>
             </div>
             <div class="row more-medicine">
-            	<div class="col-xs-12">
-            		<h2>Pozostałe leki</h2>
-            		<ul class="clearfix">
-            			<li>
+                <div class="col-xs-12">
+                    <h2>Pozostałe leki</h2>
+                    <ul class="clearfix">
+                        <li>
                             <a title="" href="{{path('info')}}">
                                 <div class="text">
                                     <span class="drug-name">Biodacyna</span>
@@ -83,12 +83,37 @@
                                 </div>
                             </a>
                         </li>
-            		</ul>
-            	</div>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
     <!--Advertice -->
     {{ include('AppBundle:common:_advertice.html.twig') }}
     <!--Advertice end-->
+{% endblock %}
+{% block footersil %}
+    <div class="container">
+        <aside class="footer-sil">
+            <footer>
+                <p>
+                    1.  Charakterystyka Produktu Leczniczego Tobrosopt –DEX<br/>
+                    2. Prost ME. Kliniczna Farmakologia Okulistyczna. Elsevier Urban & Partner  Sp. z o. o., Wrocław 2013<br/>
+                    3. Rhee SS, Francis S., Mah FS. Comparison of Tobramycin 0.3%/Dexamethasone 0.1% and Tobramycin 0.3%/Loteprednol 0.5% in the Management of Blepharo-keratoconjunctivitis. Advances in Therapy 2007; 24 (1): 60-67<br/>
+                    4. Nodouble-maskedtivol R et al. Comparison of topical tobramycin-dexamethasone with dexamethasone-neomycin-polymyxin and neomycin-polymyxin-gramicidin for control of inflammation after cataract surgery: results of a multicenter, prospective, three-arm, randomized,, controlled, parallel-group study. Clin Ther. 2004; 26 (8): 1274-85.
+                </p>
+                <p>
+                    <b>Tobrosopt-DEX (Tobramycinum, Dexamethasonum)</b>
+                    <br/><b>Skład i postać:</b> 1 ml kropli do oczu zawiera 3 mg tobramycyny oraz 1 mg deksametazonu. Jedna kropla zawiera 120 mikrogramów tobramycyny i 40 mikrogramów deksametazonu. Substancja pomocnicza o znanym działaniu: benzalkoniowy chlorek w ilości 0,2 mg/ml. Krople do oczu, zawiesina. Biała zawiesina o pH 5,0-6,5 i osmolalności 280-320 mosmol/kg.
+                    <br/><b>Wskazania:</b> Zapobieganie i leczenie zapalenia oraz zapobieganie zakażeniu po operacyjnym usunięciu zaćmy u dorosłych i dzieci w wieku 2 lat i starszych.
+                    <br/><b>Dawkowanie i sposób podawania:</b> Stosowanie u młodzieży i dorosłych, w tym pacjentów w podeszłym wieku. Jedna do dwóch kropli do worka spojówkowego (worków spojówkowych) zakażonego oka (oczu) co 4-6 godzin. W pierwszych 24-48 godzinach dawkę produktu można zwiększyć do 1-2 kropli co dwie godziny. Należy stopniowo zmniejszać częstość stosowania produktu, w miarę ustępowania objawów. Należy zachować ostrożność i nie przerywać leczenia przedwcześnie. W ciężkich przypadkach stosuje się jedną do dwóch kropli do worka spojówkowego (worków spojówkowych) zakażonego oka (oczu) co godzinę, do uzyskania poprawy. Stopniowo produkt stosuje się coraz rzadziej - do 1-2 kropli co dwie godziny przez okres trzech dni. Następnie stosuje się 1-2 krople co 4 godziny przez 5-8 dni, w końcu 1-2 krople codziennie przez 5 do 8 dni, o ile lekarz uzna to za wymagane. Po zabiegu usunięcia zaćmy stosuje się 1-2 krople cztery razy na dobę, zaczynając od dnia po zabiegu przez okres do 24 dni. Produkt można zastosować dzień przed zabiegiem, w dawce 1 kropla cztery razy na dobę, a następnie 1 kroplę po zabiegu i później 1 kroplę cztery razy na dobę przez kolejne 23 dni. W razie potrzeby, produkt można stosować częściej - do dawki 1 kropla co dwie godziny przez pierwsze dwa dni leczenia. Zaleca się regularne kontrolowanie ciśnienia wewnątrzgałkowego. Po zakropleniu produktu zaleca się delikatnie zamknąć powiekę i ucisnąć przewód nosowo - łzowy. Może to zmniejszyć ogólnoustrojowe wchłanianie produktu podanego do oka i przyczynić się do zmniejszenia jego ogólnych działań niepożądanych. W przypadku jednoczesnego stosowania innych produktów podawanych miejscowo do oka, należy zachować od 10 do 15 minut przerwy między podaniami kolejnych produktów. Krople do oczu zawierające tobramycynę i deksametazon mogą być stosowane u dzieci w wieku 2 lat i starszych w takich samych dawkach jak u dorosłych. Bezpieczeństwo i skuteczność u dzieci w wieku poniżej 2 lat nie zostało określone i nie są dostępne żadne dane na ten temat. Nie badano działania produktu leczniczego zawierającego tobramycynę i deksametazon w tych populacjach pacjentów. Jednak ze względu na małe wchłanianie ogólnoustrojowe wyżej wymienionych substancji po ich miejscowym podaniu uznaje się, że nie ma potrzeby modyfikacji dawkowania. Podanie do oka.
+                    Przed użyciem butelkę należy dobrze wstrząsnąć. Aby zapobiec zanieczyszczeniu końcówki kroplomierza i zawiesiny zawartej w butelce, należy zachować ostrożność, by nie dotykać końcówką kroplomierza powiek, okolic oka lub innych powierzchni.
+                    <br/><b>Przeciwwskazania:</b> Nadwrażliwość na tobramycynę, deksametazon lub na którąkolwiek substancję pomocniczą. Ostre powierzchowne zapalenie rogówki, wywołane przez wirusa opryszczki, ospy krowiej, ospy wietrznej lub inne choroby wirusowe rogówki i spojówki. Niepowikłane usunięcie ciała obcego z rogówki. Zakażenia gruźlicze oka wywołane przez Mycobacteriae, w tym przez pałeczki kwasooporne, takie jak Mycobacterium tuberculosis, Mycobacterium leprae lub Mycobacterium avium. Zakażenie grzybicze oka. Nieleczone ropne zakażenie oka.
+                    <br/><b>Ostrzeżenia i zalecane środki ostrożności:</b> Długotrwałe stosowanie produktu (tzn. powyżej 24 dni) lub zwiększona częstość jego podawania mogą prowadzić do podwyższenia ciśnienia wewnątrzgałkowego/jaskry, a w następstwie tego do uszkodzenia nerwu wzrokowego, zmniejszenia ostrości wzroku i ograniczenia pola widzenia. Może także dojść do tylnej zaćmy podtorebkowej. U wrażliwych pacjentów ciśnienie wewnątrzgałkowe może wzrosnąć nawet po stosowaniu produktu w zalecanych dawkach. Zaleca się regularną kontrolę ciśnienia wewnątrzgałkowego. Jest to szczególnie ważne u dzieci otrzymujących produkty lecznicze zawierające deksametazon, ponieważ ryzyko rozwoju nadciśnienia ocznego może być większe u dzieci w wieku poniżej 6 lat i może wystąpić szybciej niż odpowiedź na kortykosteroidy u dorosłych. Częstość podawania produktu i czas leczenia należy starannie zaplanować, a ciśnienie wewnątrzgałkowe powinno być monitorowane od początku leczenia, uwzględniając ryzyko wcześniejszego i większego podwyższenia ciśnienia wewnątrzgałkowego wywoływanego przez kortykosteroidy u dzieci. Po stosowaniu produktów złożonych zawierających steroidy i leki przeciwbakteryjne dochodziło do rozwoju wtórnych zakażeń. Długotrwałe stosowanie steroidów szczególnie predysponuje do zakażeń grzybiczych rogówki. Dlatego w przypadku uporczywego owrzodzenia rogówki, które wystąpiło po leczeniu steroidami, należy zawsze rozważyć możliwość zakażenia grzybiczego. Wtórne zakażenie oka występuje także w wyniku upośledzenia odporności pacjenta. Leczenie kortykosteroidami może maskować lub zaostrzać ostre zakażenia ropne. Podczas miejscowego stosowania steroidów w chorobach powodujących ścieńczenie rogówki lub twardówki opisywano występowanie perforacji. U niektórych pacjentów może występować nadwrażliwość na aminoglikozydy podawane miejscowo, objawiająca się zwykle świądem powiek, obrzękiem i zaczerwienieniem spojówek. W razie wystąpienia nadwrażliwości stosowanie produktu Tobrosopt-DEX należy przerwać i zastosować odpowiednie leczenie. Kortykosteroidy stosowane miejscowo do oczu mogą opóźniać gojenie uszkodzeń rogówki. Ze względu na zawartość w produkcie benzalkoniowego chlorku, może on powodować podrażnienie oczu i zmieniać zabarwienie miękkich szkieł kontaktowych. Przed zakropleniem produktu należy zdjąć miękkie (hydrofilne) szkła kontaktowe i odczekać co najmniej 15 minut przed ich ponownym założeniem. Pacjenci nie powinni stosować soczewek kontaktowych, gdy występują zakażenia oka.
+                    <br/><b>Działania niepożądane:</b> W badaniach klinicznych podawano tobramycynę i deksametazon w postaci kropli do oczu ponad 600 pacjentom do 6 razy na dobę. Nie stwierdzono przy tym poważnych zdarzeń niepożądanych ze strony oka ani układowych, a najczęściej zgłaszanym niepożądanym efektem związanym ze stosowaną terapią był dyskomfort ze strony oka (1,7%). Poniżej przedstawiono działania niepożądane związane ze stosowaniem produktu Tobrosopt-DEX: często (≥1/100 do <1/10); niezbyt często (≥1/1000 do <1/100). Zaburzenia oka. Często: dyskomfort w oku (przemijające pieczenie lub kłucie po podaniu produktu). Niezbyt często: świąd oka, zwiększone ciśnienie wewnątrzgałkowe, przekrwienie oka, punkcikowe zapalenie rogówki, rumień, wzmożone łzawienie, obrzęk i świąd powiek. Zaburzenia ogólnoustrojowe. Nie notowano ogólnoustrojowych działań niepożądanych podczas miejscowego stosowania produktu, zawierającego tobramycynę i deksametazon w postaci kropli do oczu, zawiesiny. Przegląd wszystkich spontanicznych doniesień o działaniach niepożądanych kropli do oczu w postaci zawiesiny, zawierających tobramycynę z deksametazonem, zebranych od czasu wprowadzenia ich do lecznictwa nie wykazały zmian profilu bezpieczeństwa produktu pod względem działań niepożądanych ze strony narządu wzroku, ogólnoustrojowych oraz działań farmakologicznych swoistych dla danej grupy produktów. Po dopuszczeniu produktu leczniczego do obrotu istotne jest zgłaszanie podejrzewanych działań niepożądanych. Umożliwia to nieprzerwane monitorowanie stosunku korzyści do ryzyka stosowania produktu leczniczego. Osoby należące do fachowego personelu medycznego powinny zgłaszać wszelkie podejrzewane działania niepożądane za pośrednictwem Departamentu Monitorowania Niepożądanych Działań Produktów Leczniczych Urzędu Rejestracji Produktów Leczniczych, Wyrobów Medycznych i Produktów Biobójczych, Al. Jerozolimskie 181C, 02-222 Warszawa, Tel.: + 48 22 49 21 301, Faks: + 48 22 49 21 309, e-mail: ndl@urpl.gov.pl. Działania niepożądane można zgłaszać również podmiotowi odpowiedzialnemu.
+                    <br/><b>Podmiot odpowiedzialny:</b> Polfa Warszawa S.A. Pozwolenie na dopuszczenie do obrotu nr 21271 wydane przez MZ. Dodatkowych informacji o leku udziela: Polpharma Biuro Handlowe Sp. z o.o., ul. Bobrowiecka 6, 00-728 Warszawa, tel. +48 22 364 61 00; fax. +48 22 364 61 02. www.polpharma.pl. Lek wydawany na podstawie recepty. ChPL: 16.12.2015
+                </p>
+            </footer>
+        </aside>
+    </div>
 {% endblock %}

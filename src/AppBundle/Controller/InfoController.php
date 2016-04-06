@@ -22,7 +22,7 @@ class InfoController extends Controller
      */
     public function biodacynaAction()
     {
-        return $this->render('AppBundle:Info:biodacyna.html.twig', array(
+        return $this->render('AppBundle:Info:index.html.twig', array(
                         // ...
         ));
     }
