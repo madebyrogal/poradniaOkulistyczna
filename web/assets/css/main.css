@@ -9241,7 +9241,7 @@ body {
   color: #8498a3;
 }
 h1 {
-  font-family: 'Playfair Display';
+  font-family: 'PlayfairDisplay';
   font-weight: bold;
   font-size: 40px;
   line-height: 48px;
@@ -9253,7 +9253,7 @@ h1 {
   }
 }
 h2 {
-  font-family: 'Playfair Display';
+  font-family: 'PlayfairDisplay';
   font-weight: bold;
   font-size: 30px;
   line-height: 34px;
@@ -9267,7 +9267,7 @@ h2 {
 h3 {
   font-size: 26px;
   line-height: 30px;
-  font-family: 'Playfair Display';
+  font-family: 'PlayfairDisplay';
   font-weight: bold;
 }
 @media (min-width: 768px) {
@@ -9279,7 +9279,7 @@ h3 {
 h4 {
   font-size: 22px;
   line-height: 26px;
-  font-family: 'Playfair Display';
+  font-family: 'PlayfairDisplay';
   font-weight: bold;
 }
 h5 {
@@ -9386,7 +9386,7 @@ hr {
   text-decoration: none;
 }
 .helpfull-info .help-box article .content h3 {
-  font-family: 'Playfair Display';
+  font-family: 'PlayfairDisplay';
   font-size: 36px;
   line-height: 48px;
   color: #282828;
