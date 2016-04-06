@@ -9042,7 +9042,7 @@ footer .bar-links .links ul li:last-child {
   border-right: none;
 }
 footer .bar-links .links ul li a {
-  color: #282828;
+  color: #fff9fa;
 }
 footer nav {
   text-align: center;
@@ -9635,7 +9635,7 @@ hr {
   display: none;
   background-color: #27343f;
   height: 43px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 @media (min-width: 768px) {
   #breadcrumb {
@@ -9665,7 +9665,7 @@ hr {
   display: block;
   border: 1px solid #d1d1d1;
   padding: 24px 30px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   -webkit-box-shadow: 0px 5px 35px -13px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 5px 35px -13px rgba(0, 0, 0, 0.75);
 }
@@ -9763,7 +9763,7 @@ hr {
 }
 @media (min-width: 768px) {
   .medicine .medicine-logo {
-    margin: 90px 0 20px 0;
+    margin: 90px 0 30px 0;
   }
 }
 .medicine .main-image img {
@@ -9814,6 +9814,7 @@ hr {
 @media (min-width: 768px) {
   .medicine .about-medicine p {
     font-size: 20px;
+    line-height: 25px;
   }
 }
 .medicine .about-medicine ul {
@@ -9830,6 +9831,7 @@ hr {
 @media (min-width: 768px) {
   .medicine .about-medicine ul li {
     font-size: 20px;
+    line-height: 25px;
   }
 }
 .medicine .about-medicine ul li span {
@@ -10421,6 +10423,9 @@ hr {
   font-size: 19px;
   line-height: 26px;
 }
+.exam h1 {
+  font-size: 40px;
+}
 .exam ul.dosage {
   margin-left: 10px;
   list-style-type: none;
@@ -10467,7 +10472,7 @@ hr {
 }
 .exam .list li {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 25px;
   position: relative;
   padding-left: 12px;
 }
@@ -10496,7 +10501,7 @@ hr {
   font-size: 20px;
   line-height: 24px;
   font-family: 'SolomonSans';
-  margin: 5px 0 8px 0;
+  margin: 15px 0 8px 0;
 }
 .exam img {
   margin-bottom: 20px;
@@ -10509,6 +10514,7 @@ hr {
 }
 .medicine-sort h1 {
   margin-top: 40px;
+  font-size: 40px;
   margin-bottom: 30px;
 }
 @media (min-width: 768px) {
