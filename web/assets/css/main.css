@@ -9161,6 +9161,8 @@ footer .copywrite {
 .footer-sil {
   color: #282828;
   text-align: justify;
+  font-size: 11px;
+  line-height: 14px;
 }
 .loginForm {
   margin-top: 50px;
