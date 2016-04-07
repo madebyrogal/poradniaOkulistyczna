@@ -20,15 +20,15 @@ header{
     }
 
     #menu{
-        
+
         &.in{
             display: block !important;
             padding-top:20px;
             clear: both;
-            
+
             nav {
                 float: none;
-                
+
                 ul{
                     li{
                         display: block;
@@ -37,7 +37,7 @@ header{
                 }
             }
         }
-        
+
         nav{
             font-family: 'SolomonSans';
             font-size: 16px;
@@ -55,6 +55,17 @@ header{
 
                     &:last-child{
                         margin-right: 0;
+                    }
+
+                    &.active{
+                        a{
+                            color: @red-bg;
+
+                            &:hover, &:active, &:focus {
+                                color: @red-bg;
+                            }
+                        }
+
                     }
 
                     a {

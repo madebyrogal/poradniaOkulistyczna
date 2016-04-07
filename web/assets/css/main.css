@@ -8969,6 +8969,14 @@ header #menu nav ul li {
 header #menu nav ul li:last-child {
   margin-right: 0;
 }
+header #menu nav ul li.active a {
+  color: #fa5456;
+}
+header #menu nav ul li.active a:hover,
+header #menu nav ul li.active a:active,
+header #menu nav ul li.active a:focus {
+  color: #fa5456;
+}
 header #menu nav ul li a {
   color: #282828;
 }
@@ -9580,6 +9588,9 @@ hr {
 .search-box .form-box .nice-radio {
   display: inline-block;
 }
+.search-box .form-box .nice-radio label {
+  cursor: pointer;
+}
 .search-box .form-box.secend {
   margin-bottom: 13px;
 }
@@ -9644,6 +9655,12 @@ hr {
   .search-box .form-box select.submit {
     width: 70%;
   }
+}
+.search-box .form-box input.submit:active,
+.search-box .form-box select.submit:active {
+  background-color: #fff9fa;
+  color: #282828;
+  border: none;
 }
 #breadcrumb {
   display: none;

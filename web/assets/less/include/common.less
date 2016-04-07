@@ -278,6 +278,10 @@
 
         .nice-radio{
             display: inline-block;
+            
+            label{
+                cursor: pointer;
+            }
         }
 
         &.secend{
@@ -346,6 +350,12 @@
 
                 @media(min-width: @screen-sm-min){
                     width: 70%;
+                }
+                
+                &:active{
+                    background-color: @white;
+                    color: @black;
+                    border: none;
                 }
             }
         }
