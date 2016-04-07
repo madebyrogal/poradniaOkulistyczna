@@ -1,6 +1,6 @@
 $(document).ready(function () {
     toogleMenu();
-    toogleDiseaseInSearch();
+    toogleDiseaseRecommendation();
     toogleDisease();
     toogleMedicine();
     openDiseaseFromLocation();
@@ -85,10 +85,15 @@ function toogleMenu() {
     });
 }
 
-//Toogle disease on search page
-function toogleDiseaseInSearch(){
+//Toogle disease extend recomendationon search page
+function toogleDiseaseRecommendation(){
     $('.disease .button-ext').click(function(){
         var disease = $(this).closest('.disease');
+        disease.toggleClass('not-extend');
+    });
+    
+    $('.more-disease .button-ext').click(function(){
+        var disease = $(this).closest('.more-disease');
         disease.toggleClass('not-extend');
     });
 }

@@ -28,10 +28,10 @@
                                     <ul class="menu-disease">
                                         {% for disease in category.diseases %}
                                             <li {% if loop.first %}class="active" {% endif %} data-disease="disease-{{disease.id}}">{{disease.name}}</li>
-                                        {% endfor %}
+                                            {% endfor %}
                                     </ul>
                                     {% for disease in category.diseases %}
-                                        <div class="more-disease disease-{{disease.id}} {% if loop.first %}active{% endif %}">
+                                        <div class="more-disease not-extend disease-{{disease.id}} {% if loop.first %}active{% endif %}">
                                             <div class="mode type-{{disease.type | default('A')}}"><span>{{disease.type}}</span>{{disease.type | writeType}}</div>
                                             <div class="picture">
                                                 {% if disease.picture1 %}<img class="img-responsive" alt="" src="{{asset(disease.picture1)}}"/>{% endif %}
@@ -42,14 +42,14 @@
                                                     <p>{{disease.symptoms | raw}}</p>
                                                 </div>
                                             </div>
-                                            <div class="about-disease">
+                                            <div class="about-disease extend-content">
                                                 <div class="top">Zalecenia:</div>
                                                 <div class="desc">
                                                     <p>{{disease.recommendation | raw}}</p>
                                                 </div>
                                             </div>
                                             {% if disease.comments %}
-                                                <div class="about-disease">
+                                                <div class="about-disease extend-content">
                                                     <div class="comments clearfix">
                                                         <div class="desc">
                                                             <b>Uwaga!</b><br/> 
@@ -58,9 +58,16 @@
                                                     </div>
                                                 </div>
                                             {% endif %}
-                                            <!--<div class="unwrap-button">
-                                                                            <a class="" title="" href="#">Zwiń zalecenia <i class="fa fa-chevron-up"></i></a>
-                                                                        </div>-->
+                                            <div class="unwrap-button button-ext">
+                                                <span class="normal">Sprawdź zalecenia <i class="fa fa-chevron-down"></i></span>
+                                                <span class="extend-content">Zwiń zalecenia <i class="fa fa-chevron-up"></i></span>
+                                            </div>
+                                            {#<div class="about-disease">
+                                                <div class="button-ext">
+                                                    <span class="normal">Sprawdź zalecenia <i class="fa fa-chevron-down"></i></span>
+                                                    <span class="extend-content">Zwiń zalecenia <i class="fa fa-chevron-up"></i></span>
+                                                </div>
+                                            </div>#}
                                         </div>
                                     {% endfor %}
                                 </div>

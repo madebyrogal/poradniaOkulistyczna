@@ -10299,9 +10299,10 @@ hr {
   border-top: 1px solid #c9c9c9;
   display: none;
   float: left;
-  padding: 30px 0;
+  padding: 30px 0 55px 0;
   margin: 0 2% 0 3%;
   width: 95%;
+  position: relative;
 }
 .disease .disease-list .menu-disease {
   float: left;
@@ -10428,45 +10429,44 @@ hr {
   padding: 10px;
   border: 1px #ed1c24 solid;
 }
-.disease .more-disease .unwrap-button {
-  margin-top: 20px;
+.disease .more-disease.not-extend .extend-content {
+  display: none;
 }
-@media (min-width: 992px) {
-  .disease .more-disease .unwrap-button {
-    float: left;
-    width: 100%;
-  }
+.disease .more-disease.not-extend .normal {
+  display: block;
 }
-.disease .more-disease .unwrap-button a {
-  background-color: #56a3b0;
-  color: #fff;
-  display: inline-block;
-  font-family: 'SolomonSans';
-  font-size: 15px;
-  font-weight: bold;
+.disease .more-disease .normal {
+  display: none;
+}
+.disease .more-disease .button-ext {
+  width: 160px;
+  height: 35px;
+  text-align: left;
+  float: right;
+  font-size: 13px;
   line-height: 35px;
-  padding: 0 11px 0 14px;
-  width: 100%;
+  font-weight: bold;
+  color: #fff9fa;
+  background-color: #57a3b1;
+  padding-left: 18px;
+  padding-right: 8px;
+  cursor: pointer;
+}
+.disease .more-disease .button-ext i {
+  float: right;
+  line-height: 32px;
+}
+.disease .more-disease .unwrap-button {
+  bottom: 20px;
+  right: 50%;
+  transform: translateX(50%);
+  position: absolute;
 }
 @media (min-width: 768px) {
-  .disease .more-disease .unwrap-button a {
-    float: right;
-    width: 50%;
+  .disease .more-disease .unwrap-button {
+    right: 0;
+    transform: translateX(0);
   }
-}
-@media (min-width: 992px) {
-  .disease .more-disease .unwrap-button a {
-    width: 27%;
-  }
-}
-.disease .more-disease .unwrap-button a i {
-  float: right;
-  font-weight: normal;
-  line-height: 35px;
-  margin-left: 1%;
-}
-.disease .more-disease .unwrap-button a:hover {
-  text-decoration: none;
 }
 .exam {
   color: #282828;

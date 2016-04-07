@@ -128,9 +128,10 @@
             border-top: 1px solid #c9c9c9;
             display: none;
             float: left;
-            padding: 30px 0;
+            padding: 30px 0 55px 0;
             margin: 0 2% 0 3%;
             width: 95%;
+            position: relative;
         }
         .menu-disease {
             float: left;
@@ -254,38 +255,33 @@
                 border: 1px @red-bg-type solid;
             }
         }
-        .unwrap-button {
-            margin-top: 20px;
-            @media (min-width: @screen-md-min) {
-                float: left;
-                width: 100%;
+        
+        &.not-extend{
+            .extend-content{
+                display: none;
             }
-            a {
-                background-color: #56a3b0;
-                color: #fff;
-                display: inline-block;
-                font-family: 'SolomonSans';
-                font-size: 15px;
-                font-weight: bold;
-                line-height: 35px;
-                padding: 0 11px 0 14px;
-                width: 100%;
-                @media (min-width: @screen-sm-min) {
-                    float: right;
-                    width: 50%;
-                }
-                @media (min-width: @screen-md-min) {
-                    width: 27%;
-                }
-                i {
-                    float: right;
-                    font-weight: normal;
-                    line-height: 35px;
-                    margin-left: 1%;
-                }
-                &:hover {
-                    text-decoration: none;
-                }
+
+            .normal{
+                display: block;
+            }
+        }
+
+        .normal{
+            display: none;
+        }
+        
+        .button-ext{
+            .button-ext();
+        }
+        
+        .unwrap-button {
+            bottom: 20px;
+            right: 50%;
+            transform: translateX(50%);
+            position: absolute;
+            @media (min-width: @screen-sm-min) {
+                right: 0;
+                transform: translateX(0);
             }
         }
     }
