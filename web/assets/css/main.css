@@ -10210,6 +10210,16 @@ hr {
   color: #fff;
   font-weight: bold;
 }
+@media (min-width: 768px) {
+  .disease .disease-choice li.active.child a {
+    background-image: url('../images/search_child.png');
+  }
+}
+@media (min-width: 768px) {
+  .disease .disease-choice li.active.adult a {
+    background-image: url('../images/search_adult.png');
+  }
+}
 .disease .disease-choice li a {
   color: #a8a8a8;
   display: block;
@@ -10223,8 +10233,13 @@ hr {
   text-decoration: none;
 }
 @media (min-width: 768px) {
+  .disease .disease-choice .child {
+    /*&:hover a {
+                    background-image: url('../images/search_child_hover.png');
+                }*/
+  }
   .disease .disease-choice .child a {
-    background-image: url('../images/search_child.png');
+    background-image: url('../images/search_child_hover.png');
     background-position: 0 0;
     background-repeat: no-repeat;
     padding-left: 18%;
@@ -10232,12 +10247,16 @@ hr {
   }
 }
 .disease .disease-choice .adult {
-  background-color: #dfdfdf;
   border-left: 1px solid #cacaca;
 }
 @media (min-width: 768px) {
+  .disease .disease-choice .adult {
+    /*&:hover a {
+                    background-image: url('../images/search_adult_hover.png');
+                }*/
+  }
   .disease .disease-choice .adult a {
-    background-image: url('../images/search_adult.png');
+    background-image: url('../images/search_adult_hover.png');
     background-position: 0 0;
     background-repeat: no-repeat;
     padding-right: 14%;

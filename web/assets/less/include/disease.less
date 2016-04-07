@@ -31,6 +31,20 @@
                     color: @white-bg;
                     font-weight: bold;
                 }
+                &.child {
+                    @media (min-width: @screen-sm-min) {
+                        a {
+                            background-image: url('../images/search_child.png');
+                        }
+                    }
+                }
+                &.adult {
+                    @media (min-width: @screen-sm-min) {
+                        a {
+                            background-image: url('../images/search_adult.png');
+                        }
+                    }
+                }
             }
             a {
                 color: #a8a8a8;
@@ -48,7 +62,7 @@
         .child {
             @media (min-width: @screen-sm-min) {
                 a {
-                    background-image: url('../images/search_child.png');
+                    background-image: url('../images/search_child_hover.png');
                     background-position: 0 0;
                     background-repeat:  no-repeat;
                     padding-left: 18%;
@@ -57,12 +71,10 @@
             }
         }
         .adult {
-            background-color: #dfdfdf;
             border-left: 1px solid #cacaca;
             @media (min-width: @screen-sm-min) {
                 a {
-                
-                    background-image: url('../images/search_adult.png');
+                    background-image: url('../images/search_adult_hover.png');
                     background-position: 0 0;
                     background-repeat:  no-repeat;
                     padding-right: 14%;
