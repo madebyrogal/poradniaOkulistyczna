@@ -138,6 +138,7 @@ function clikOnFooterDisease(){
 function toogleMedicine(){
     $('.list-box li h2').click(function(){
         $(this).next().slideToggle();
+        $(this).toggleClass('active');
     });
     
     $('.medicine-list li').click(function(){

@@ -6,7 +6,7 @@
         color: #4c6472;
         font-size: 16px;
         text-align: left;
-        
+
         img {
             margin: 9px auto 0 auto;
             @media(min-width: @screen-lg-min){
@@ -159,7 +159,7 @@
             margin-top: 74px;
             margin-bottom: 30px;
             height: 360px;
-            
+
             @media(min-width: @screen-lg-min){
                 height: 273px;
             }
@@ -170,13 +170,13 @@
             }
 
             .form-box{
-                
+
                 &.patient{
                     text-align: center;
                     label{
                         text-align: center;
                     }
-                    
+
                     @media(min-width: @screen-lg-min){
                         float: left;
                         margin-right: 9%;
@@ -188,11 +188,11 @@
                     display: inline-block;
                     width: 45%;
                     position: relative;
-                    
+
                     @media(min-width: @screen-lg-min){
                         width: 30%;
                     }
-                    
+
                     label{
                         text-align: center;
                     }
@@ -203,14 +203,14 @@
                     width: 45%;
                     margin-left: 9%;
                     position: relative;
-                    
+
                     @media(min-width: @screen-lg-min){
                         width: 30%;
                     }
 
                     label{
                         text-align: center;
-                        
+
                         &.text-or{
                             position: absolute;
                             top: 40px;
@@ -222,7 +222,7 @@
                         }
                     }
                 }
-                
+
                 .submit{
                     @media(min-width: @screen-sm-min){
                         width: 262px;
@@ -282,7 +282,7 @@
 
         .nice-radio{
             display: inline-block;
-            
+
             label{
                 cursor: pointer;
             }
@@ -355,7 +355,7 @@
                 @media(min-width: @screen-sm-min){
                     width: 70%;
                 }
-                
+
                 &:active{
                     background-color: @white;
                     color: @black;
@@ -419,6 +419,13 @@
                 float: right;
                 content: '\f078';
                 cursor: pointer;
+                font-size: 12px;
+            }
+
+            &.active{
+                &:before {
+                    content: '\f077';
+                }
             }
         }
 

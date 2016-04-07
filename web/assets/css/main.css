@@ -9720,6 +9720,10 @@ hr {
   float: right;
   content: '\f078';
   cursor: pointer;
+  font-size: 12px;
+}
+.list-box > li h2.active:before {
+  content: '\f077';
 }
 .list-box > li .content {
   display: none;
@@ -10286,6 +10290,7 @@ hr {
   float: right;
   content: '\f078';
   cursor: pointer;
+  font-size: 12px;
 }
 .disease .disease-list > li .name.active:before {
   content: '\f077';
