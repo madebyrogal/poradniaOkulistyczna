@@ -9350,7 +9350,12 @@ hr {
   text-align: left;
 }
 .advertice aside img {
-  margin: 0 auto;
+  margin: 9px auto 0 auto;
+}
+@media (min-width: 1200px) {
+  .advertice aside img {
+    margin: 9px 0 0 0;
+  }
 }
 .helpfull-info {
   margin-bottom: 30px;
