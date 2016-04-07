@@ -10233,11 +10233,6 @@ hr {
   text-decoration: none;
 }
 @media (min-width: 768px) {
-  .disease .disease-choice .child {
-    /*&:hover a {
-                    background-image: url('../images/search_child_hover.png');
-                }*/
-  }
   .disease .disease-choice .child a {
     background-image: url('../images/search_child_hover.png');
     background-position: 0 0;
@@ -10250,11 +10245,6 @@ hr {
   border-left: 1px solid #cacaca;
 }
 @media (min-width: 768px) {
-  .disease .disease-choice .adult {
-    /*&:hover a {
-                    background-image: url('../images/search_adult_hover.png');
-                }*/
-  }
   .disease .disease-choice .adult a {
     background-image: url('../images/search_adult_hover.png');
     background-position: 0 0;
