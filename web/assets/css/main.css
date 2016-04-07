@@ -9832,6 +9832,9 @@ hr {
     margin-top: 40px;
   }
 }
+.medicine .about-medicine {
+  margin-top: 10px;
+}
 .medicine .about-medicine h2 {
   color: #fa5456;
   font-family: 'SolomonSans';
