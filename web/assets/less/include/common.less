@@ -151,7 +151,7 @@
     .box-shadow(0px 5px 35px -13px rgba(0,0,0,0.75));
 
     @media(min-width: @screen-sm-min){
-        padding: 33px 38px 0 38px;
+        padding: 30px 30px 0 30px;
         margin-top: 30px;
 
         &.search-result{
@@ -403,7 +403,7 @@
 
             ul{
                 position: absolute;
-                width: 110%;
+                width: 100%;
                 max-height: 200px;
                 top: 39px;
                 border: 1px @gray solid;
@@ -413,6 +413,10 @@
                 overflow-x: hidden;
                 background-color: #fff;
                 z-index: 2;
+                
+                @media(min-width: @screen-lg-min){
+                    width: 110%;
+                }
 
                 li{
                     cursor: pointer;
