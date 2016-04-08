@@ -17,12 +17,22 @@
                 <ul></ul>
             </div>
         </div>
-        <div class="form-box diseases-list">
+        <div class="form-box diseases-list nice-select-box">
             <label class="text-center text-or">lub</label>
             <label>Wybierz schorzenie z listy</label>
-            <select name="search[disease]" id="select-disease">
+            <div class="select-wraper-container">
+                <div id="select-wraper" class="select-wraper" tabindex='-1'>
+                    <span></span>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+                <ul id="select-data" style="display: none;">
+
+                </ul>
+            </div>
+            <select name="search[disease]" id="select-disease" style="display: none;">
                 {{ render(controller('AppBundle:Search:renderOptionSearch',{'diseaseId': search.disease, 'patientId' : search.patient})) }}
             </select>
+            <input id="search-disease" type="hidden" name="search[disease]" value="0"/>
         </div>
         <div class="form-box text-center">
             <input type="submit" class="submit" value="Sprawdź wytyczne" /> 
