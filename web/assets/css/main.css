@@ -9528,11 +9528,13 @@ hr {
 }
 @media (min-width: 768px) and (min-width: 1200px) {
   .search-box.search-result .form-box.symptoms-input {
+    float: left;
     width: 30%;
   }
 }
 @media (min-width: 768px) and (min-width: 1200px) {
   .search-box.search-result .form-box.diseases-list {
+    float: left;
     width: 30%;
   }
 }
