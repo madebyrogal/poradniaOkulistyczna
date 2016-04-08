@@ -8959,6 +8959,11 @@ header #menu nav {
   margin-top: 10px;
   color: #282828;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  header #menu nav {
+    font-size: 13px;
+  }
+}
 header #menu nav ul {
   list-style-type: none;
 }
