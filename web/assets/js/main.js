@@ -20,7 +20,7 @@ function niceSelect() {
     $(".select-wraper").on('click', function () {
         $("#select-data").html('');
         $('#select-disease option').each(function (i, elem) {
-            $("#select-data").append('<li data-option="' + $(elem).val() + '">' + $(elem).html() + $(elem).html() + $(elem).html() + '</li>');
+            $("#select-data").append('<li data-option="' + $(elem).val() + '">' + $(elem).html() + '</li>');
         });
         $("#select-data").show();
     }).on('focusout', function () {
