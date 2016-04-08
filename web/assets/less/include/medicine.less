@@ -46,7 +46,6 @@
         }
     }
     .about-medicine {
-        //margin-top: 50px;
         margin-top: 10px;
         h2 {
             color: @red;
@@ -88,6 +87,22 @@
                     line-height: 120%;
                     @media (min-width: @screen-sm-min) {
                         font-size: 24px;
+                    }
+                }
+            }
+            &.list {
+                margin-top: 25px;
+                
+                li {
+                    /*font-size: 20px;
+                    line-height: 25px;*/
+                    position: relative;
+                    padding-left: 12px;
+                    
+                    &:before {
+                        position: absolute;
+                        content:'-';
+                        left: 0;
                     }
                 }
             }

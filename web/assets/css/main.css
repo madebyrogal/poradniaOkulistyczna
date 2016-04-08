@@ -9949,6 +9949,20 @@ hr {
     font-size: 24px;
   }
 }
+.medicine .about-medicine ul.list {
+  margin-top: 25px;
+}
+.medicine .about-medicine ul.list li {
+  /*font-size: 20px;
+                    line-height: 25px;*/
+  position: relative;
+  padding-left: 12px;
+}
+.medicine .about-medicine ul.list li:before {
+  position: absolute;
+  content: '-';
+  left: 0;
+}
 .medicine .about-medicine .dosage h2 {
   line-height: 34px;
 }
