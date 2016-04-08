@@ -10584,6 +10584,7 @@ hr {
 }
 .exam .list {
   list-style-type: none;
+  margin-top: 25px;
 }
 .exam .list li {
   font-size: 20px;
