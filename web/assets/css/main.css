@@ -9099,7 +9099,12 @@ footer nav ul li a:focus {
 footer .ext-menu {
   text-align: center;
   margin-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+}
+@media (min-width: 992px) {
+  footer .ext-menu {
+    padding-bottom: 30px;
+  }
 }
 @media (min-width: 768px) {
   footer .ext-menu {
@@ -9164,8 +9169,14 @@ footer .copywrite {
   font-size: 13px;
   margin-top: 0;
   padding-bottom: 30px;
+  text-align: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+  footer .copywrite {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
   footer .copywrite {
     float: right;
     margin-top: 30px;
