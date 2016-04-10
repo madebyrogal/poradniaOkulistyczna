@@ -114,8 +114,9 @@ function searchAutoComplet() {
 }
 
 function toogleMenu() {
-    $('#mobile-menu').on('click', function () {
+    $('#mobile-menu, #mobile-close').on('click', function () {
         $('#menu').toggleClass('in');
+        $('body').toggleClass('slide-right');
     });
 }
 

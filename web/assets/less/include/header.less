@@ -22,9 +22,17 @@ header{
     #menu{
 
         &.in{
+            position: absolute;
+            padding-left: 30px;
+            left:-67vw;
+            top: 0;
+            width: 67vw;
+            background-color: #4c6371;
             display: block !important;
-            padding-top:20px;
+            padding-top:40px;
             clear: both;
+            color: @white;
+            height: 100vh;
 
             nav {
                 float: none;
@@ -33,9 +41,39 @@ header{
                     li{
                         display: block;
                         margin-bottom: 20px;
+                        border-bottom: 1px solid @white;
+                        padding: 46px 0 46px 48px;
+                        
+                        &:last-child{
+                            border-bottom: none;
+                        }
+
+                        a{
+                            color: @white;
+                            font-size: 30px;
+                            line-height: 30px;
+                            font-weight: bold;
+                        }
                     }
                 }
             }
+
+            #mobile-close{
+                display: block;
+                font-size: 40px;
+                line-height: 40px;
+                font-weight: bold;
+                margin-bottom: 50px;
+                cursor: pointer;
+                
+                .close{
+                    
+                }
+            }
+        }
+
+        .mobile-close{
+            display: none;
         }
 
         nav{
@@ -45,7 +83,7 @@ header{
             float: right;
             margin-top: 10px;
             color: @black;
-            
+
             @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
                 font-size: 13px;
             }
