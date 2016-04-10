@@ -10345,8 +10345,22 @@ hr {
 .search .disease .text-type.text-type-B {
   color: #fbbd09;
 }
+@media (max-width: 370px) {
+  .search .disease .text-type.text-type-B {
+    font-size: 10px;
+    line-height: 15px;
+    width: 66px;
+  }
+}
 .search .disease .text-type.text-type-C {
   color: #3eb74d;
+}
+@media (max-width: 370px) {
+  .search .disease .text-type.text-type-C {
+    font-size: 10px;
+    line-height: 15px;
+    width: 60px;
+  }
 }
 .search .disease .button-ext {
   width: 160px;
