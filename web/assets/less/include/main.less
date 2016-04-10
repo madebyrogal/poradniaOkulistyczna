@@ -8,8 +8,12 @@ body {
     &.slide-right{
         position: absolute;
         z-index: 1;
-        left: 67vw;
+        left: 100vw;
         overflow-y: hidden;
+        
+        @media(min-width: @screen-sm-min){
+            left: 67vw;
+        }
     }
 }
 

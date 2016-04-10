@@ -8942,9 +8942,9 @@ header .mobile-bar {
 header #menu.in {
   position: absolute;
   padding-left: 30px;
-  left: -67vw;
+  left: -100vw;
+  width: 100vw;
   top: 0;
-  width: 67vw;
   background-color: #4c6371;
   display: block !important;
   padding-top: 40px;
@@ -8952,23 +8952,39 @@ header #menu.in {
   color: #ffffff;
   height: 100vh;
 }
+@media (min-width: 768px) {
+  header #menu.in {
+    left: -67vw;
+    width: 67vw;
+  }
+}
 header #menu.in nav {
   float: none;
 }
 header #menu.in nav ul li {
   display: block;
-  margin-bottom: 20px;
   border-bottom: 1px solid #ffffff;
-  padding: 46px 0 46px 48px;
+  padding: 25px 0 25px 0px;
+}
+@media (min-width: 768px) {
+  header #menu.in nav ul li {
+    padding: 49px 0 46px 48px;
+  }
 }
 header #menu.in nav ul li:last-child {
   border-bottom: none;
 }
 header #menu.in nav ul li a {
   color: #ffffff;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 18px;
   font-weight: bold;
+}
+@media (min-width: 768px) {
+  header #menu.in nav ul li a {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 header #menu.in nav ul li a:active,
 header #menu.in nav ul li a:hover {
@@ -8990,7 +9006,7 @@ header #menu.in #mobile-close .close-menu {
   display: inline-block;
   margin-right: 24px;
 }
-header #menu .mobile-close {
+header #menu #mobile-close {
   display: none;
 }
 header #menu nav {
@@ -9312,8 +9328,13 @@ body {
 body.slide-right {
   position: absolute;
   z-index: 1;
-  left: 67vw;
+  left: 100vw;
   overflow-y: hidden;
+}
+@media (min-width: 768px) {
+  body.slide-right {
+    left: 67vw;
+  }
 }
 h1 {
   font-family: 'PlayfairDisplay';
@@ -10739,10 +10760,31 @@ hr {
     left: 67vw;
   }
 }
+@-webkit-keyframes bodyPhone {
+  0% {
+    left: 0vw;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@keyframes bodyPhone {
+  0% {
+    left: 0vw;
+  }
+  100% {
+    left: 100vw;
+  }
+}
 body.slide-right {
-  animation-name: body;
+  animation-name: bodyPhone;
   animation-duration: 0.7s;
   animation-delay: 0s;
   animation-timing-function: ease-in;
   animation-iteration-count: 1;
+}
+@media (min-width: 768px) {
+  body.slide-right {
+    animation-name: body;
+  }
 }

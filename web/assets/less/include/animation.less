@@ -1,10 +1,14 @@
 //Body ------------------------------------------------------------------
 body {
     &.slide-right{
-        animation-name: body;
+        animation-name: bodyPhone;
         animation-duration: 0.7s;
         animation-delay: 0s;
         animation-timing-function: ease-in;
         animation-iteration-count: 1;
+
+        @media(min-width: @screen-sm-min){
+            animation-name: body;
+        }
     }
 }
