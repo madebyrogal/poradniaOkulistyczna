@@ -53,6 +53,10 @@ header{
                             font-size: 30px;
                             line-height: 30px;
                             font-weight: bold;
+                            
+                            &:active, &:hover{
+                                color: @white;
+                            }
                         }
                     }
                 }
@@ -66,8 +70,13 @@ header{
                 margin-bottom: 50px;
                 cursor: pointer;
                 
-                .close{
-                    
+                .close-menu{
+                    background-image: url('../images/close.png');
+                    width: 24px;
+                    height: 24px;
+                    display: block;
+                    display: inline-block;
+                    margin-right: 24px;
                 }
             }
         }

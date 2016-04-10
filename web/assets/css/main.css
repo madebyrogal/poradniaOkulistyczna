@@ -8970,6 +8970,10 @@ header #menu.in nav ul li a {
   line-height: 30px;
   font-weight: bold;
 }
+header #menu.in nav ul li a:active,
+header #menu.in nav ul li a:hover {
+  color: #ffffff;
+}
 header #menu.in #mobile-close {
   display: block;
   font-size: 40px;
@@ -8977,6 +8981,14 @@ header #menu.in #mobile-close {
   font-weight: bold;
   margin-bottom: 50px;
   cursor: pointer;
+}
+header #menu.in #mobile-close .close-menu {
+  background-image: url('../images/close.png');
+  width: 24px;
+  height: 24px;
+  display: block;
+  display: inline-block;
+  margin-right: 24px;
 }
 header #menu .mobile-close {
   display: none;
