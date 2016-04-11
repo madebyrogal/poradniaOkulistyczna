@@ -1,6 +1,6 @@
 <?php
 
-namespace Madybyrogal\AdminBundle\Entity;
+namespace Madebyrogal\AdminBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;

@@ -1,3 +1,0 @@
-madybyrogal_admin_homepage:
-    path:     /
-    defaults: { _controller: MadybyrogalAdminBundle:Default:index }

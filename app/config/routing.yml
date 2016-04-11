@@ -1,5 +1,5 @@
 madybyrogal_admin:
-    resource: "@MadybyrogalAdminBundle/Resources/config/routing.yml"
+    resource: "@MadebyrogalAdminBundle/Resources/config/routing.yml"
     prefix:   /admin/
     
 fos_user:
