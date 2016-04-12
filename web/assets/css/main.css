@@ -9279,19 +9279,32 @@ footer .copywrite {
   line-height: 14px;
   margin-bottom: 20px;
 }
-.loginForm {
+.login-form {
+  text-align: center;
   margin-top: 50px;
 }
-.loginForm .loginBox {
+.login-form .login-box {
+  display: inline-block;
   background-color: black;
   padding: 30px;
+  text-align: left;
 }
-.loginForm .loginBox label {
+.login-form .login-box label {
   color: white;
 }
-.loginForm .loginBox .error {
+.login-form .login-box .error {
   color: red;
   font-weight: bold;
+}
+.login-form .login-box .form-box {
+  margin-bottom: 10px;
+}
+.login-form .login-box .form-box label {
+  margin-right: 10px;
+  line-height: 30px;
+}
+.login-form .login-box .form-box input {
+  float: right;
 }
 .panel {
   font-size: 12px;
