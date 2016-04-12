@@ -12,7 +12,7 @@ use AppBundle\Form\AdverticeType;
 /**
  * Advertice controller.
  *
- * @Route("/advertice")
+ * @Route("/admin/advertice")
  */
 class AdverticeController extends Controller
 {

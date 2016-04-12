@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'MadebyrogalAdminBundle::base.html.twig' %}
 
 {% block body %}
     <h1>Advertice</h1>
@@ -22,14 +22,14 @@
 
     <ul>
         <li>
-            <a href="{{ path('advertice_index') }}">Back to the list</a>
+            <a href="{{ path('advertice_index') }}" class="btn btn-sm btn-primary">Back to the list</a>
         </li>
         <li>
-            <a href="{{ path('advertice_edit', { 'id': advertice.id }) }}">Edit</a>
+            <a href="{{ path('advertice_edit', { 'id': advertice.id }) }}" class="btn btn-sm btn-success">Edit</a>
         </li>
         <li>
             {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
+                <input type="submit" value="Delete" class="btn btn-sm btn-danger">
             {{ form_end(delete_form) }}
         </li>
     </ul>
