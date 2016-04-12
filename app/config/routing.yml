@@ -1,3 +1,7 @@
+app_advertice:
+    resource: "@AppBundle/Controller/AdverticeController.php"
+    type:     annotation
+
 madybyrogal_admin:
     resource: "@MadebyrogalAdminBundle/Resources/config/routing.yml"
     prefix:   /admin/

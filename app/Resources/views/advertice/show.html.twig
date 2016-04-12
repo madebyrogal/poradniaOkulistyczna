@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Advertice</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ advertice.id }}</td>
+            </tr>
+            <tr>
+                <th>Picture</th>
+                <td>{{ advertice.picture }}</td>
+            </tr>
+            <tr>
+                <th>Alt</th>
+                <td>{{ advertice.alt }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('advertice_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('advertice_edit', { 'id': advertice.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}
