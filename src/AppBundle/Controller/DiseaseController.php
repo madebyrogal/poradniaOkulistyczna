@@ -12,7 +12,7 @@ class DiseaseController extends Controller
     const DISEASE_ADULT = 2;
 
     /**
-     * @Route("schorzenie/{patient}.html", name="disease", defaults={"patient" = "dziecko"})
+     * @Route("schorzenie/{patient}.html", name="disease", defaults={"patient" = "dorosly"})
      */
     public function indexAction($patient)
     {
