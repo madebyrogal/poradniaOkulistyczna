@@ -17,8 +17,8 @@
                 <div class="col-xs-12">
                     <h1>Wybierz pacjenta</h1>
                     <ul class="disease-choice clearfix">
-                        <li class="child {%if (patientID == 1)%}active{%endif%}"><a title="" href="{{path('disease', {'patient': 'dziecko'})}}">Dziecko</a></li>
                         <li class="adult {%if (patientID == 2)%}active{%endif%}"><a title="" href="{{path('disease', {'patient': 'dorosly'})}}">Dorosły</a></li>
+                        <li class="child {%if (patientID == 1)%}active{%endif%}"><a title="" href="{{path('disease', {'patient': 'dziecko'})}}">Dziecko</a></li>
                     </ul>
                     <ul class="disease-list clearfix">
                         {% for category in diseaseCategories %}

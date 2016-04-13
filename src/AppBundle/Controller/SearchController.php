@@ -73,6 +73,7 @@ class SearchController extends Controller
         $qb = $this->getDoctrine()->getRepository('AppBundle:Disease')->createQueryBuilder('d')->select('d.id, d.name');
         $qb->andWhere('d.patient = :patient');
         $qb->setParameter('patient', $patientId);
+        $qb->orderBy('d.name', 'ASC');
         $q = $qb->getQuery();
         $diseases = $q->getArrayResult();
 
@@ -85,7 +86,7 @@ class SearchController extends Controller
      * Render option in searchbox
      * @return type
      */
-    public function renderOptionSearchAction($diseaseId = 0, $patientId = 1)
+    public function renderOptionSearchAction($diseaseId = 0, $patientId = 2)
     {
         $diseases = $this->getDoctrine()->getRepository('AppBundle:Disease')->findBy(array('patient' => $patientId), array('name' => 'ASC'));
 
