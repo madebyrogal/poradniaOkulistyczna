@@ -15,8 +15,9 @@ class AdverticeType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('picture')
-            ->add('alt')
+            ->add('picture', 'Symfony\Component\Form\Extension\Core\Type\FileType')
+            ->add('name', 'Symfony\Component\Form\Extension\Core\Type\TextType')
+            ->add('alt', 'Symfony\Component\Form\Extension\Core\Type\TextType')
         ;
     }
     
