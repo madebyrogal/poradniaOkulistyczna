@@ -46,6 +46,7 @@ class AdverticeController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $advertice->upload();
             $em = $this->getDoctrine()->getManager();
             $em->persist($advertice);
             $em->flush();

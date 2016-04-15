@@ -1,8 +1,9 @@
 <?php
 
 namespace AppBundle\Entity;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
 
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -26,14 +27,24 @@ class Advertice
     /**
      * @var string
      *
-     * @ORM\Column(name="picture", type="string", length=255)
+     * @ORM\Column(name="path", type="string", length=255)
      */
-    private $picture;
+    private $path;
+
+    /**
+     * @Assert\File(maxSize="6000000", mimeTypes={"image/png", "image/tiff", "image/jpeg"})
+     */
+    private $file;
 
     /**
      * @ORM\Column(name="name", type="string", length=255)
      */
     public $name;
+    
+    /**
+     * @ORM\Column(name="orginName", type="string", length=255)
+     */
+    public $orginName;
 
     /**
      * @var string
@@ -42,14 +53,52 @@ class Advertice
      */
     private $alt;
 
+    public function upload()
+    {
+        // the file property can be empty if the field is not required
+        if (null === $this->getFile()) {
+            return;
+        }
+
+        $this->setOrginName($this->getFile()->getClientOriginalName());
+        $newFileName = hash_file('sha256', $this->getFile()->getClientOriginalName());
+        $this->getFile()->move($this->getUploadRootDir(), $newFileName);
+
+        // set the path property to the filename where you've saved the file
+        $this->path = $newFileName;
+
+        // clean up the file property as you won't need it anymore
+        $this->file = null;
+    }
+
+    /**
+     * Sets file.
+     *
+     * @param UploadedFile $file
+     */
+    public function setFile(UploadedFile $file = null)
+    {
+        $this->file = $file;
+    }
+
+    /**
+     * Get file.
+     *
+     * @return UploadedFile
+     */
+    public function getFile()
+    {
+        return $this->file;
+    }
+
     public function getAbsolutePath()
     {
-        return null === $this->picture ? null : $this->getUploadRootDir() . '/' . $this->picture;
+        return null === $this->path ? null : $this->getUploadRootDir() . '/' . $this->path;
     }
 
     public function getWebPath()
     {
-        return null === $this->picture ? null : $this->getUploadDir() . '/' . $this->picture;
+        return null === $this->path ? null : $this->getUploadDir() . '/' . $this->path;
     }
 
     protected function getUploadRootDir()
@@ -77,26 +126,26 @@ class Advertice
     }
 
     /**
-     * Set picture
+     * Set path
      *
-     * @param UploadedFile $picture
+     * @param string $path
      * @return Advertice
      */
-    public function setPicture(UploadedFile $picture)
+    public function setPath($path)
     {
-        $this->picture = hash_file('sha256', $picture);
+        $this->path = $path;
 
         return $this;
     }
 
     /**
-     * Get picture
+     * Get path
      *
      * @return string 
      */
-    public function getPicture()
+    public function getPath()
     {
-        return $this->picture;
+        return $this->path;
     }
 
     /**
@@ -145,4 +194,27 @@ class Advertice
         return $this->name;
     }
 
+
+    /**
+     * Set orginName
+     *
+     * @param string $orginName
+     * @return Advertice
+     */
+    public function setOrginName($orginName)
+    {
+        $this->orginName = $orginName;
+
+        return $this;
+    }
+
+    /**
+     * Get orginName
+     *
+     * @return string 
+     */
+    public function getOrginName()
+    {
+        return $this->orginName;
+    }
 }

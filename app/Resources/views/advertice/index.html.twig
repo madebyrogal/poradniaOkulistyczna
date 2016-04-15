@@ -7,6 +7,7 @@
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Name</th>
                 <th>Banner</th>
                 <th>Alt tekst</th>
                 <th>Actions</th>
@@ -16,6 +17,7 @@
         {% for advertice in advertices %}
             <tr>
                 <td><a href="{{ path('advertice_show', { 'id': advertice.id }) }}">{{ advertice.id }}</a></td>
+                <td>{{ advertice.name }}</td>
                 <td>{{ advertice.picture }}</td>
                 <td>{{ advertice.alt }}</td>
                 <td>
