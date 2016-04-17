@@ -48,7 +48,8 @@ function changeOptionDisease() {
     $('.change-option').change(function () {
         var url = $('#diseaseOptionURL').val();
         var data = {
-            'patient': $(this).val()
+            'patient': $(this).val(),
+            'selectDisease': $('#search-disease').val()
         };
         //Clear niceSelects
         clearNiceSelect();
@@ -57,11 +58,16 @@ function changeOptionDisease() {
             data: data,
             type: 'GET',
             success: function (response) {
-                var diseases = response;
+                var diseases = response.diseases;
+                var selectDisease = response.selectDisease;
                 var select = $('#select-disease');
                 $(select).html('');
                 $(select).append($('<option>').html('').val(''));
                 diseases.forEach(function (elem) {
+                    if(selectDisease === elem.id){
+                        $('#search-disease').val(selectDisease);
+                        $('#select-wraper span').html(elem.name);
+                    }
                     $(select).append($('<option>').html(elem.name).val(elem.id));
                 });
 
