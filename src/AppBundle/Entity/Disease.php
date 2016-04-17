@@ -102,7 +102,12 @@ class Disease
      * @ORM\Column(name="positionInFooter", type="integer", nullable=true)
      */
     private $positionInFooter;
-
+    
+    /**
+     * @ORM\OneToOne(targetEntity="Disease")
+     * @ORM\JoinColumn(name="disease_id", referencedColumnName="id")
+     */
+    private $otherPatientDisease;
 
     /**
      * Get id
@@ -389,5 +394,28 @@ class Disease
     public function getPositionInFooter()
     {
         return $this->positionInFooter;
+    }
+
+    /**
+     * Set otherPatientDisease
+     *
+     * @param \AppBundle\Entity\Disease $otherPatientDisease
+     * @return Disease
+     */
+    public function setOtherPatientDisease(\AppBundle\Entity\Disease $otherPatientDisease = null)
+    {
+        $this->otherPatientDisease = $otherPatientDisease;
+
+        return $this;
+    }
+
+    /**
+     * Get otherPatientDisease
+     *
+     * @return \AppBundle\Entity\Disease 
+     */
+    public function getOtherPatientDisease()
+    {
+        return $this->otherPatientDisease;
     }
 }

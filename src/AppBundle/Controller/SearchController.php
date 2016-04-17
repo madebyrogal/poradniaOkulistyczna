@@ -70,16 +70,19 @@ class SearchController extends Controller
     public function changeOptionSearchAction(Request $request)
     {
         $patientId = $request->query->get('patient');
+        $diseaseId = $request->query->get('selectDisease');
         $qb = $this->getDoctrine()->getRepository('AppBundle:Disease')->createQueryBuilder('d')->select('d.id, d.name');
         $qb->andWhere('d.patient = :patient');
         $qb->setParameter('patient', $patientId);
         $qb->orderBy('d.name', 'ASC');
         $q = $qb->getQuery();
         $diseases = $q->getArrayResult();
+        
+        $selectDisease = $this->getDoctrine()->getRepository('AppBundle:Disease')->find($diseaseId);
+        $result['diseases'] = $diseases;
+        $result['selectDisease'] = $selectDisease ? $selectDisease->getOtherPatientDisease()->getId() : 0;
 
-        //$diseases = $this->getDoctrine()->getRepository('AppBundle:Disease')->findBy(array('patient' => $patientId), array('name' => 'ASC'));
-
-        return new JsonResponse($diseases, JsonResponse::HTTP_OK);
+        return new JsonResponse($result, JsonResponse::HTTP_OK);
     }
 
     /**
