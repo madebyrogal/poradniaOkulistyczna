@@ -1,0 +1,37 @@
+{% extends 'MadebyrogalAdminBundle::base.html.twig' %}
+
+{% block body %}
+    <h1>Advertice list</h1>
+
+    <table  class="table table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Picture</th>
+                <th>Alt tekst</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for advertice in advertices %}
+            <tr>
+                <td><a href="{{ path('advertice_show', { 'id': advertice.id }) }}">{{ advertice.id }}</a></td>
+                <td>{{ advertice.name }}</td>
+                <td><img src="{{ advertice.getWebPath }}" width="300" /></td>
+                <td>{{ advertice.alt }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('advertice_show', { 'id': advertice.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('advertice_edit', { 'id': advertice.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

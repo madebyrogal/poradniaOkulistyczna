@@ -1,0 +1,7 @@
+#madebyrogal_admin_homepage:
+#    path:     /
+#    defaults: { _controller: MadebyrogalAdminBundle:Main:index }
+    
+app:
+    resource: "@MadebyrogalAdminBundle/Controller/"
+    type:     annotation

@@ -1,0 +1,16 @@
+{% extends 'MadebyrogalAdminBundle::base.html.twig' %}
+
+{% block body %}
+    <h1>Nowa reklama</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Utwórz" class="btn btn-sm btn-success"/>
+    {{ form_end(form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('advertice_index') }}" class="btn btn-sm btn-primary">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}
