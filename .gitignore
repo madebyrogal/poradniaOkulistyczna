@@ -17,6 +17,10 @@
 /node_modules
 /web/vendor
 
+#uploads
+/web/uploads
+!/web/uploads/.gitkeep
+
 #others
 /nbproject
 .idea/

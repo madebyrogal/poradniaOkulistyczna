@@ -61,7 +61,7 @@ class Advertice
         }
 
         $this->setOrginName($this->getFile()->getClientOriginalName());
-        $newFileName = hash_file('sha256', $this->getFile()->getClientOriginalName());
+        $newFileName = hash_file('sha256', $this->getFile()->getPathname()) . '.' . $this->getFile()->getClientOriginalExtension();
         $this->getFile()->move($this->getUploadRootDir(), $newFileName);
 
         // set the path property to the filename where you've saved the file
@@ -105,14 +105,14 @@ class Advertice
     {
         // the absolute directory path where uploaded
         // documents should be saved
-        return __DIR__ . '/../../../../web/' . $this->getUploadDir();
+        return __DIR__ . '/../../../web/' . $this->getUploadDir();
     }
 
     protected function getUploadDir()
     {
         // get rid of the __DIR__ so it doesn't screw up
         // when displaying uploaded doc/image in the view.
-        return 'uploads/';
+        return '/uploads';
     }
 
     /**

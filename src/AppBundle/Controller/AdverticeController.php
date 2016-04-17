@@ -89,11 +89,12 @@ class AdverticeController extends Controller
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
+            $advertice->upload();
             $em = $this->getDoctrine()->getManager();
             $em->persist($advertice);
             $em->flush();
 
-            return $this->redirectToRoute('advertice_edit', array('id' => $advertice->getId()));
+            return $this->redirectToRoute('advertice_show', array('id' => $advertice->getId()));
         }
 
         return $this->render('advertice/edit.html.twig', array(

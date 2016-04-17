@@ -8,7 +8,7 @@
             <tr>
                 <th>Id</th>
                 <th>Name</th>
-                <th>Banner</th>
+                <th>Picture</th>
                 <th>Alt tekst</th>
                 <th>Actions</th>
             </tr>
@@ -18,7 +18,7 @@
             <tr>
                 <td><a href="{{ path('advertice_show', { 'id': advertice.id }) }}">{{ advertice.id }}</a></td>
                 <td>{{ advertice.name }}</td>
-                <td>{{ advertice.picture }}</td>
+                <td><img src="{{ advertice.getWebPath }}" width="300" /></td>
                 <td>{{ advertice.alt }}</td>
                 <td>
                     <ul>
@@ -34,10 +34,4 @@
         {% endfor %}
         </tbody>
     </table>
-
-    <ul>
-        <li>
-            <a href="{{ path('advertice_new') }}" class="btn btn-success">Utwórz banner</a>
-        </li>
-    </ul>
 {% endblock %}
