@@ -43,7 +43,7 @@
                                 </div>
                                 <div class="subtitle col-xs-12 col-sm-7 col-md-1">Objawy:</div>
                                 <div class="col-xs-12 col-sm-7 col-md-7 content symptoms">
-                                    <p>{{disease.symptoms | raw}}</p>
+                                    <p>{{disease.symptoms | hightLightText(search.search) | raw }}</p>
                                 </div>
                                 <div class="subtitle col-xs-12 col-sm-7 col-md-1 extend-content">Zalecenia:</div>
                                 <div class="col-xs-12 col-sm-7 col-md-7 content extend-content">
