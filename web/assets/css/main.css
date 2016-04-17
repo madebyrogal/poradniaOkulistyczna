@@ -10030,7 +10030,7 @@ hr {
 }
 @media (min-width: 768px) {
   .medicine .about-medicine p {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 25px;
   }
 }
@@ -10047,7 +10047,7 @@ hr {
 }
 @media (min-width: 768px) {
   .medicine .about-medicine ul li {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 25px;
   }
 }
@@ -10058,7 +10058,7 @@ hr {
 }
 @media (min-width: 768px) {
   .medicine .about-medicine ul li span {
-    font-size: 24px;
+    font-size: 15px;
   }
 }
 .medicine .about-medicine ul.list {
@@ -10714,7 +10714,6 @@ hr {
   margin-top: 20px;
 }
 .exam ul.dosage .list li {
-  line-height: 25px;
   margin-bottom: 10px;
 }
 @media (min-width: 992px) {
@@ -10727,7 +10726,7 @@ hr {
   margin-top: 25px;
 }
 .exam .list li {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 25px;
   position: relative;
   padding-left: 12px;
@@ -10754,7 +10753,7 @@ hr {
   margin: 0;
 }
 .exam h3 {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 24px;
   font-family: 'SolomonSans';
   margin: 15px 0 8px 0;
