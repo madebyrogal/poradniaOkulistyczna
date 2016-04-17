@@ -21,7 +21,6 @@ class AppExtension extends \Twig_Extension
         return array(
             new \Twig_SimpleFilter('writeType', array($this, 'writeType')),
             new \Twig_SimpleFilter('hightLightText', array($this, 'hightLightText'))
-            
         );
     }
 
@@ -47,8 +46,10 @@ class AppExtension extends \Twig_Extension
 
     public function hightLightText($text, $search)
     {
-        $text = preg_replace('/('.$search.')/i', '<b><span class="red-text">$1</span></b>', $text);
-        
+        if ($search != '') {
+            $text = preg_replace('/(' . $search . ')/i', '<b><span class="red-text">$1</span></b>', $text);
+        }
+
         return $text;
     }
 

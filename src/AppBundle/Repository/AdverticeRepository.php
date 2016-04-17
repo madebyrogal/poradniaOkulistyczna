@@ -12,4 +12,10 @@ use Doctrine\ORM\EntityRepository;
  */
 class AdverticeRepository extends EntityRepository
 {
+    public function getFirst(){
+        $qb = $this->createQueryBuilder('a');
+        $q = $qb->getQuery();
+        
+        return $q->getOneOrNullResult();
+    }
 }
