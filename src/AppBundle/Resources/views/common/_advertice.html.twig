@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-offset-1 col-lg-10">
                 Reklama<br />
-                <img src="{{advertice.getWebPath}}" alt="{{advertice.alt}}" class="img-responsive"/>
+                {%if advertice%}<img src="{{advertice.getWebPath}}" alt="{{advertice.alt}}" class="img-responsive"/>{%endif%}
             </div>
         </div>
     </aside>
