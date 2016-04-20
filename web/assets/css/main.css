@@ -5,31 +5,31 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'PlayfairDisplay-Black';
+  font-family: 'PlayfairDisplay-BlackItalic';
   src: url('../fonts/PlayfairDisplay/PlayfairDisplay-BlackItalic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
-  font-family: 'PlayfairDisplay';
+  font-family: 'PlayfairDisplay-Regular';
   src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'PlayfairDisplay';
+  font-family: 'PlayfairDisplay-Italic';
   src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
-  font-family: 'PlayfairDisplay';
+  font-family: 'PlayfairDisplay-Bold';
   src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: 'PlayfairDisplay';
+  font-family: 'PlayfairDisplay-BoldItalic';
   src: url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
@@ -41,20 +41,20 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'SolomonSans-Black';
+  font-family: 'SolomonSans-BlackItalic';
   src: url('../fonts/SolomonSans/Solomon-Sans-Black-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Normal';
   src: url('../fonts/SolomonSans/Solomon-Sans-Normal.eot');
   src: url('../fonts/SolomonSans/Solomon-Sans-Normal.eot?#iefix') format('embedded-opentype'), url('../fonts/SolomonSans/Solomon-Sans-Normal.woff2') format('woff2'), url('../fonts/SolomonSans/Solomon-Sans-Normal.woff') format('woff'), url('../fonts/SolomonSans/Solomon-Sans-Normal.ttf') format('truetype'), url('../fonts/SolomonSans/Solomon-Sans-Normal.svg#Solomon-Sans-Normal') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-NormalItalic';
   src: url('../fonts/SolomonSans/Solomon-Sans-Normal-Italic.eot');
   src: url('../fonts/SolomonSans/Solomon-Sans-Normal-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/SolomonSans/Solomon-Sans-Normal-Italic.woff2') format('woff2'), url('../fonts/SolomonSans/Solomon-Sans-Normal-Italic.woff') format('woff'), url('../fonts/SolomonSans/Solomon-Sans-Normal-Italic.ttf') format('truetype'), url('../fonts/SolomonSans/Solomon-Sans-Normal-Italic.svg#Solomon-Sans-Normal-Italic') format('svg');
   font-weight: normal;
@@ -68,19 +68,19 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'SolomonSans-SemiBold';
+  font-family: 'SolomonSans-SemiBoldItalic';
   src: url('../fonts/SolomonSans/Solomon-Sans-SemiBold-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-BoldItalic';
   src: url('../fonts/SolomonSans/Solomon-Sans-Bold-Italic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Bold';
   src: url('../fonts/SolomonSans/Solomon-Sans-Bold.eot');
   src: url('../fonts/SolomonSans/Solomon-Sans-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/SolomonSans/Solomon-Sans-Bold.woff2') format('woff2'), url('../fonts/SolomonSans/Solomon-Sans-Bold.woff') format('woff'), url('../fonts/SolomonSans/Solomon-Sans-Bold.ttf') format('truetype'), url('../fonts/SolomonSans/Solomon-Sans-Bold.svg#Solomon-Sans-Bold') format('svg');
   font-weight: bold;
@@ -9010,7 +9010,7 @@ header #menu #mobile-close {
   display: none;
 }
 header #menu nav {
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Bold';
   font-size: 16px;
   font-weight: bold;
   float: right;
@@ -9255,7 +9255,7 @@ footer .ext-menu li a:focus {
 }
 footer .copywrite {
   color: #cacaca;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Normal';
   font-size: 13px;
   margin-top: 0;
   padding-bottom: 30px;
@@ -9365,7 +9365,7 @@ footer .copywrite {
   height: 500px;
 }
 body {
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Normal';
   font-size: 15px;
   line-height: 22px;
   color: #8498a3;
@@ -9382,7 +9382,7 @@ body.slide-right {
   }
 }
 h1 {
-  font-family: 'PlayfairDisplay';
+  font-family: 'PlayfairDisplay-Bold';
   font-weight: bold;
   font-size: 40px;
   line-height: 48px;
@@ -9394,7 +9394,7 @@ h1 {
   }
 }
 h2 {
-  font-family: 'PlayfairDisplay';
+  font-family: 'PlayfairDisplay-Bold';
   font-weight: bold;
   font-size: 30px;
   line-height: 34px;
@@ -9408,7 +9408,7 @@ h2 {
 h3 {
   font-size: 26px;
   line-height: 30px;
-  font-family: 'PlayfairDisplay';
+  font-family: 'PlayfairDisplay-Bold';
   font-weight: bold;
 }
 @media (min-width: 768px) {
@@ -9420,13 +9420,13 @@ h3 {
 h4 {
   font-size: 22px;
   line-height: 26px;
-  font-family: 'PlayfairDisplay';
+  font-family: 'PlayfairDisplay-Bold';
   font-weight: bold;
 }
 h5 {
   font-size: 20px;
   line-height: 24px;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Bold';
   font-weight: bold;
   color: #282828;
 }
@@ -9532,7 +9532,7 @@ hr {
   text-decoration: none;
 }
 .helpfull-info .help-box article .content h3 {
-  font-family: 'PlayfairDisplay';
+  font-family: 'PlayfairDisplay-Bold';
   font-size: 36px;
   line-height: 48px;
   color: #282828;
@@ -9872,7 +9872,7 @@ hr {
 #breadcrumb ul li {
   color: #fff;
   float: left;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Normal';
   font-size: 11px;
   font-weight: normal;
   line-height: 43px;
@@ -9974,7 +9974,7 @@ hr {
 .medicine h1 {
   color: #282828;
   font-size: 30px;
-  font-family: 'PlayfairDisplay';
+  font-family: 'PlayfairDisplay-Bold';
   font-weight: bold;
   line-height: 60px;
   margin: 10px 0 20px 0;
@@ -10024,7 +10024,7 @@ hr {
 }
 .medicine .about-medicine h2 {
   color: #fa5456;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Bold';
   font-size: 20px;
   font-weight: bold;
   line-height: 28px;
@@ -10037,7 +10037,7 @@ hr {
 }
 .medicine .about-medicine p {
   color: #282828;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Normal';
   font-size: 18px;
   font-weight: normal;
 }
@@ -10053,7 +10053,7 @@ hr {
 }
 .medicine .about-medicine ul li {
   color: #282828;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Normal';
   font-size: 18px;
   font-weight: normal;
   margin-bottom: 20px;
@@ -10065,6 +10065,7 @@ hr {
   }
 }
 .medicine .about-medicine ul li span {
+  font-family: 'SolomonSans-Bold';
   font-size: 20px;
   font-weight: bold;
   line-height: 120%;
@@ -10115,7 +10116,7 @@ hr {
 }
 .medicine .more-medicine h2 {
   color: #282828;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Bold';
   font-size: 26px;
   font-weight: bold;
   line-height: 120%;
@@ -10169,7 +10170,7 @@ hr {
 .medicine .more-medicine ul li .text .drug-name {
   color: #282828;
   font-size: 16px;
-  font-family: 'PlayfairDisplay';
+  font-family: 'PlayfairDisplay-Bold';
   font-weight: bold;
   line-height: 35px;
 }
@@ -10185,7 +10186,7 @@ hr {
 }
 .medicine .more-medicine ul li .text .see-more {
   color: #fa5456;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Normal';
   font-size: 15px;
   font-weight: normal;
   line-height: 35px;
@@ -10273,7 +10274,7 @@ hr {
   color: #56a3b0;
   font-size: 16px;
   line-height: 16px;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Bold';
   font-weight: bold;
 }
 .search .disease h4 {
@@ -10396,7 +10397,7 @@ hr {
 .disease h1 {
   color: #283440;
   font-size: 40px;
-  font-family: 'PlayfairDisplay';
+  font-family: 'PlayfairDisplay-Bold';
   font-weight: bold;
   line-height: 65px;
   margin: 0 0 20px 0;
@@ -10445,7 +10446,7 @@ hr {
 .disease .disease-choice li a {
   color: #a8a8a8;
   display: block;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Normal';
   font-size: 18px;
   font-weight: normal;
   line-height: 100px;
@@ -10492,7 +10493,7 @@ hr {
   cursor: pointer;
   display: block;
   font-size: 24px;
-  font-family: 'PlayfairDisplay';
+  font-family: 'PlayfairDisplay-Bold';
   font-weight: bold;
   line-height: 28px;
   padding: 24px 2% 22px 3%;
@@ -10539,7 +10540,7 @@ hr {
   border: none;
   color: #000;
   display: block;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Normal';
   font-size: 15px;
   font-weight: normal;
   margin-bottom: 10px;
@@ -10567,7 +10568,7 @@ hr {
 }
 .disease .more-disease p {
   color: #282828;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Normal';
   font-size: 15px;
   font-weight: normal;
 }
@@ -10762,13 +10763,13 @@ hr {
   color: #fa5456;
   font-size: 20px;
   line-height: 28px;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Bold';
   margin: 0;
 }
 .exam h3 {
   font-size: 20px;
   line-height: 28px;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Bold';
   margin: 15px 0 8px 0;
 }
 .exam img {
@@ -10778,7 +10779,7 @@ hr {
   color: #282828;
   font-size: 19px;
   line-height: 26px;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Normal';
 }
 .medicine-sort h1 {
   margin-top: 40px;
@@ -10793,7 +10794,7 @@ hr {
 .medicine-sort h3 {
   font-size: 19px;
   line-height: 26px;
-  font-family: 'SolomonSans';
+  font-family: 'SolomonSans-Bold';
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;
