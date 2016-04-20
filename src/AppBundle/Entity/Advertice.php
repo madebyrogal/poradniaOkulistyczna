@@ -39,12 +39,12 @@ class Advertice
     /**
      * @ORM\Column(name="name", type="string", length=255)
      */
-    public $name;
+    private $name;
     
     /**
      * @ORM\Column(name="orginName", type="string", length=255)
      */
-    public $orginName;
+    private $orginName;
 
     /**
      * @var string

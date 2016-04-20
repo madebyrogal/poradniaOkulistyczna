@@ -8,11 +8,15 @@ $(document).ready(function () {
     searchAutoComplet();
     changeOptionDisease();
     niceSelect();
+    removeWidow();
 });
 
 $(window).resize(function () {
 
 });
+function removeWidow(){
+    $('.no-widows li, h1, h2, h3, h4, h5, h6, p').noWidows();
+}
 
 //Funtion of nice select
 function niceSelect() {
