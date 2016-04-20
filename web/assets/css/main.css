@@ -10027,12 +10027,12 @@ hr {
   font-family: 'SolomonSans';
   font-size: 20px;
   font-weight: bold;
-  line-height: 120%;
+  line-height: 28px;
   margin-bottom: 18px;
 }
 @media (min-width: 768px) {
   .medicine .about-medicine h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 .medicine .about-medicine p {
@@ -10760,14 +10760,14 @@ hr {
 }
 .exam h2 {
   color: #fa5456;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 28px;
   font-family: 'SolomonSans';
   margin: 0;
 }
 .exam h3 {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 28px;
   font-family: 'SolomonSans';
   margin: 15px 0 8px 0;
 }
