@@ -38,7 +38,8 @@ function niceSelect() {
         
         $('#search-disease').val($(this).data('option'));
         $("#select-wraper span").html($(this).html());
-        //$("#select-data").hide();
+        //Clear write by hand symptoms
+        $('#symptom').val('');
     });
 }
 
