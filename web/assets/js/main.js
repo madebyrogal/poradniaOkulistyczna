@@ -9,11 +9,24 @@ $(document).ready(function () {
     changeOptionDisease();
     niceSelect();
     removeWidow();
+    customPlaceholder();
 });
 
 $(window).resize(function () {
 
 });
+
+//For result page custom placeholder for symtoms
+function customPlaceholder(){
+    var buf;
+    $('#symptom').on('click', function(){
+        buf = $('#symptom').val();
+        $('#symptom').val('');
+    }).on('blur', function(){
+        $('#symptom').val() === '' ? $('#symptom').val(buf) : null;
+    });
+}
+
 function removeWidow(){
     $('.no-widows li, h1, h2, h3, h4, h5, h6, p').noWidows();
 }
