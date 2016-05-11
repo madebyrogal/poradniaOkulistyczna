@@ -34,9 +34,11 @@ class SymptomsCommand extends ContainerAwareCommand
     protected function generateSymptoms($em, $patient = self::DISEASE_CHILD){
         $diseases = $this->getContainer()->get('doctrine')->getRepository('AppBundle:Disease')->findBy(array('patient'=> self::DISEASE_CHILD));
         foreach ($diseases as $disease) {
-            $symptomsTemp = explode(',', $disease->getSymptoms());
+            $symptomsTemp = explode(',', $disease->getSymptomsSearch());
             foreach ($symptomsTemp as $symptom) {
-                $symptoms[] = trim($symptom);
+                if(trim($symptom) !== ''){
+                    $symptoms[] = trim($symptom);
+                }
             }
         }
         $symptoms = array_unique($symptoms);

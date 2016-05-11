@@ -53,6 +53,13 @@ class Disease
      * @ORM\Column(name="symptoms", type="text", nullable=true)
      */
     private $symptoms;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="symptomsSearch", type="text", nullable=true)
+     */
+    private $symptomsSearch;
 
     /**
      * @var string
@@ -417,5 +424,28 @@ class Disease
     public function getOtherPatientDisease()
     {
         return $this->otherPatientDisease;
+    }
+
+    /**
+     * Set symptomsSearch
+     *
+     * @param string $symptomsSearch
+     * @return Disease
+     */
+    public function setSymptomsSearch($symptomsSearch)
+    {
+        $this->symptomsSearch = $symptomsSearch;
+
+        return $this;
+    }
+
+    /**
+     * Get symptomsSearch
+     *
+     * @return string 
+     */
+    public function getSymptomsSearch()
+    {
+        return $this->symptomsSearch;
     }
 }

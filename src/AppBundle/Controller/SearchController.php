@@ -23,7 +23,7 @@ class SearchController extends Controller
             $qb->setParameter('patient', $search['patient']);
         }
         if (!empty($search['search'])) {
-            $qb->andWhere('d.symptoms LIKE :search');
+            $qb->andWhere('d.symptomsSearch LIKE :search');
             $qb->setParameter('search', '%' . $search['search'] . '%');
         }
         if (!empty($search['disease'])) {
