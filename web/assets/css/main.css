@@ -9998,7 +9998,7 @@ hr {
 }
 @media (min-width: 768px) {
   .medicine .medicine-logo {
-    margin: 90px 0 30px 0;
+    margin: 0px 0 30px 0;
   }
 }
 .medicine .main-image img {
@@ -10014,17 +10014,51 @@ hr {
   margin-bottom: 20px;
   margin-top: 30px;
 }
+@media (min-width: 768px) {
+  .medicine .biodacyna .medicine-info {
+    position: relative;
+    top: -80px;
+  }
+}
+@media (min-width: 768px) {
+  .medicine .dicortineff .medicine-info {
+    position: relative;
+    top: 0px;
+  }
+}
 @media (min-width: 992px) {
   .medicine .dicortineff .main-image {
-    margin-top: 100px;
+    margin-top: 0px;
   }
+}
+@media (min-width: 768px) {
+  .medicine .oflodinex .medicine-info {
+    position: relative;
+    top: -110px;
+  }
+}
+@media (min-width: 768px) {
   .medicine .oflodinex .main-image {
-    margin-top: 20px;
+    margin-top: 0px;
     padding-right: 3%;
   }
+}
+@media (min-width: 768px) {
+  .medicine .tobrosopt .medicine-info {
+    position: relative;
+    top: -110px;
+  }
+}
+@media (min-width: 992px) {
+  .medicine .tobrosopt .medicine-info {
+    position: relative;
+    top: -150px;
+  }
+}
+@media (min-width: 992px) {
   .medicine .tobrosopt .main-image img {
     margin-right: 5%;
-    margin-top: 40px;
+    margin-top: 0px;
   }
 }
 .medicine .about-medicine {
@@ -10317,13 +10351,13 @@ hr {
 }
 .search .disease .subtitle {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 16px;
   color: #282828;
   margin-bottom: 5px;
 }
 .search .disease .content {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 20px;
 }
 .search .disease b {
@@ -10714,7 +10748,7 @@ hr {
   border-left: 1px solid #cacaca;
 }
 .exam ul.dosage > li h2 {
-  line-height: 40px;
+  line-height: 28px;
 }
 .exam ul.dosage > li:before {
   background: url('../images/circle.png') 0 0 no-repeat;

@@ -14,7 +14,7 @@
     .medicine-logo {
         margin: 20px 0;
         @media (min-width: @screen-sm-min) {
-            margin: 90px 0 30px 0;
+            margin: 0px 0 30px 0;
         }
     }
     .main-image {
@@ -30,23 +30,73 @@
         margin-bottom: 20px;
         margin-top: 30px;
     }
-    @media (min-width: @screen-md-min) {
-        .dicortineff .main-image {
-            margin-top: 100px;
-        }
-        .oflodinex .main-image {
-            margin-top: 20px;
-            padding-right: 3%;
-        }
-        .tobrosopt .main-image {
-            img {
-                margin-right: 5%;
-                margin-top: 40px;
+    
+    .biodacyna{
+        .medicine-info{
+            @media (min-width: @screen-sm-min) {
+                position: relative;
+                top: -80px;
             }
         }
     }
+
+    .dicortineff{
+        .medicine-info{
+            @media (min-width: @screen-sm-min) {
+                position: relative;
+                top: 0px;
+            }
+        }
+
+        @media (min-width: @screen-md-min) {
+            .main-image {
+                margin-top: 0px;
+            }  
+        }
+    } 
+
+    .oflodinex{
+        .medicine-info{
+            @media (min-width: @screen-sm-min) {
+                position: relative;
+                top: -110px;
+            }
+        }
+
+        @media (min-width: @screen-sm-min) {
+            .main-image {
+                margin-top: 0px;
+                padding-right: 3%;
+            }  
+        }
+    } 
+
+    .tobrosopt{
+        .medicine-info{
+            @media (min-width: @screen-sm-min) {
+                position: relative;
+                top: -110px;
+            }
+            
+            @media (min-width: @screen-md-min) {
+                position: relative;
+                top: -150px;
+            }
+        }
+
+        @media (min-width: @screen-md-min) {
+            .main-image {
+                img {
+                    margin-right: 5%;
+                    margin-top: 0px;
+                }
+            }  
+        }
+    } 
+
     .about-medicine {
         margin-top: 10px;
+
         h2 {
             color: @red;
             font-family: 'SolomonSans-Bold';
@@ -93,13 +143,13 @@
             }
             &.list {
                 margin-top: 25px;
-                
+
                 li {
                     /*font-size: 20px;
                     line-height: 25px;*/
                     position: relative;
                     padding-left: 12px;
-                    
+
                     &:before {
                         position: absolute;
                         content:'-';
