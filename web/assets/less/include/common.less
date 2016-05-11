@@ -420,12 +420,17 @@
 
                 li{
                     cursor: pointer;
+                    display: block;
                     background-color: #fff;
                     padding: 1px 5px;
                     word-wrap: normal;
                     white-space: nowrap;
                     overflow: hidden;
                     color: @main;
+                    
+                    &:hover{
+                        background-color: @blue-bg;
+                    }
                 }
             }
         }

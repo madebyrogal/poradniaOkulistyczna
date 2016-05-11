@@ -9851,12 +9851,16 @@ hr {
 }
 .search-box .form-box .select-wraper-container ul li {
   cursor: pointer;
+  display: block;
   background-color: #fff;
   padding: 1px 5px;
   word-wrap: normal;
   white-space: nowrap;
   overflow: hidden;
   color: #8498a3;
+}
+.search-box .form-box .select-wraper-container ul li:hover {
+  background-color: #7acff4;
 }
 #breadcrumb {
   display: none;
