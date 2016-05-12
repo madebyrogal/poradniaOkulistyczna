@@ -10844,6 +10844,7 @@ hr {
 .medicine-sort .list {
   list-style-type: none;
   margin-bottom: 10px;
+  font-size: 15px;
 }
 @-webkit-keyframes body {
   0% {
