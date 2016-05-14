@@ -25,7 +25,7 @@
                             <li>
                                 <span class="name">{{category.name}}</span>
                                 <div class="disease-content">
-                                    <ul class="menu-disease">
+                                    <ul class="menu-disease no-widows">
                                         {% for disease in category.diseases %}
                                             <li {% if loop.first %}class="active" {% endif %} data-disease="disease-{{disease.id}}">{{disease.name}}</li>
                                             {% endfor %}

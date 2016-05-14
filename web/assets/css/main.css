@@ -9702,7 +9702,8 @@ hr {
   width: 100%;
   max-height: 190px;
   overflow: auto;
-  z-index: 1;
+  background-color: #fff;
+  z-index: 3;
 }
 .search-box .symptoms-input .symptomsAutoComplete ul {
   list-style-type: none;
@@ -9713,6 +9714,9 @@ hr {
   text-align: left;
   padding: 2px 5px;
   cursor: pointer;
+}
+.search-box .symptoms-input .symptomsAutoComplete ul li:hover {
+  background-color: #7acff4;
 }
 .search-box .form-box {
   margin-bottom: 25px;
@@ -10194,6 +10198,10 @@ hr {
   .medicine .more-medicine ul li {
     width: 32%;
   }
+}
+.medicine .more-medicine ul li:hover {
+  -webkit-box-shadow: 0px 5px 35px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 35px -13px rgba(0, 0, 0, 0.75);
 }
 .medicine .more-medicine ul li a:hover {
   text-decoration: none;
@@ -10779,7 +10787,7 @@ hr {
 }
 .exam .list {
   list-style-type: none;
-  margin-top: 25px;
+  margin-top: 0px;
 }
 .exam .list li {
   font-size: 15px;
@@ -10812,7 +10820,7 @@ hr {
   font-size: 20px;
   line-height: 28px;
   font-family: 'SolomonSans-Bold';
-  margin: 15px 0 8px 0;
+  margin: 15px 0 0px 0;
 }
 .exam img {
   margin-bottom: 20px;

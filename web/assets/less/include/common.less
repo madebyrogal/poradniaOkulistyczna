@@ -254,7 +254,8 @@
             width: 100%;
             max-height: 190px;
             overflow: auto;
-            z-index: 1;
+            background-color: @white-bg;
+            z-index: 3;
 
             ul{
                 list-style-type: none;
@@ -265,6 +266,10 @@
                     text-align: left;
                     padding: 2px 5px;
                     cursor: pointer;
+                    
+                    &:hover{
+                        background-color: @blue-bg;
+                    }
                 }
             }
         }
