@@ -43,7 +43,7 @@ function niceSelect() {
     }).on('focusout', function () {
         setTimeout(function () {
             $("#select-data").hide()
-        }, 100);
+        }, 200);
     });
 
     //Select data from container
@@ -128,6 +128,7 @@ function searchAutoComplet() {
         var symptom = $(this).html();
         $('#symptom').val(symptom);
         $('.symptomsAutoComplete ul').hide();
+        clearNiceSelect();
     });
 
     $('#symptom').focusout(function () {
