@@ -115,9 +115,9 @@ function searchAutoComplet() {
                     $(ulCon).append($('<li>').html(elem.name));
                 });
                 if (symptoms.length) {
-                    ulCon.show();
+                    $('.symptomsAutoComplete').show();
                 } else {
-                    ulCon.hide();
+                    $('.symptomsAutoComplete').hide();
                 }
             }
         });
@@ -127,13 +127,13 @@ function searchAutoComplet() {
     $('.symptomsAutoComplete ul').on('click', 'li', function () {
         var symptom = $(this).html();
         $('#symptom').val(symptom);
-        $('.symptomsAutoComplete ul').hide();
+        $('.symptomsAutoComplete').hide();
         clearNiceSelect();
     });
 
     $('#symptom').focusout(function () {
         setTimeout(function () {
-            $('.symptomsAutoComplete ul').hide()
+            $('.symptomsAutoComplete').hide();
         }, 200);
     });
 }
