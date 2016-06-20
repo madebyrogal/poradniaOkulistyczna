@@ -42,12 +42,14 @@
                                                     <p>{{disease.symptoms | raw}}</p>
                                                 </div>
                                             </div>
-                                            <div class="about-disease extend-content">
-                                                <div class="top">Zalecenia:</div>
-                                                <div class="desc">
-                                                    <p>{{disease.recommendation | raw}}</p>
+                                            {% if disease.recommendation %}
+                                                <div class="about-disease extend-content">
+                                                    <div class="top">Zalecenia:</div>
+                                                    <div class="desc">
+                                                        <p>{{disease.recommendation | raw}}</p>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            {% endif %}    
                                             {% if disease.comments %}
                                                 <div class="about-disease extend-content">
                                                     <div class="comments clearfix">
@@ -58,10 +60,12 @@
                                                     </div>
                                                 </div>
                                             {% endif %}
-                                            <div class="unwrap-button button-ext">
-                                                <span class="normal">Sprawdź zalecenia <i class="fa fa-chevron-down"></i></span>
-                                                <span class="extend-content">Zwiń zalecenia <i class="fa fa-chevron-up"></i></span>
-                                            </div>
+                                            {% if disease.recommendation %}
+                                                <div class="unwrap-button button-ext">
+                                                    <span class="normal">Sprawdź zalecenia <i class="fa fa-chevron-down"></i></span>
+                                                    <span class="extend-content">Zwiń zalecenia <i class="fa fa-chevron-up"></i></span>
+                                                </div>
+                                            {% endif %}    
                                             {#<div class="about-disease">
                                                 <div class="button-ext">
                                                     <span class="normal">Sprawdź zalecenia <i class="fa fa-chevron-down"></i></span>
