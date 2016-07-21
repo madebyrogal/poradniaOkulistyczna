@@ -9176,6 +9176,7 @@ footer nav ul li:last-child {
   margin-bottom: 0px;
 }
 footer nav ul li a {
+  font-family: "SolomonSans-Bold";
   font-weight: bold;
   font-size: 18px;
   color: #282828;
