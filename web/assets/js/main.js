@@ -28,7 +28,7 @@ function customPlaceholder(){
 }
 
 function removeWidow(){
-    $('.no-widows li, h1, h2, h3, h4, h5, h6, p').noWidows();
+    $('.no-widows li, h1, h2, h3, h4, h5, h6, p').not('.footer-sil p').noWidows();
 }
 
 //Funtion of nice select
