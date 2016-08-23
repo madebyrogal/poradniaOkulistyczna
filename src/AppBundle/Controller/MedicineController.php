@@ -4,6 +4,8 @@ namespace AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Response;
+
 
 class MedicineController extends Controller
 {
@@ -12,8 +14,9 @@ class MedicineController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('AppBundle:Medicine:index.html.twig', array(
-            // ...
-        ));
+       return new Response('Not found', 404);
+//        return $this->render('AppBundle:Medicine:index.html.twig', array(
+//            // ...
+//        ));
     }
 }
