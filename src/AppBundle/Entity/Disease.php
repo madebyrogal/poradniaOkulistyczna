@@ -81,6 +81,13 @@ class Disease
      * @ORM\Column(name="picture1", type="string", length=255, nullable=true)
      */
     private $picture1;
+    
+    /**
+     * @var string
+     * 
+     * @ORM\Column(name="picture1Desc", type="string", length=255, nullable=true)
+     */
+    private $picture1Desc;
 
     /**
      * @var string
@@ -88,6 +95,13 @@ class Disease
      * @ORM\Column(name="picture2", type="string", length=255, nullable=true)
      */
     private $picture2;
+    
+    /**
+     * @var string
+     * 
+     * @ORM\Column(name="picture2Desc", type="string", length=255, nullable=true)
+     */
+    private $picture2Desc;
 
     /**
      * @var string
@@ -95,6 +109,13 @@ class Disease
      * @ORM\Column(name="picture3", type="string", length=255, nullable=true)
      */
     private $picture3;
+    
+    /**
+     * @var string
+     * 
+     * @ORM\Column(name="picture3Desc", type="string", length=255, nullable=true)
+     */
+    private $picture3Desc;
     
     /**
      * @var string
@@ -447,5 +468,74 @@ class Disease
     public function getSymptomsSearch()
     {
         return $this->symptomsSearch;
+    }
+
+    /**
+     * Set picture1Desc
+     *
+     * @param string $picture1Desc
+     * @return Disease
+     */
+    public function setPicture1Desc($picture1Desc)
+    {
+        $this->picture1Desc = $picture1Desc;
+
+        return $this;
+    }
+
+    /**
+     * Get picture1Desc
+     *
+     * @return string 
+     */
+    public function getPicture1Desc()
+    {
+        return $this->picture1Desc;
+    }
+
+    /**
+     * Set picture2Desc
+     *
+     * @param string $picture2Desc
+     * @return Disease
+     */
+    public function setPicture2Desc($picture2Desc)
+    {
+        $this->picture2Desc = $picture2Desc;
+
+        return $this;
+    }
+
+    /**
+     * Get picture2Desc
+     *
+     * @return string 
+     */
+    public function getPicture2Desc()
+    {
+        return $this->picture2Desc;
+    }
+
+    /**
+     * Set picture3Desc
+     *
+     * @param string $picture3Desc
+     * @return Disease
+     */
+    public function setPicture3Desc($picture3Desc)
+    {
+        $this->picture3Desc = $picture3Desc;
+
+        return $this;
+    }
+
+    /**
+     * Get picture3Desc
+     *
+     * @return string 
+     */
+    public function getPicture3Desc()
+    {
+        return $this->picture3Desc;
     }
 }
