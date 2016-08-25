@@ -34,7 +34,10 @@
                                         <div class="more-disease not-extend disease-{{disease.id}} {% if loop.first %}active{% endif %}">
                                             <div class="mode type-{{disease.type | default('A')}}"><span>{{disease.type}}</span>{{disease.type | writeType}}</div>
                                             <div class="picture">
-                                                {% if disease.picture1 %}<img class="img-responsive" alt="" src="{{asset(disease.picture1)}}"/>{% endif %}
+                                                {% if disease.picture1 %}
+                                                    <img class="img-responsive" alt="" src="{{asset(disease.picture1)}}"/>
+                                                    {{disease.picture1Desc}}
+                                                {% endif %}
                                             </div>
                                             <div class="about-disease">
                                                 <div class="top">Objawy:</div>

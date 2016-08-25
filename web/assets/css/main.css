@@ -10345,7 +10345,7 @@ hr {
   height: 163px;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   padding-bottom: 50vw;
 }
 @media (min-width: 768px) {
@@ -10360,6 +10360,10 @@ hr {
     width: 100%;
     padding-bottom: 66%;
   }
+}
+.search .disease .img-wraper .img-description {
+  text-align: left;
+  margin-bottom: 15px;
 }
 .search .disease .subtitle {
   font-weight: bold;
@@ -10660,13 +10664,18 @@ hr {
 .disease .more-disease .mode.type-C span {
   background-color: #3eb74d;
 }
+.disease .more-disease .picture {
+  margin-bottom: 10px;
+  color: #282828;
+}
 .disease .more-disease .picture img {
-  margin: 0 auto 20px auto;
+  margin: 0 auto 10px auto;
 }
 @media (min-width: 992px) {
   .disease .more-disease .picture {
     float: right;
     width: 40%;
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 992px) {
