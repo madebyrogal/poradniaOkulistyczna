@@ -13,7 +13,7 @@
             <nav>
                 <ul>
                     <li {% if app.request.get('_route') == 'disease' %}class="active"{% endif %}><a href="{{path('disease')}}">Schorzenia</a></li>
-                    <li {% if app.request.get('_route') == 'exam' %}class="active"{% endif %}><a href="{{path('exam')}}">Badania narządów wzroku</a></li>
+                    <li {% if app.request.get('_route') == 'exam' %}class="active"{% endif %}><a href="{{path('exam')}}">Badanie narządów wzroku</a></li>
 {#                    <li {% if app.request.get('_route') == 'medicine' %}class="active"{% endif %}><a href="{{path('medicine')}}">Rodzaje stosowanych leków</a></li>#}
                     <li {% if (app.request.get('_route') == 'info' or app.request.get('_route') == 'biodacyna' or app.request.get('_route') == 'dicortineff' or app.request.get('_route') == 'oflodinex' or app.request.get('_route') == 'tobrosopt')  %}class="active"{% endif %}><a href="{{path('info')}}">Informacje o lekach</a></li>
                 </ul>
