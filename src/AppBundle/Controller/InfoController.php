@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class InfoController extends Controller
 {
     /**
-     * @Route("informacje-o-lekach.html", name="info")
+     * @Route("produkty.html", name="info")
      */
     public function indexAction()
     {
@@ -18,7 +18,7 @@ class InfoController extends Controller
     }
 
     /**
-     * @Route("informacje-o-lekach-biodacyna.html", name="biodacyna")
+     * @Route("produkty-biodacyna.html", name="biodacyna")
      */
     public function biodacynaAction()
     {
@@ -28,7 +28,7 @@ class InfoController extends Controller
     }
 
     /**
-     * @Route("informacje-o-lekach-dicortineff.html", name="dicortineff")
+     * @Route("produkty-dicortineff.html", name="dicortineff")
      */
     public function dicortineffAction()
     {
@@ -38,7 +38,7 @@ class InfoController extends Controller
     }
 
     /**
-     * @Route("informacje-o-lekach-oflodinex.html", name="oflodinex")
+     * @Route("produkty-oflodinex.html", name="oflodinex")
      */
     public function oflodinexAction()
     {
@@ -48,7 +48,7 @@ class InfoController extends Controller
     }
 
     /**
-     * @Route("informacje-o-lekach-tobrosopt.html", name="tobrosopt")
+     * @Route("produkty-tobrosopt.html", name="tobrosopt")
      */
     public function tobrosoptAction()
     {
