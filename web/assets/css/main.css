@@ -9225,7 +9225,7 @@ footer .ext-menu li:nth-child(2) {
   }
 }
 footer .ext-menu li.polfarma-logo {
-  background-image: url('../images/logo_footer.jpg');
+  background-image: url('../images/grupa-polpharma-logo.png');
   background-repeat: no-repeat;
   width: 100%;
   height: 28px;
@@ -9233,6 +9233,7 @@ footer .ext-menu li.polfarma-logo {
   margin-bottom: 30px;
   background-position: center center;
   display: block;
+  background-size: contain;
 }
 @media (min-width: 768px) {
   footer .ext-menu li.polfarma-logo {

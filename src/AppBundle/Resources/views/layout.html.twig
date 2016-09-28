@@ -8,10 +8,12 @@
         {% block stylesheets %}
             {{ include('AppBundle:default:include_head.html.twig') }}
         {% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="icon" type="image/x-icon" href="{{ asset('web/favicon.ico') }}" />
     </head>
     <body>
         {{ include('AppBundle:default:header.html.twig') }}
+{#        {{ include('AppBundle:default:popup_doctor.html.twig') }}#}
+{#        {{ include('AppBundle:default:cookies_consent.html.twig') }}#}
         <main class="container-fluid">
             <div class="row">
                 {% block body %}{% endblock %}
