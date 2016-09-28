@@ -45,6 +45,11 @@ class Advertice
      * @ORM\Column(name="orginName", type="string", length=255)
      */
     private $orginName;
+    
+    /**
+     * @ORM\Column(name="link", type="text", nullable=true)
+     */
+    private $link;
 
     /**
      * @var string
@@ -216,5 +221,28 @@ class Advertice
     public function getOrginName()
     {
         return $this->orginName;
+    }
+
+    /**
+     * Set link
+     *
+     * @param string $link
+     * @return Advertice
+     */
+    public function setLink($link)
+    {
+        $this->link = $link;
+
+        return $this;
+    }
+
+    /**
+     * Get link
+     *
+     * @return string 
+     */
+    public function getLink()
+    {
+        return $this->link;
     }
 }

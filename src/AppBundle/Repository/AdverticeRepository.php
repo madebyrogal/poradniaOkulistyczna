@@ -14,6 +14,7 @@ class AdverticeRepository extends EntityRepository
 {
     public function getFirst(){
         $qb = $this->createQueryBuilder('a');
+        $qb->setMaxResults(1);
         $q = $qb->getQuery();
         
         return $q->getOneOrNullResult();
