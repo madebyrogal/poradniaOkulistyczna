@@ -82,7 +82,7 @@
         </div>
     </div>
     <!--Advertice -->
-    {{ render(controller('AppBundle:Common:advertice')) }}
+    {{ include('AppBundle:common:_advertice.html.twig', { 'advertice': {'name' : 'Biodacyna', 'getWebPath' : '/assets/images/banners/Biodacyna_baner_930x2002.jpg', 'alt' : 'Biodacyna'} }) }}
     <!--Advertice end-->
 {% endblock %}
 {% block footersil %}

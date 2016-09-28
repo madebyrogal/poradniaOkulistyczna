@@ -86,7 +86,7 @@
         </div>
     </div>
     <!--Advertice -->
-    {{ render(controller('AppBundle:Common:advertice')) }}
+    {{ include('AppBundle:common:_advertice.html.twig', { 'advertice': {'name' : 'Oflodinex', 'getWebPath' : '/assets/images/banners/Oflodinex_baner_930x200.jpg', 'alt' : 'Oflodinex'} }) }}
     <!--Advertice end-->
 {% endblock %}
 {% block footersil %}
