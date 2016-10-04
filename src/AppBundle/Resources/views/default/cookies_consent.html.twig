@@ -1,3 +1,14 @@
-<div id="cookie-consent">
-	<a href="#">W ramach naszej witryny stosujemy pliki cookies w celu świadczenia Państwu usług na najwyższym poziomie, w tym w sposób dostosowany do indywidualnych potrzeb. Korzystanie z witryny bez zmiany ustawień dotyczących cookies oznacza, że będą one zamieszczane w Państwa urządzeniu końcowym. Możecie Państwo dokonać w każdym czasie zmiany ustawień dotyczących cookies.</a>
+<div id="cookie-consent" {% if app.request.cookies.has('cookie-consent') %}style="display: none"{% endif %}>
+    <div class="container consent">
+        <div class="text">
+            W ramach naszej witryny stosujemy pliki cookies w celu świadczenia Państwu 
+            usług na najwyższym poziomie, w tym w sposób dostosowany do indywidualnych potrzeb. 
+            Korzystanie z witryny bez zmiany ustawień dotyczących cookies oznacza, że będą 
+            one zamieszczane w Państwa urządzeniu końcowym. Możecie Państwo dokonać w 
+            każdym czasie zmiany ustawień dotyczących cookies.
+        </div>
+        <div class="cross">
+            <a href="#" id="close-cookie">&times;</a>
+        </div>
+    </div>
 </div>

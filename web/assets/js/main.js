@@ -10,6 +10,7 @@ $(document).ready(function () {
     niceSelect();
     removeWidow();
     customPlaceholder();
+    acceptCookieConsent();
 });
 
 $(window).resize(function () {
@@ -184,7 +185,7 @@ function openDiseaseFromLocation(loc) {
         loc = location.href;
     var locArray = loc.split('#');
 
-    if (typeof locArray[1] !== 'undefined') {
+    if (typeof locArray[1] !== 'undefined' && locArray[1] !== '') {
         var disease = $(".menu-disease li[data-disease='" + locArray[1] + "']");
         disease.addClass('active').siblings('li').removeClass('active');
         disease.closest('.disease-content').slideDown().find('.more-disease').removeClass('active');

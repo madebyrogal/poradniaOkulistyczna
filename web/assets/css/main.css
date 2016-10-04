@@ -10912,3 +10912,27 @@ body.slide-right {
     animation-name: body;
   }
 }
+#cookie-consent {
+  position: fixed;
+  bottom: 0px;
+  padding: 18px 0;
+  background-color: #fff;
+  z-index: 100;
+  width: 100%;
+}
+#cookie-consent .consent {
+  padding: 0 100px;
+}
+#cookie-consent .consent .text {
+  float: left;
+  width: 90%;
+}
+#cookie-consent .consent .cross {
+  float: left;
+  font-size: 96px;
+  line-height: 75px;
+}
+#cookie-consent .consent .cross a {
+  color: #d1d1d1;
+  text-decoration: none;
+}
