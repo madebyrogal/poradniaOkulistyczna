@@ -5,33 +5,35 @@
     background-color: @white-bg;
     z-index: 100;
     width: 100%;
-    
+
     .consent{
         text-align: center;
         padding: 0 15px;
-        
-        @media(min-width: @screen-sm-min){
+
+        @media(min-width: @screen-md-min){
             padding: 0 100px;
             text-align: left;
         }
-        
+
         .text{
-            @media(min-width: @screen-sm-min){
+            @media(min-width: @screen-md-min){
                 float: left;
                 width: 90%;
             }
         }
-        
+
         .cross{
             font-size: 48px;
             line-height: 48px;
-            
-            @media(min-width: @screen-sm-min){
+
+            @media(min-width: @screen-md-min){
                 float: left;
                 font-size: 96px;
                 line-height: 75px;
+                width: 10%;
+                text-align: center;
             }
-            
+
             a{
                 color: @gray;
                 text-decoration: none;
