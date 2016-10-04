@@ -10921,16 +10921,31 @@ body.slide-right {
   width: 100%;
 }
 #cookie-consent .consent {
-  padding: 0 100px;
+  text-align: center;
+  padding: 0 15px;
 }
-#cookie-consent .consent .text {
-  float: left;
-  width: 90%;
+@media (min-width: 768px) {
+  #cookie-consent .consent {
+    padding: 0 100px;
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  #cookie-consent .consent .text {
+    float: left;
+    width: 90%;
+  }
 }
 #cookie-consent .consent .cross {
-  float: left;
-  font-size: 96px;
-  line-height: 75px;
+  font-size: 48px;
+  line-height: 48px;
+}
+@media (min-width: 768px) {
+  #cookie-consent .consent .cross {
+    float: left;
+    font-size: 96px;
+    line-height: 75px;
+  }
 }
 #cookie-consent .consent .cross a {
   color: #d1d1d1;

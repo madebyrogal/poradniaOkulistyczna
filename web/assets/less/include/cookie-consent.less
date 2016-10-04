@@ -7,17 +7,30 @@
     width: 100%;
     
     .consent{
-        padding: 0 100px;
+        text-align: center;
+        padding: 0 15px;
+        
+        @media(min-width: @screen-sm-min){
+            padding: 0 100px;
+            text-align: left;
+        }
         
         .text{
-            float: left;
-            width: 90%;
+            @media(min-width: @screen-sm-min){
+                float: left;
+                width: 90%;
+            }
         }
         
         .cross{
-            float: left;
-            font-size: 96px;
-            line-height: 75px;
+            font-size: 48px;
+            line-height: 48px;
+            
+            @media(min-width: @screen-sm-min){
+                float: left;
+                font-size: 96px;
+                line-height: 75px;
+            }
             
             a{
                 color: @gray;
