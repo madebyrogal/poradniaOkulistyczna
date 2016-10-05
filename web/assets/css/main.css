@@ -9530,6 +9530,11 @@ hr {
 .helpfull-info .help-box article.info .image {
   background-image: url('../images/kropelka.jpg');
 }
+@media (min-width: 992px) {
+  .helpfull-info .help-box article.info h3 {
+    height: 92px;
+  }
+}
 .helpfull-info .help-box article .content {
   padding: 12px 15px 10px 15px;
 }
@@ -10751,6 +10756,9 @@ hr {
     transform: translateX(0);
   }
 }
+.disease .bibliography {
+  margin-top: 15px;
+}
 .exam {
   color: #282828;
   font-size: 19px;
@@ -10964,22 +10972,30 @@ body.slide-right {
 }
 .popup-intro .content {
   text-align: center;
-  font-size: 22px;
-  line-height: 32px;
-  width: 800px;
   padding-top: 8%;
   color: #282828;
+}
+@media (min-width: 992px) {
+  .popup-intro .content {
+    font-size: 22px;
+    line-height: 32px;
+    width: 800px;
+  }
 }
 .popup-intro .content h1 {
   color: #fa5456;
   margin-bottom: 35px;
 }
 .popup-intro .content .box-form {
-  width: 69%;
   margin: 35px auto;
   padding: 15px 0;
   border-top: 1px solid #d1d1d1;
   border-bottom: 1px solid #d1d1d1;
+}
+@media (min-width: 992px) {
+  .popup-intro .content .box-form {
+    width: 69%;
+  }
 }
 .popup-intro .content .box-form input[type=checkbox] {
   display: none;
@@ -11024,8 +11040,14 @@ body.slide-right {
   font-size: 18px;
 }
 .popup-intro .content .buttons #statement-cancel {
-  margin-right: 30px;
+  margin-bottom: 10px;
   background-color: #fa5456;
+}
+@media (min-width: 992px) {
+  .popup-intro .content .buttons #statement-cancel {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 .popup-intro .content .buttons #statement-ok {
   background-color: #56a3b0;

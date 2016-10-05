@@ -9,23 +9,29 @@
 
     .content{
         text-align: center;
-        font-size: 22px;
-        line-height: 32px;
-        width: 800px;
         padding-top: 8%;
         color: @black;
-
+        
+        @media(min-width: @screen-md-min){
+            font-size: 22px;
+            line-height: 32px;
+            width: 800px;
+        }
+        
         h1{
             color: @red;
             margin-bottom: 35px;
         }
 
         .box-form{
-            width: 69%;
             margin: 35px auto;
             padding: 15px 0;
             border-top: 1px solid @gray;
             border-bottom: 1px solid @gray;
+            
+            @media(min-width: @screen-md-min){
+                width: 69%;
+            }
 
             input[type=checkbox]{
                 display: none;
@@ -87,15 +93,16 @@
                 outline: none;
                 font-family: "SolomonSans-Bold";
                 font-size: 18px;
-
-                &:active{
-
-                }
             }
 
             #statement-cancel{
-                margin-right: 30px;
+                margin-bottom: 10px;
                 background-color: @red;
+                
+                @media(min-width: @screen-md-min){
+                    margin-right: 30px;
+                    margin-bottom: 0;
+                }
             }
 
             #statement-ok{
