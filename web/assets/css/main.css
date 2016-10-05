@@ -10953,3 +10953,80 @@ body.slide-right {
   color: #d1d1d1;
   text-decoration: none;
 }
+.popup-intro {
+  background-color: #fff;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.popup-intro .content {
+  text-align: center;
+  font-size: 22px;
+  line-height: 32px;
+  width: 800px;
+  padding-top: 8%;
+  color: #282828;
+}
+.popup-intro .content h1 {
+  color: #fa5456;
+  margin-bottom: 35px;
+}
+.popup-intro .content .box-form {
+  width: 69%;
+  margin: 35px auto;
+  padding: 15px 0;
+  border-top: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
+}
+.popup-intro .content .box-form input[type=checkbox] {
+  display: none;
+}
+.popup-intro .content .box-form input[type=checkbox] + label:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 15px;
+  margin-top: -3px;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+}
+.popup-intro .content .box-form input[type=checkbox] + label.error:before {
+  border: 1px solid #fa5456;
+}
+.popup-intro .content .box-form input[type=checkbox]:checked + label:before {
+  content: "\2714";
+  /* Tick */
+  color: #56a3b0;
+  text-align: center;
+  line-height: 25px;
+}
+.popup-intro .content .box-form input[type=checkbox]:checked + label.error:before {
+  border: 1px solid #d1d1d1;
+}
+.popup-intro .content .box-form label {
+  font-weight: normal;
+}
+.popup-intro .content .buttons button {
+  display: inline-block;
+  width: 165px;
+  height: 50px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  border: none;
+  outline: none;
+  font-family: "SolomonSans-Bold";
+  font-size: 18px;
+}
+.popup-intro .content .buttons #statement-cancel {
+  margin-right: 30px;
+  background-color: #fa5456;
+}
+.popup-intro .content .buttons #statement-ok {
+  background-color: #56a3b0;
+}

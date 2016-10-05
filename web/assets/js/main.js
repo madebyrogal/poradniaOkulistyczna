@@ -11,6 +11,7 @@ $(document).ready(function () {
     removeWidow();
     customPlaceholder();
     acceptCookieConsent();
+    statementsAction();
 });
 
 $(window).resize(function () {
@@ -216,5 +217,25 @@ function toogleMedicine() {
         $(this).closest('.row').find('.border').removeClass('active');
         $('.' + medicine).addClass('active');
 
+    });
+}
+
+function statementsAction() {
+    $('#statement-cancel').on('click', function(){
+        location.href = 'http://google.pl';
+    });
+    
+    $('#statement-ok').on('click', function(){
+        if($('#accept').is(':checked')){
+            var host = location.host;
+            var cookie = new Cookie();
+            if (host.split('.').length !== 1 && !validateIP(host)) {
+                host = '.' + host;
+            }
+            cookie.setCookie('doctor-statement', '1', 365, '/', host);
+            $('.popup-intro').hide();
+        } else {
+            $('#accept + label').addClass('error');
+        }
     });
 }
