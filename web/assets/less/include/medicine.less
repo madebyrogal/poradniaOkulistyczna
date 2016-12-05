@@ -35,8 +35,11 @@
         .medicine-info{
             @media (min-width: @screen-sm-min) {
                 position: relative;
-                top: -80px;
+                top: -20px;
             }
+        }
+        .medicine-logo{
+            width: 60%;
         }
     }
 
@@ -92,7 +95,24 @@
                 }
             }  
         }
-    } 
+    }
+    
+    .primadex {
+        @media (min-width: @screen-md-min) {
+            .main-image{
+                img{
+                    margin-right: 10%;
+                }
+            }
+        }
+        
+        .medicine-info{
+            @media (min-width: @screen-sm-min) {
+                position: relative;
+                top: -130px;
+            }
+        }
+    }
 
     .about-medicine {
         margin-top: 10px;
@@ -116,7 +136,7 @@
             margin-bottom: 1px;
             
             @media (min-width: @screen-sm-min) {
-                font-size: 15px;
+                font-size: 16px;
                 line-height: 25px;
             }
         }
@@ -130,7 +150,7 @@
                 font-weight: normal;
                 margin-bottom: 0px;
                 @media (min-width: @screen-sm-min) {
-                    font-size: 15px;
+                    font-size: 16px;
                     line-height: 25px;
                 }
                 span {
@@ -139,7 +159,7 @@
                     font-weight: bold;
                     line-height: 120%;
                     @media (min-width: @screen-sm-min) {
-                        font-size: 15px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -188,6 +208,9 @@
                 }
             }
         }
+        strong{
+            color: #282828;
+        }
     }
     .more-medicine {
         h2 {
@@ -204,13 +227,17 @@
             li {
                 border: 1px solid #cacaca;
                 float: left;
-                margin-bottom: 15px;
+                margin-bottom: 16px;
                 width: 100%;
                 &:nth-child(odd) {
                     margin-right: 4%;
                     @media (min-width: @screen-sm-min) {
                         margin-right: 0%;
                     }
+                }
+                &:nth-child(2n+1) {
+                    clear: both;
+                    margin-left: 0;
                 }
                 @media (min-width: @screen-sm-min) {
                     margin-left: 2%;
@@ -219,8 +246,7 @@
                     }
                 }
                 @media (min-width: @screen-sm-min) {
-                    //width: 24%;
-                    width: 32%;
+                    width: 49%;
                 }
                 
                 &:hover{
@@ -258,7 +284,7 @@
                     .see-more {
                         color: @red;
                         font-family: 'SolomonSans-Normal';
-                        font-size: 15px;
+                        font-size: 16px;
                         font-weight: normal;
                         line-height: 35px;
                     }

@@ -57,4 +57,15 @@ class InfoController extends Controller
         ));
     }
 
+    /**
+     * @Route("produkty-primadex.html", name="primadex")
+     */
+    public function primadexAction()
+    {
+        return $this->render('AppBundle:Info:primadex.html.twig', array(
+                        // ...
+        ));
+    }
+
+
 }

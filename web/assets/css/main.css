@@ -9371,7 +9371,7 @@ footer .copywrite {
 }
 body {
   font-family: 'SolomonSans-Normal';
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
   color: #8498a3;
 }
@@ -9567,7 +9567,7 @@ hr {
 .helpfull-info .help-box article .content .read-more {
   font-family: 'SolomonSans-SemiBold';
   float: right;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
 }
 .helpfull-info .help-box article .image {
@@ -10024,6 +10024,9 @@ hr {
     float: right;
     margin-right: 30%;
   }
+  .medicine .primadex .main-image img {
+    margin-right: 10%;
+  }
 }
 .medicine .h1-img {
   margin-bottom: 20px;
@@ -10032,7 +10035,11 @@ hr {
 @media (min-width: 768px) {
   .medicine .biodacyna .medicine-info {
     position: relative;
-    top: -80px;
+    top: -20px;
+  }
+  .medicine .primadex .medicine-info {
+    position: relative;
+    top: -130px;
   }
 }
 @media (min-width: 768px) {
@@ -10101,7 +10108,7 @@ hr {
 }
 @media (min-width: 768px) {
   .medicine .about-medicine p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 25px;
   }
 }
@@ -10118,7 +10125,7 @@ hr {
 }
 @media (min-width: 768px) {
   .medicine .about-medicine ul li {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 25px;
   }
 }
@@ -10130,7 +10137,7 @@ hr {
 }
 @media (min-width: 768px) {
   .medicine .about-medicine ul li span {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 .medicine .about-medicine ul.list {
@@ -10185,11 +10192,15 @@ hr {
 .medicine .more-medicine ul li {
   border: 1px solid #cacaca;
   float: left;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   width: 100%;
 }
 .medicine .more-medicine ul li:nth-child(odd) {
   margin-right: 4%;
+}
+.medicine .more-medicine ul li:nth-of-type(2n+1) {
+  clear: both;
+  margin-left: 0;
 }
 @media (min-width: 768px) {
   .medicine .more-medicine ul li:nth-child(odd) {
@@ -10206,7 +10217,7 @@ hr {
 }
 @media (min-width: 768px) {
   .medicine .more-medicine ul li {
-    width: 32%;
+    width: 49%;
   }
 }
 .medicine .more-medicine ul li:hover {
@@ -10247,7 +10258,7 @@ hr {
 .medicine .more-medicine ul li .text .see-more {
   color: #fa5456;
   font-family: 'SolomonSans-Normal';
-  font-size: 15px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 35px;
 }
@@ -10373,13 +10384,13 @@ hr {
 }
 .search .disease .subtitle {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 16px;
   color: #282828;
   margin-bottom: 5px;
 }
 .search .disease .content {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 20px;
 }
 .search .disease b {
@@ -10605,7 +10616,7 @@ hr {
   color: #000;
   display: block;
   font-family: 'SolomonSans-Normal';
-  font-size: 15px;
+  font-size: 16px;
   font-weight: normal;
   margin-bottom: 10px;
   padding: 12px 13px 8px 10px;
@@ -10633,15 +10644,17 @@ hr {
 .disease .more-disease p {
   color: #282828;
   font-family: 'SolomonSans-Normal';
-  font-size: 15px;
+  font-size: 16px;
   font-weight: normal;
 }
-.disease .more-disease .mode {
+.disease .more-disease .mode,
+.modes .mode {
   font-weight: bold;
   font-size: 16px;
   padding: 9px 0;
 }
-.disease .more-disease .mode span {
+.disease .more-disease .mode span,
+.modes .mode span {
   color: #fff9fa;
   display: inline-block;
   font-weight: bold;
@@ -10652,22 +10665,28 @@ hr {
   text-transform: uppercase;
   width: 30px;
 }
-.disease .more-disease .mode.type-A {
+.disease .more-disease .mode.type-A,
+.modes .mode.type-A {
   color: #ed1c24;
 }
-.disease .more-disease .mode.type-A span {
+.disease .more-disease .mode.type-A span,
+.modes .mode.type-A span {
   background-color: #ed1c24;
 }
-.disease .more-disease .mode.type-B {
+.disease .more-disease .mode.type-B,
+.modes .mode.type-B {
   color: #fbbd09;
 }
-.disease .more-disease .mode.type-B span {
+.disease .more-disease .mode.type-B span,
+.modes .mode.type-B span {
   background-color: #fbbd09;
 }
-.disease .more-disease .mode.type-C {
+.disease .more-disease .mode.type-C,
+.modes .mode.type-C {
   color: #3eb74d;
 }
-.disease .more-disease .mode.type-C span {
+.disease .more-disease .mode.type-C span,
+.modes .mode.type-C span {
   background-color: #3eb74d;
 }
 .disease .more-disease .picture {
@@ -10698,7 +10717,7 @@ hr {
 @media (min-width: 992px) {
   .disease .more-disease .about-disease .top {
     float: left;
-    padding-right: 2%;
+    margin-right: 2%;
     width: 18%;
   }
 }
@@ -10708,7 +10727,7 @@ hr {
 @media (min-width: 992px) {
   .disease .more-disease .about-disease .desc {
     float: left;
-    width: 82%;
+    width: 80%;
   }
 }
 .disease .more-disease .about-disease .comments {
@@ -10812,7 +10831,7 @@ hr {
   margin-top: 0px;
 }
 .exam .list li {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 25px;
   position: relative;
   padding-left: 12px;
@@ -10874,7 +10893,7 @@ hr {
 .medicine-sort .list {
   list-style-type: none;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 16px;
 }
 @-webkit-keyframes body {
   0% {
@@ -11051,4 +11070,38 @@ body.slide-right {
 }
 .popup-intro .content .buttons #statement-ok {
   background-color: #56a3b0;
+}
+.col-md-4.col-xs-10.logo {
+  padding-left: 0;
+}
+
+.modes { 
+  overflow: hidden; 
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.modes .mode {
+  float: left;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+.modes .mode small {
+  color: #525252;
+  font-weight: 100;
+  display: block;
+  margin-left: 40px;
+}
+
+.about-medicine strong {
+  color: #282828;
+}
+
+.biodacyna .col-sm-6 .medicine-logo {
+  width: 60%;
+}
+
+@media (max-width: 480px) {
+  .exam ul.dosage > li:last-child {
+    border-left: 1px solid #cacaca;
+  }
 }

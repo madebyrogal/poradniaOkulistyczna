@@ -1,0 +1,123 @@
+{% extends "AppBundle::layout.html.twig" %}
+
+{% block title %}Poradnia Okulistyczna - Produkty - Primadex{% endblock %}
+
+{% block body %}
+    <div class="medicine">
+        <div id="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li><a title="" href="{{path('home')}}">Strona główna <i class="fa fa-angle-right"></i></a></li>
+                    <li><a title="" href="">Produkty <i class="fa fa-angle-right"></i></a></li>
+                    <li>Primadex</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container primadex">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <img alt="" class="img-responsive medicine-logo" src="{{asset('assets/images/logo-primadex.png')}}" />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="line-hr red"></span>
+                        </div>
+                    </div>
+                    <img alt="" class="h1-img img-responsive" src="{{asset('assets/images/primadex_haslo.png')}}" />
+                </div>
+                <div class="col-xs-12 col-sm-6 main-image">
+                    <img alt="" class="img-responsive" src="{{asset('assets/images/Primadex_opakowanie.png')}}" />
+                </div>
+            </div>
+            <div class="row about-medicine">
+                <div class="col-xs-12 col-sm-6 col-md-5 medicine-info">
+                    <p><i>Dexamethasonum, Neomycini sulfas, Polymyxini B sulfas.</i></p>
+                    <p>Wykazuje aktywność wobec większości bakterii chorobotwórczych, najczęściej powodujących zakażenia oka<sup>1</sup>:</p>
+                    <p><strong>Gram-ujemne</strong> Escherichia coli, Haemophilus influenzae, Klebsiella/Enterobacter spp, Proteus mirabilis, Pseudomonas aeruginosa, Serratia marcescens.</p>
+                    <p><strong>Gram-dodatnie</strong> Staphylococcus aureus, Staphylococcus epidermidis.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 dosage">
+                    <h2 class="special">Wskazania w okulistyce</h2>
+                    <div class="grey-line">
+                        <p>Leczenie chorób oczu ze współistniejącym odczynem zapalnym, odpowiadających na stosowanie steroidów, w przypadkach, w których wskazane jest stosowanie kortykosteroidów i jednocześnie podejrzewa się lub istnieje niebezpieczeństwo wystąpienia zakażenia bakteryjnego oka (np. w chorobach zapalnych spojówek powiekowych i gałkowych, rogówki, przedniego odcinka gałki ocznej, przewlekłym zapaleniu błony naczyniowej przedniego odcinka oka oraz uszkodzeniach rogówki wywołanych oparzeniami np. chemicznymi, radiacyjnymi, cieplnymi lub wbiciem ciał obcych).</p>
+
+                    </div>
+                    <h2 class="special">Dawkowanie</h2>
+                    <div>
+                        <p>Stosowanie u młodzieży i dorosłych, w tym u pacjentów w podeszłym wieku. W chorobach o łagodnym przebiegu stosuje się jedną do dwóch kropli do worka (worków) spojówkowego (spojówkowych) maksymalnie do sześciu razy na dobę. Częstość podawania produktu zmniejsza się w miarę uzyskiwania poprawy klinicznej. Należy jednak wystrzegać się przedwczesnego przerwania leczenia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row more-medicine">
+                <div class="col-xs-12">
+                    <h2>Pozostałe leki</h2>
+                    <ul class="clearfix">
+                        <li>
+                            <a title="" href="{{path('info')}}">
+                                <div class="text">
+                                    <span class="drug-name">Biodacyna Ophtalmicum 0,3%</span>
+                                    <span class="see-more">Sprawdź <i class="fa fa-angle-right"></i></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Dicortineff" href="{{path('dicortineff')}}">
+                                <div class="text">
+                                    <span class="drug-name">Dicortineff</span>
+                                    <span class="see-more">Sprawdź <i class="fa fa-angle-right"></i></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Tobrosopt-DEX" href="{{path('tobrosopt')}}">
+                                <div class="text">
+                                    <span class="drug-name">Tobrosopt-DEX</span>
+                                    <span class="see-more">Sprawdź <i class="fa fa-angle-right"></i></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Oflodinex" href="{{path('oflodinex')}}">
+                                <div class="text">
+                                    <span class="drug-name">Oflodinex</span>
+                                    <span class="see-more">Sprawdź <i class="fa fa-angle-right"></i></span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Advertice -->
+    {{ include('AppBundle:common:_advertice.html.twig', { 'advertice': {'name' : 'Primadex', 'getWebPath' : '/assets/images/banners/Primadex_baner_930x200.jpg', 'alt' : 'Primadex'} }) }}
+    <!--Advertice end-->
+{% endblock %}
+{% block footersil %}
+    <div class="container">
+        <aside class="footer-sil">
+            <footer>
+                <p>
+                    1. Charakterystyka Produktu Leczniczego Primadex
+                </p>
+                <p>
+                    <b>PRIMADEX</b> (Dexamethasonum, Neomycini sulfas, Polymyxini B sulfas).<br/>
+
+                    <b>Skład i postać:</b> 1 ml zawiesiny zawiera: 1 mg deksametazon, 3 500 IU neomycyny siarczanu, 6 000 IU polimyksyny B siarczanu. Jedna kropla zawiesiny zawiera 33 μg deksametazonu, 115,5 IU neomycyny siarczanu, 198 IU polimyksyny B siarczanu. Substancja pomocnicza o znanym działaniu: benzalkoniowy chlorek 0,04 mg/ml. Krople do oczu, zawiesina. Biała lub kremowa zawiesina. Osmolalność: 280-320 mosmol/kg, pH 5,0-6,5.<br/>
+
+                    <b>Wskazania:</b> Leczenie chorób oczu ze współistniejącym odczynem zapalnym, odpowiadających na stosowanie steroidów, w przypadkach, w których wskazane jest stosowanie kortykosteroidów i jednocześnie podejrzewa się lub istnieje niebezpieczeństwo wystąpienia zakażenia bakteryjnego oka (np. w chorobach zapalnych spojówek powiekowych i gałkowych, rogówki, przedniego odcinka gałki ocznej, przewlekłym zapaleniu błony naczyniowej przedniego odcinka oka oraz uszkodzeniach rogówki wywołanych oparzeniami np. chemicznymi, radiacyjnymi, cieplnymi lub wbiciem ciał obcych).<br/>
+
+                    <b>Dawkowanie i sposób podawania:</b> Stosowanie u młodzieży i dorosłych, w tym u pacjentów w podeszłym wieku. W chorobach o łagodnym przebiegu stosuje się jedną do dwóch kropli do worka (worków) spojówkowego (spojówkowych) maksymalnie do sześciu razy na dobę. Częstość podawania produktu zmniejsza się w miarę uzyskiwania poprawy klinicznej. Należy jednak wystrzegać się przedwczesnego przerwania leczenia. W ciężkich przypadkach stosuje się jedną do dwóch kropli co godzinę. Stopniowo lek stosuje się w coraz mniejszej dawce, a po ustąpieniu objawów zapalenia przerywa się jego stosowanie. Zaleca się delikatne zamknięcie powieki i uciśnięcie przewodu nosowo-łzowego po wkropleniu produktu. Może to zmniejszyć ogólnoustrojowe wchłanianie leku podanego do oka i przyczynić się do zmniejszenia jego ogólnych działań niepożądanych. W przypadku jednoczesnego stosowania innych produktów podawanych miejscowo do oka, należy zachować od 10 do 15 minut przerwy pomiędzy podaniami kolejnych leków. Stosowanie u dzieci. Nie określono skuteczności i bezpieczeństwa stosowania produktu u dzieci, w związku z tym nie stosuje się go w tej grupie wiekowej. Stosowanie u pacjentów z zaburzeniami czynności wątroby lub nerek Nie badano działania produktu Primadex w tych populacjach pacjentów. Jednak ze względu na małe wchłanianie ogólnoustrojowe substancji czynnych po miejscowym podaniu produktu, uznaje się, że nie ma potrzeby modyfikacji jego dawkowania. Przed użyciem butelkę należy dobrze wstrząsnąć. Aby zapobiec zanieczyszczeniu końcówki zakraplacza i zawiesiny zawartej w butelce należy zachować ostrożność, by nie dotykać końcówką zakraplacza powiek, okolic sąsiadujących z okiem lub innych powierzchni.<br/>
+
+                    <b>Przeciwwskazania:</b> Nadwrażliwość na substancje czynne lub inne antybiotyki aminoglikozydowe, lub na którąkolwiek substancję pomocniczą. Zakażenie rogówki wirusem Herpes simplex (drzewkowate zapalenie rogówki - dendritic keratitis), ospy krowiej, ospy wietrznej i inne choroby wirusowe rogówki i spojówki. Zakażenie gruźlicze oka wywołane m.in. przez pałeczki kwasooporne, takie jak: Mycobacterium tuberculosis, Mycobacterium leprae lub Mycobacterium avium. Choroby oka wywołane przez grzyby. Nieleczone ropne zakażenie oka.<br/>
+
+                    <b>Ostrzeżenia i zalecane środki ostrożności:</b> Długotrwałe stosowanie produktu lub zwiększona częstość jego podawania mogą spowodować nadciśnienie oczne i (lub) jaskrę, co może prowadzić do uszkodzenia nerwu wzrokowego oraz zaburzenia ostrości i pola widzenia, a także tworzenia tylnej zaćmy podtorebkowej. U wrażliwych pacjentów może wystąpić zwiększenie ciśnienia wewnątrzgałkowego nawet po krótkotrwałym stosowaniu produktu. Jeżeli produkt jest podawany pacjentom chorym na jaskrę, czas leczenia powinien być ograniczony do dwóch tygodni, o ile dłuższe stosowanie nie ma wyraźnego uzasadnienia; ciśnienie wewnątrzgałkowe powinno być rutynowo kontrolowane u tych pacjentów. Po stosowaniu produktów złożonych zawierających steroidy i leki przeciwbakteryjne dochodziło do rozwoju wtórnych zakażeń. Długotrwałe stosowanie steroidów szczególnie predysponuje do występowania zakażeń grzybiczych rogówki. Możliwość zakażenia grzybiczego należy zawsze brać pod uwagę w przypadku uporczywego owrzodzenia rogówki, które wystąpiło po leczeniu steroidami. Wtórne zakażenia oka występują także w wyniku upośledzenia odporności pacjenta. Ostre zakażenia ropne mogą być maskowane lub ulegać zaostrzeniu podczas stosowania produktów zawierających kortykosteroidy. Podczas miejscowego stosowania steroidów w chorobach powodujących ścieńczenie rogówki lub twardówki opisywano występowanie perforacji. U niektórych pacjentów może występować nadwrażliwość na aminoglikozydy podawane miejscowo, objawiająca się zwykle świądem powiek, obrzękiem i zaczerwienieniem spojówek. W razie występowania nadwrażliwości stosowanie produktu Primadex należy przerwać. Kortykosteroidy stosowane miejscowo do oczu, mogą opóźniać gojenie uszkodzeń rogówki. Primadex krople do oczu, zawiesina zawiera benzalkoniowy chlorek jako środek konserwujący. Może on powodować podrażnienie oczu i zmienia zabarwienie miękkich soczewek kontaktowych. Przed zakropleniem leku, należy usunąć soczewki kontaktowe i odczekać co najmniej 15 minut przed ponownym ich założeniem. Pacjenci nie powinni stosować soczewek kontaktowych, jeśli występuje zakażenie oczu.<br/>
+
+                    <b>Działania niepożądane:</b> Poniżej przedstawiono działania niepożądane związane ze stosowaniem produktu Primadex: bardzo często (≥1/10), często (≥1/100 do <1/10), niezbyt często (≥1/1000 do <1/100), rzadko (≥1/10 000 do <1/1000), bardzo rzadko (<1/10 000), częstość nieznana (nie może być określona na podstawie dostępnych danych). Zaburzenia oka: Często: dyskomfort w oku (przemijające pieczenie lub kłucie po zastosowaniu). Niezbyt często: alergiczne reakcje nadwrażliwości, świąd oka, zwiększone ciśnienie wewnątrzgałkowe, przekrwienie oka, punkcikowe
+zapalenie rogówki, zaczerwienienie, nasilone łzawienie, obrzęk i świąd powiek. Częstość nieznana: jaskra z uszkodzeniem nerwu wzrokowego, ubytki ostrości widzenia i pola widzenia, powstanie tylnej zaćmy podtorebkowej. Zaburzenia ogólne i stany w miejscu podania. Nie odnotowano występowania żadnych częstych ani niezbyt częstych działań niepożądanych podczas stosowania kropli do oczu zawierających deksametazon, neomycynę i polimyksynę B. Przegląd wszystkich spontanicznych doniesień po wprowadzeniu leku do obrotu o działaniach niepożądanych kropli z deksametazonem, neomycyną i polimyksyną B zebranych od czasu wprowadzenia tego produktu do lecznictwa, wykazał niezmieniony profil bezpieczeństwa leku z punktu widzenia wszystkich działań niepożądanych dotyczących oczu, działań ogólnoustrojowych oraz działań farmakologicznych specyficznych dla danej grupy leków. Po dopuszczeniu produktu leczniczego do obrotu istotne jest zgłaszanie podejrzewanych działań niepożądanych. Umożliwia to nieprzerwane monitorowanie stosunku korzyści do ryzyka stosowania produktu leczniczego. Osoby należące do fachowego personelu medycznego powinny zgłaszać wszelkie podejrzewane działania niepożądane za pośrednictwem Departamentu Monitorowania Niepożądanych Działań Produktów Leczniczych Urzędu Rejestracji Produktów Leczniczych, Wyrobów Medycznych i Produktów Biobójczych, Al. Jerozolimskie 181C, 02-222 Warszawa, Tel.: + 48 22 49 21 301, Fax: + 48 22 49 21 309, e-mail: ndl@urpl.gov.pl.<br/>
+
+                    <b>Podmiot odpowiedzialny:</b> Polfa Warszawa S.A. Pozwolenie na dopuszczenie do obrotu nr 22225 wydane przez MZ. Dodatkowych informacji o leku udziela: Polpharma Biuro Handlowe Sp. z o.o., ul. Bobrowiecka 6, 00-728 Warszawa, tel. +48 22 364 61 00; fax. +48 22 364 61 02. www.polpharma.pl. Lek wydawany na podstawie recepty. ChPL: 2014.12.19.
+                </p>
+            </footer>
+        </aside>
+    </div>
+{% endblock %}

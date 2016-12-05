@@ -81,7 +81,7 @@
                     text-align: right;
                 }
             }
-           
+
         }
     }
     .disease-list {
@@ -148,7 +148,7 @@
                 color: #000;
                 display: block;
                 font-family: 'SolomonSans-Normal';
-                font-size: 15px;
+                font-size: 16px;
                 font-weight: normal;
                 margin-bottom: 10px;
                 padding: 12px 13px 8px 10px;
@@ -178,7 +178,7 @@
         p {
             color: #282828;
             font-family: 'SolomonSans-Normal';
-            font-size: 15px;
+            font-size: 16px;
             font-weight: normal;
         }
         .mode {
@@ -220,10 +220,10 @@
             img {
                 margin: 0 auto 10px auto;
             }
-            
+
             margin-bottom: 10px;
             color: @black;
-            
+
             @media (min-width: @screen-md-min) {
                 float: right;
                 width: 40%;
@@ -241,7 +241,7 @@
                 font-weight: bold;
                 @media (min-width: @screen-md-min) {
                     float: left;
-                    padding-right: 2%;
+                    margin-right: 2%;
                     width: 18%;
                 }
             }
@@ -249,10 +249,10 @@
                 color: #282828;
                 @media (min-width: @screen-md-min) {
                     float: left;
-                    width: 82%;
+                    width: 80%;
                 }
             }
-            
+
             .comments{
                 margin-top:5px;
                 margin-bottom: 15px;
@@ -260,7 +260,7 @@
                 border: 1px @red-bg-type solid;
             }
         }
-        
+
         &.not-extend{
             .extend-content{
                 display: none;
@@ -274,11 +274,11 @@
         .normal{
             display: none;
         }
-        
+
         .button-ext{
             .button-ext();
         }
-        
+
         .unwrap-button {
             bottom: 20px;
             right: 50%;
@@ -292,5 +292,62 @@
     }
     .bibliography{
         margin-top: 15px;
+    }
+}
+.modes {
+    overflow: hidden; 
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    .mode {
+        float: left;
+        padding-right: 30px;
+        padding-top: 10px;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 9px 0;
+
+        small{
+            color: #525252;
+            font-weight: 100;
+            display: block;
+            margin-left: 40px;
+        }
+
+        span {
+            color: #fff9fa;
+            display: inline-block;
+            font-weight: bold;
+            height: 30px;
+            line-height: 33px;
+            margin-right: 13px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 30px;
+        }
+
+        &.type-A{
+            color: #ed1c24;
+
+            span{
+                background-color: #ed1c24;
+            }
+        }
+
+        &.type-B{
+            color: #fbbd09;
+
+            span{
+                background-color: #fbbd09;
+            }
+        }
+
+        &.type-C{
+            color: #3eb74d;
+
+            span{
+                background-color: #3eb74d;
+            }
+        }
     }
 }
